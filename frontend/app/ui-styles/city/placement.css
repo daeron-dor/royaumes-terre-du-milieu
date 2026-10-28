@@ -1,0 +1,21 @@
+/* city/placement — voir docs/STYLES.md pour les responsabilités et la cascade. */
+
+.living-city .scene-stage {
+  aspect-ratio: 1;
+  min-height: 0;
+}
+.living-building.city-building {
+  transform: translate(-50%, -100%);
+}
+.living-building .plot-shadow {
+  bottom: 0;
+  height: 12%;
+  left: 18%;
+  width: 64%;
+}
+.living-building .building-label {
+  top: 98%;
+}
+.living-building .construction-badge {
+  top: 112%;
+}

@@ -1,0 +1,200 @@
+/* features/demo — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.demo-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin: 10px;
+  padding: 14px 16px;
+  background: #eadbb6;
+  color: #3b2f1d;
+  border: 2px ridge #a28b57;
+}
+.demo-controls-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.demo-controls-title strong {
+  font: 13px Georgia;
+  letter-spacing: 1px;
+}
+.demo-controls-title small {
+  font: 10px Georgia;
+}
+.demo-controls label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font: 12px Georgia;
+}
+.demo-controls select {
+  max-width: 220px;
+  background: #fff4d8;
+  color: #352b1e;
+  border: 1px solid #998151;
+  padding: 8px;
+}
+.demo-role {
+  display: flex;
+  border: 1px solid #7b673f;
+}
+.demo-role button {
+  padding: 10px 15px;
+  font: 13px Georgia;
+}
+.demo-role button[aria-pressed='true'] {
+  background: #263e35;
+  color: #fff0c7;
+  box-shadow: inset 0 -3px #c6a967;
+}
+.demo-controls > a {
+  margin-left: auto;
+  text-decoration: underline;
+  font: 11px Georgia;
+}
+.demo-controls > p {
+  width: 100%;
+  margin: 0;
+  border-top: 1px solid #a58e6155;
+  padding-top: 8px;
+  font: 11px/1.5 Georgia;
+}
+@media (max-width: 760px) {
+  .demo-controls {
+    gap: 10px;
+    padding: 12px;
+    margin: 7px;
+  }
+  .demo-controls-title {
+    width: 100%;
+  }
+  .demo-controls label {
+    width: 100%;
+  }
+  .demo-controls select {
+    flex: 1;
+    min-width: 0;
+    max-width: none;
+  }
+  .demo-role {
+    flex: 1;
+  }
+  .demo-role button {
+    flex: 1;
+    padding: 10px;
+  }
+  .demo-controls > a {
+    margin-left: 0;
+  }
+}
+.demo-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 100%;
+}
+.demo-tools button {
+  padding: 9px 12px;
+  border: 1px solid #947944;
+  background: #fff0cb;
+  color: #3b2e19;
+  font: 12px Georgia;
+  min-height: 38px;
+}
+.demo-tools button:hover:not(:disabled) {
+  background: #f9dfa0;
+}
+.demo-tools button:disabled {
+  opacity: 0.45;
+}
+.city-adviser .building-art {
+  height: 180px;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 14px 23px;
+  overflow: visible;
+}
+.city-adviser .building-art > .architecture-fitted {
+  flex-shrink: 0;
+  max-height: 145px;
+}
+.city-adviser .building-art .level-badge {
+  bottom: 5px;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+@media (max-width: 760px) {
+  .demo-tools button {
+    flex: 1 1 150px;
+  }
+  .city-adviser .building-panel {
+    display: block;
+  }
+  .city-adviser .building-art {
+    height: 180px;
+    width: 100%;
+  }
+  .city-adviser .building-content {
+    padding: 14px;
+  }
+  .resources-bar .resource-amount strong {
+    font-size: 12px;
+  }
+}
+.demo-entry {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 12px 16px;
+  background: #eadbb6;
+  border: 2px ridge #a28b57;
+  color: #3b2f1d;
+}
+.demo-entry > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.demo-entry strong {
+  font: 16px Georgia;
+}
+.demo-entry span {
+  font: 11px/1.4 Georgia;
+}
+.demo-entry > a {
+  padding: 11px 16px;
+  background: #294437;
+  color: #fff0cb;
+  border: 2px ridge #a28b57;
+  white-space: nowrap;
+  font: 13px Georgia;
+}
+.demo-tools .demo-reset {
+  margin-left: auto;
+  background: #694136;
+  color: #fff0d4;
+  border-color: #a78664;
+}
+.demo-tools .demo-reset:hover:not(:disabled) {
+  background: #825142;
+}
+@media (max-width: 760px) {
+  .demo-entry {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .demo-entry > a {
+    text-align: center;
+  }
+  .demo-tools .demo-reset {
+    margin-left: 0;
+  }
+}

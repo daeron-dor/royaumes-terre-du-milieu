@@ -1,0 +1,222 @@
+/* parchment/cards-ledgers — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.bottom-grid {
+  gap: 16px;
+  margin-top: 16px;
+}
+.card {
+  padding: 19px;
+}
+.card-title {
+  margin-bottom: 16px;
+}
+.card-title h3 {
+  font-size: 15px;
+}
+.card-title h3 svg {
+  color: #a68e5a;
+}
+.soft-tag {
+  background: #111d1e;
+  color: #a9b59d;
+  border: 1px solid #5d6a5a70;
+  border-radius: 1px;
+  font-size: 8px;
+}
+.quiet-state {
+  color: #89978a;
+  min-height: 55px;
+}
+.quiet-state > svg {
+  color: #667565;
+}
+.quiet-state strong {
+  font-family: Georgia;
+  font-size: 14px;
+  color: #c3c4ae;
+}
+.quiet-state p {
+  font-size: 10px;
+  color: #849287;
+}
+.production-grid > div {
+  color: #a18d59;
+}
+.production-grid strong {
+  color: #bdcfa3;
+  font-size: 17px;
+  font-family: Georgia;
+}
+.production-grid span {
+  color: #8e9c89;
+  font-size: 9px;
+}
+.muted {
+  color: #95a095;
+  font-size: 11px;
+}
+.tiny {
+  font-size: 9px;
+  color: #798b7e;
+}
+.construction-row strong,
+.garrison strong {
+  font-family: Georgia;
+  color: #d2c7a9;
+  font-size: 15px;
+}
+.square-icon {
+  background: linear-gradient(#35423e, #26352e);
+  border: 1px solid #69755866;
+  border-radius: 1px;
+  color: #b49d65;
+}
+.construction-row small,
+.garrison small,
+.list-row small {
+  color: #8e9d8b;
+}
+.construction-row b {
+  color: #dac18b;
+  font-family: Georgia;
+}
+.progress {
+  background: #111a16;
+  height: 5px;
+  border: 1px solid #6872485e;
+}
+.progress span {
+  background: linear-gradient(90deg, #687f4c, #afbc7a);
+}
+footer {
+  color: #5f7168;
+  border-color: #4f625641;
+  font-size: 8px;
+  margin-top: 23px;
+  padding: 16px 0;
+}
+footer i {
+  background: #6b745a;
+}
+.summary-grid {
+  gap: 16px;
+}
+.stat {
+  padding: 22px;
+}
+.stat strong {
+  color: #e5d3a6;
+  font-size: 32px;
+}
+.stat small {
+  color: #94a18f;
+  font-size: 10px;
+}
+.realm-grid {
+  gap: 17px;
+}
+.realm-card {
+  border-color: #786a4580;
+}
+.mini-city {
+  height: 200px;
+  background:
+    linear-gradient(#17292155, #15241abd),
+    url('/art/city-terrain.webp') center/cover;
+}
+.mini-city .building-sprite {
+  width: 150px;
+  height: 200px;
+}
+.mini-city .soft-tag {
+  background: #192322d9;
+  color: #d8c18b;
+  border-color: #ad915e77;
+}
+.realm-card > div:last-child {
+  padding: 19px;
+}
+.realm-card h2 {
+  color: #d8c49b;
+  font-size: 23px;
+}
+.realm-card p {
+  color: #8da08c;
+}
+.realm-card > div:last-child > span {
+  color: #a6b198;
+}
+.found-card {
+  border: 1px dashed #7c7651;
+  border-radius: 2px;
+  background: #27322b;
+  color: #afa477;
+  min-height: 300px;
+}
+.found-card:hover {
+  background: #303e33;
+}
+.section-toolbar h2 {
+  color: #d9c7a1;
+}
+.table-wrap {
+  padding: 0;
+}
+.table-wrap th {
+  background: #192526;
+  color: #b7a377;
+  font-size: 10px;
+}
+.table-wrap td {
+  font-size: 12px;
+  color: #bac7b1;
+}
+.table-wrap td,
+.table-wrap th {
+  border-bottom: 1px solid #55664e55;
+  padding: 18px;
+}
+.table-wrap td svg {
+  color: #ae9765;
+}
+.table-wrap .total td {
+  background: #354331;
+  color: #d6d8ac;
+}
+.notice {
+  background: #2f3b30;
+  color: #b1bd9d;
+  border: 1px solid #7c845649;
+  border-radius: 1px;
+  font-size: 11px;
+}
+.list-row {
+  border-color: #59654c55;
+  font-size: 11px;
+}
+.list-row strong {
+  color: #c9c7ac;
+}
+.footnote {
+  color: #7c8c7b;
+  font-size: 10px;
+}
+.garrison {
+  border-color: #55664e55;
+}
+.garrison > b {
+  color: #cdbc91;
+}
+.timeline-row {
+  border-color: #55664e55;
+}
+.timeline-row > span {
+  background: #34412f;
+  color: #acb78e;
+  border: 1px solid #727c5047;
+}
+.timeline-row small {
+  color: #83957e;
+}
+.timeline-row p {
+  color: #c2c9b5;
+}

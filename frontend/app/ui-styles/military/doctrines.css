@@ -1,0 +1,106 @@
+/* military/doctrines — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.faction-attributes {
+  margin: 16px 0;
+  padding: 20px;
+}
+.faction-attributes h3 {
+  font: 25px Georgia;
+  margin: 8px 0;
+}
+.faction-attributes p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.faction-attributes small {
+  display: block;
+  font-size: 10px;
+  line-height: 1.7;
+  margin-top: 14px;
+  color: #675b42;
+}
+.doctrine-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.doctrine-columns h4 {
+  font-size: 12px;
+  margin: 8px 0;
+}
+.doctrine-columns ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.doctrine-columns li {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 0;
+  border-bottom: 1px solid #9e895b44;
+  font-size: 12px;
+}
+.doctrine-benefit {
+  color: #31572c !important;
+}
+.doctrine-drawback {
+  color: #863e2b !important;
+}
+.signature-badge {
+  display: inline-block;
+  font: 8px Arial !important;
+  letter-spacing: 0.6px;
+  color: #385336 !important;
+  border: 1px solid #6a7e49;
+  padding: 3px 5px;
+  margin-top: 3px;
+}
+.faction-attributes.compact {
+  padding: 14px;
+}
+.faction-attributes.compact h3 {
+  font-size: 21px;
+}
+@media (max-width: 520px) {
+  .doctrine-columns {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .faction-attributes {
+    padding: 16px;
+  }
+}
+.doctrine-lore {
+  margin-top: 16px;
+  border-top: 1px solid #9e895b66;
+  padding-top: 12px;
+}
+.doctrine-lore summary {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+.doctrine-lore ul {
+  padding-left: 18px;
+}
+.doctrine-lore li {
+  margin: 12px 0;
+}
+.doctrine-lore a {
+  text-decoration: underline;
+  font-size: 12px;
+}
+.doctrine-lore li small {
+  margin-top: 3px;
+}
+.balance-summary {
+  margin: 16px 0;
+  padding: 20px;
+}
+.balance-summary p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.balance-summary a {
+  text-decoration: underline;
+}

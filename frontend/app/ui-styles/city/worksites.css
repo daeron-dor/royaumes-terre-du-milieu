@@ -1,0 +1,68 @@
+/* city/worksites — voir docs/STYLES.md pour les responsabilités et la cascade. */
+/* Local worksite at the base, without a grid covering the architecture. */
+.living-building .site-scaffold {
+  position: absolute;
+  left: 2%;
+  bottom: 0;
+  width: 35%;
+  height: 35%;
+  z-index: 2;
+  filter: drop-shadow(1px 2px 1px #0007);
+  pointer-events: none;
+}
+.living-building .construction-badge {
+  top: calc(100% + 25px);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: max-content;
+  min-width: 112px;
+  padding: 5px 7px;
+  background: #26312af5;
+  border: 1px solid #bfa66e;
+  border-radius: 3px;
+  color: #f4e5bd;
+  font: 10px Georgia;
+  pointer-events: none;
+}
+.construction-badge > span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+.construction-badge b {
+  font: 9px Arial;
+  margin-left: 3px;
+  color: #f3d58d;
+}
+.construction-badge .site-progress {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #080f0c;
+  border-radius: 2px;
+  overflow: hidden;
+}
+.site-progress i {
+  display: block;
+  height: 100%;
+  background: #d7b96f;
+  transition: width 1s linear;
+}
+@media (max-width: 760px) {
+  .living-building .construction-badge {
+    font-size: 8px;
+    min-width: 95px;
+    padding: 4px;
+    top: calc(100% + 20px);
+  }
+  .construction-badge b {
+    font-size: 8px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-progress i {
+    transition: none;
+  }
+}

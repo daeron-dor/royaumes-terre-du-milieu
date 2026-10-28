@@ -1,0 +1,221 @@
+/* features/resources — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.resources-bar .resource > div > small {
+  display: block;
+  font: 9px Georgia;
+  color: #dfd2b1;
+  margin-bottom: 2px;
+}
+.city-adviser .costs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+.costs small {
+  font: 10px Georgia;
+}
+@media (max-width: 760px) {
+  .resources-bar .resource > div > small {
+    font-size: 8px;
+  }
+  .resources-bar .resource-icon {
+    height: 16px;
+  }
+  .city-adviser .costs {
+    display: flex;
+  }
+}
+/* Demo polish: one predictable grid per resource, with no inherited auto margins. */
+.resources-bar {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) 30px;
+  align-items: stretch;
+  height: 86px;
+  padding: 0;
+  gap: 0;
+}
+.resources-bar .resource {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  padding: 5px 2px;
+  margin: 0;
+  min-width: 0;
+  text-align: center;
+}
+.resources-bar .resource-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 20px;
+  flex: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+}
+.resources-bar .resource-icon svg {
+  width: 19px;
+  height: 19px;
+}
+.resources-bar .resource-amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  width: 100%;
+  margin: 0;
+}
+.resources-bar .resource-amount small {
+  display: block;
+  margin: 0;
+  font: 10px/1.1 Georgia;
+  color: #e4d5ae;
+}
+.resources-bar .resource-amount strong {
+  font: 17px/1.1 Georgia;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  text-shadow: none;
+}
+.resources-bar .resource-rate {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font: 9px/1.2 Arial;
+  text-align: center;
+}
+.resources-bar .resource-rate small {
+  display: inline;
+  margin: 0 0 0 2px;
+  font: 8px/1 Arial;
+}
+.resources-bar .deposit-shortcut {
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  width: 26px;
+  height: 32px;
+  padding: 0;
+}
+.topbar {
+  height: 86px;
+}
+.menu-backdrop {
+  display: none;
+}
+.realm-top-nav button,
+.city-nav > button {
+  transition:
+    background-color 0.15s,
+    color 0.15s;
+}
+.realm-top-nav button:hover,
+.city-nav > button:hover {
+  background: #c5a25633;
+}
+.toast {
+  z-index: 150;
+  max-width: calc(100vw - 24px);
+  pointer-events: none;
+}
+@media (max-width: 760px) {
+  .topbar {
+    height: 62px;
+  }
+  .resources-bar {
+    height: 85px;
+    grid-template-columns: repeat(5, minmax(0, 1fr)) 28px;
+  }
+  .resources-bar .resource-amount strong {
+    font-size: 14px;
+  }
+  .resources-bar .resource-amount small {
+    font-size: 9px;
+  }
+  .resources-bar .resource-rate {
+    font-size: 8px;
+  }
+  .resources-bar .resource-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+  .menu-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: #0008;
+    z-index: 70;
+  }
+  .sidebar.open {
+    box-shadow: 12px 0 35px #0008;
+  }
+  .city-adviser .building-panel {
+    grid-template-columns: 95px minmax(0, 1fr);
+  }
+  .city-adviser .building-art > .architecture-sprite {
+    width: 90px;
+  }
+  .city-adviser .building-content {
+    min-width: 0;
+    padding: 12px;
+  }
+  .primary,
+  .secondary {
+    white-space: normal;
+  }
+  .demo-note {
+    flex-wrap: wrap;
+  }
+  .army-toolbar,
+  .inline-form {
+    flex-wrap: wrap;
+  }
+  .inline-form > * {
+    max-width: 100%;
+  }
+  .comparison {
+    overflow-x: auto;
+  }
+  .gm-order {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+.resources-bar .resource-icon {
+  border: 0;
+  box-shadow: none;
+  background: transparent !important;
+}
+.resources-bar .resource-icon:before,
+.resources-bar .resource-icon:after {
+  display: none;
+}
+.demo-note,
+.demo-note span,
+.demo-note button,
+.demo-note a {
+  color: #49391d !important;
+  opacity: 1;
+}
+.demo-note a {
+  text-decoration: underline;
+  white-space: nowrap;
+  font: 11px Georgia;
+}
+.military-doctrine {
+  margin-bottom: 12px;
+}
+.military-doctrine > summary {
+  cursor: pointer;
+  padding: 14px;
+  font-size: 14px;
+}
+.resources-bar .resource .resource-icon {
+  display: flex !important;
+}
+.toast button {
+  pointer-events: auto;
+}

@@ -1,0 +1,413 @@
+/* parchment/city — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.city-tabs {
+  gap: 3px;
+  border-bottom: 1px solid #8c7648;
+  margin-bottom: 0;
+  background: linear-gradient(#252f30, #1d2527);
+  padding: 0 7px;
+  box-shadow: inset 0 1px #ffffff07;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.city-tabs button {
+  font-family: Georgia;
+  font-size: 13px;
+  color: #aaa994;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  border-radius: 4px 4px 0 0;
+  margin: 5px 0 0;
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+.city-tabs button.selected {
+  background: linear-gradient(#b5a06d, #81704b);
+  color: #fff1cd;
+  border-color: #d0b879;
+  box-shadow: inset 0 1px #ead7a3;
+  text-shadow: 0 1px #48391d;
+}
+.city-tabs button span:not(.building-dot) {
+  font-size: 7px;
+  background: #2c281f44;
+  color: #eedcb4;
+}
+.city-tabs .new-city {
+  font-family: Tahoma;
+  font-size: 9px;
+  color: #a5ad9a;
+}
+.city-layout {
+  grid-template-columns: minmax(0, 1fr) 252px;
+  border: 1px solid #8c7648;
+  border-top: 0;
+  box-shadow: 0 8px 25px #0004;
+}
+.city-panel,
+.building-panel,
+.card,
+.stat,
+.realm-card {
+  background: linear-gradient(120deg, #2b3434, #202a2b);
+  border: 1px solid #64706965;
+  border-radius: 2px;
+  box-shadow:
+    inset 0 1px #ffffff06,
+    0 3px 8px #0002;
+}
+.city-panel {
+  border-right: 1px solid #8c7648;
+  overflow: hidden;
+}
+.panel-heading {
+  padding: 12px 18px;
+  background: linear-gradient(#374142, #273133);
+  border-bottom: 1px solid #756647;
+  min-height: 62px;
+}
+.panel-heading h2 {
+  color: #e7d7ad;
+  line-height: 1;
+  margin: 0;
+  text-shadow: 0 2px #0005;
+}
+.panel-heading .eyebrow {
+  font-size: 7px;
+  margin-bottom: 6px;
+  color: #9eaa99;
+}
+.city-meta {
+  display: flex;
+  color: #bbc1ad;
+  font-size: 9px;
+  gap: 13px;
+}
+.city-meta svg {
+  color: #b99d62;
+}
+.map-wrap {
+  background: #1a2420;
+  line-height: 0;
+}
+.game-city {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.scene-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #857549 #17201f;
+  max-height: 660px;
+}
+.scene-stage {
+  aspect-ratio: 3/2;
+  isolation: isolate;
+  overflow: hidden;
+}
+.city-terrain {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+  user-select: none;
+}
+.scene-light {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  box-shadow: inset 0 0 55px #0b131a6b;
+  z-index: 2;
+}
+.city-building {
+  position: absolute;
+  width: 16%;
+  aspect-ratio: 3/4;
+  padding: 0;
+  transform: translate(-50%, -71%);
+  background: none;
+  border: 0;
+  z-index: 3;
+  overflow: visible;
+  line-height: normal;
+}
+.city-building .building-sprite {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-origin: 50% 83%;
+  filter: drop-shadow(3px 6px 3px #111b1590);
+  pointer-events: none;
+  transition: filter 0.2s;
+}
+.building-sprite {
+  width: 150px;
+  height: 200px;
+  flex-shrink: 0;
+  background-image: url('/art/buildings.webp');
+  background-repeat: no-repeat;
+  background-size: 400% 200%;
+  position: relative;
+  transform-origin: 50% 85%;
+  filter: drop-shadow(3px 5px 4px #0007);
+}
+.city-building:hover .building-sprite,
+.city-building.chosen .building-sprite {
+  filter: drop-shadow(0 0 2px #ffe6a4) drop-shadow(2px 4px 5px #111b15aa) brightness(1.12);
+}
+.building-ground {
+  position: absolute;
+  bottom: 6%;
+  left: 0;
+  right: 0;
+  height: 20%;
+  border-radius: 50%;
+  opacity: 0;
+  border: 1px solid #e5c67d;
+  background: #e9c36722;
+  box-shadow: 0 0 13px #e9c36766;
+}
+.chosen .building-ground,
+.city-building:hover .building-ground {
+  opacity: 1;
+}
+.building-label {
+  position: absolute;
+  bottom: -2%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(#2c302cdd, #141b18ed);
+  border: 1px solid #bca67777;
+  border-radius: 2px;
+  padding: 5px 7px 5px 10px;
+  color: #f0e1b9;
+  font-family: Georgia;
+  font-size: 10px;
+  box-shadow: 0 2px 4px #0007;
+}
+.building-label b {
+  font: 10px Georgia;
+  background: #9b8350;
+  color: #fff2c9;
+  border: 1px solid #ccb47d;
+  min-width: 17px;
+  height: 17px;
+  display: grid;
+  place-items: center;
+  border-radius: 2px;
+}
+.city-building.chosen .building-label {
+  background: linear-gradient(#8c713c, #554122);
+  border-color: #dfbf73;
+  color: #fff4d2;
+}
+.construction-badge {
+  position: absolute;
+  bottom: -17%;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: #182020e8;
+  color: #f1c776;
+  font-size: 8px;
+  padding: 4px 7px;
+  border: 1px solid #be9c52;
+  border-radius: 2px;
+}
+.under-construction .building-sprite {
+  filter: sepia(0.25) drop-shadow(0 0 5px #e2ac59);
+}
+.sprite-standard {
+  position: absolute;
+  right: 27%;
+  top: 23%;
+  height: 14%;
+  width: 7%;
+  background: #304e68 !important;
+  border: 1px solid #dfb65f;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 75%, 0 100%);
+}
+.masterwork {
+  position: absolute;
+  top: 8%;
+  left: 46%;
+  font-size: 20px;
+  color: #ffdb79;
+  text-shadow: 0 0 8px #e5a94a;
+}
+.map-cartouche {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #17211bd9;
+  border: 1px solid #ab945f88;
+  padding: 9px 12px;
+  color: #ddcca1;
+  z-index: 5;
+  font: 10px Georgia;
+  line-height: 1;
+}
+.map-cartouche span {
+  color: #8b957e;
+}
+.map-controls {
+  position: absolute;
+  right: 12px;
+  bottom: 13px;
+  z-index: 6;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.map-controls > span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 5px;
+  color: #f0e4c7;
+  text-shadow: 0 1px 3px #000;
+  font-size: 8px;
+  line-height: 1;
+  background: #17211ba8;
+  padding: 8px;
+}
+.map-controls button {
+  width: 26px;
+  height: 26px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #b49b61;
+  background: linear-gradient(#424937, #1b271f);
+  color: #ead8a9;
+  box-shadow: 0 2px 3px #0005;
+  padding: 0;
+}
+.map-footer {
+  background: #202c2c;
+  border-top: 1px solid #746444;
+  padding: 11px 15px;
+  color: #98a793;
+  font-size: 9px;
+}
+.building-panel {
+  border: 0;
+  border-radius: 0;
+  background: linear-gradient(135deg, #d6c59b, #bba479);
+  color: #493d28;
+  box-shadow: inset 4px 0 10px #0002;
+  overflow: hidden;
+}
+.building-art {
+  height: 180px;
+  background:
+    radial-gradient(ellipse at 50% 70%, #90754466, transparent 65%),
+    linear-gradient(#ad9666, #cdbc94);
+  border-bottom: 1px solid #948055;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+.building-art > .building-sprite {
+  width: 145px;
+  height: 193px;
+  margin-top: -8px;
+  filter: drop-shadow(4px 5px 3px #4a352866);
+  z-index: 1;
+}
+.art-orbit {
+  display: none;
+}
+.level-badge {
+  background: #4e432b;
+  color: #efdcac;
+  border: 1px solid #ac8f50;
+  border-radius: 0;
+  font: 9px Georgia;
+  letter-spacing: 1px;
+  padding: 5px 9px;
+  bottom: 9px;
+  right: 10px;
+}
+.building-content {
+  width: auto;
+}
+.building-content .eyebrow {
+  color: #746544;
+  font-size: 7px;
+}
+.building-content h2 {
+  color: #3c3324;
+  font-size: 26px;
+  text-shadow: 0 1px #eadbb3;
+}
+.building-content > p {
+  color: #695b40;
+  font-size: 11px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  min-height: 0;
+}
+.benefit {
+  color: #6e5c3c;
+  border-color: #8d79534d;
+  font-size: 9px;
+}
+.benefit strong {
+  color: #3f5c39;
+  font-size: 12px;
+}
+.upgrade-divider {
+  border-color: #8f79564d;
+  color: #77633c;
+  margin-top: 3px;
+  padding-top: 15px;
+}
+.upgrade-divider strong {
+  color: #564224;
+}
+.next-benefit {
+  color: #465d31;
+  font-size: 11px;
+}
+.costs {
+  color: #5f4e30;
+  gap: 10px;
+  font-size: 11px;
+  margin: 14px 0;
+}
+.duration {
+  color: #76613e;
+  font-size: 10px;
+  margin: 14px 0;
+}
+.building-content .primary {
+  background: linear-gradient(#687447, #3a4829);
+  border-color: #6d7649;
+  color: #f2e9c8;
+  box-shadow:
+    inset 0 1px #d4d5a447,
+    0 2px 3px #44331e44;
+  font-size: 12px;
+  padding: 11px 7px;
+}
+.building-content .primary:hover {
+  background: linear-gradient(#7d8a54, #4d5e36);
+}
+.hint {
+  color: #7e6e4c;
+  font-size: 9px;
+}
+.building-content .hint {
+  font-size: 8px;
+}
+.success {
+  color: #4f6237;
+  font-size: 11px;
+}

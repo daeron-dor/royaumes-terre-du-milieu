@@ -1,0 +1,94 @@
+/* frame/readability — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.main-shell > main {
+  width: 100%;
+  max-width: none;
+  justify-self: stretch;
+}
+.city-title h1 {
+  color: #2d281c;
+}
+.city-adviser h2,
+.city-adviser h3 {
+  color: #302819;
+}
+.resource strong {
+  font-weight: 400;
+}
+.sidebar {
+  background:
+    repeating-linear-gradient(90deg, #ffffff05 0 1px, transparent 1px 4px),
+    linear-gradient(90deg, #0005, transparent 35%, #ffffff0a 50%, #0004), var(--realm-cloth);
+}
+.card td,
+.card td:first-child,
+.card .list-row strong,
+.card .garrison-detail h3,
+.card .gm-row strong,
+.card .quiet-state strong {
+  color: #3c3020;
+}
+.card th {
+  color: #e6d4aa;
+  background: #1d313c;
+}
+.card tr.total td {
+  background: #c8b483;
+  color: #302515;
+}
+.card .muted,
+.card .quiet-state p,
+.card .timeline-row small {
+  color: #6a5636;
+}
+.living-city .scene-stage {
+  aspect-ratio: 1.1;
+}
+.card .unit-stats dd,
+.card .unit-stats dt {
+  color: #3c3020;
+}
+@media (max-width: 760px) {
+  .living-city .scene-stage {
+    aspect-ratio: 1;
+  }
+}
+.production-grid strong {
+  color: #395333;
+}
+.production-grid span,
+.production-grid strong small {
+  color: #625232;
+}
+.topbar .mobile-menu,
+.topbar .icon-button {
+  color: #554326;
+}
+.resources-bar .deposit-shortcut {
+  background: #253844;
+  color: #f2d890;
+  border: 1px solid #ad9558;
+}
+.resources-bar .resource-icon {
+  display: grid;
+}
+.map-controls {
+  border-radius: 0;
+}
+.main-shell .card .card-title h3 {
+  color: #45351f;
+}
+@media (max-width: 760px) {
+  .resource-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+  .resource-icon {
+    height: 20px;
+  }
+  .resources-bar .resource-rate {
+    font-size: 7px;
+  }
+}
+.main-shell .card .war-room-title h3 {
+  color: #f2dfad;
+}

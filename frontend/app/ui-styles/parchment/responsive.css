@@ -1,0 +1,387 @@
+/* parchment/responsive — voir docs/STYLES.md pour les responsabilités et la cascade. */
+@media (min-width: 1550px) {
+  .sidebar {
+    width: 195px;
+  }
+  .main-shell {
+    margin-left: 195px;
+    width: calc(100% - 195px);
+  }
+  main {
+    padding: 25px 30px 0;
+  }
+  .city-layout {
+    grid-template-columns: minmax(0, 1fr) 285px;
+  }
+  .building-art {
+    height: 215px;
+  }
+  .building-art > .building-sprite {
+    width: 170px;
+    height: 227px;
+  }
+  .building-content {
+    padding: 23px;
+  }
+  .scene-scroll {
+    max-height: 740px;
+  }
+}
+@media (max-width: 1150px) {
+  .sidebar {
+    width: 163px;
+    padding: 22px 9px 14px;
+  }
+  .main-shell {
+    margin-left: 163px;
+    width: calc(100% - 163px);
+  }
+  .brand {
+    font-size: 16px;
+  }
+  .resources-bar {
+    padding: 9px 14px;
+    gap: 10px;
+  }
+  .resource {
+    padding-right: 9px;
+  }
+  .resource-rate {
+    display: none;
+  }
+  .resource strong {
+    font-size: 17px;
+  }
+  .resource-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .city-layout {
+    grid-template-columns: minmax(0, 1fr) 230px;
+  }
+  .building-content {
+    padding: 16px;
+  }
+  .building-art {
+    height: 165px;
+  }
+  .city-meta {
+    display: none;
+  }
+  main {
+    padding: 18px 16px 0;
+  }
+  .city-tabs button {
+    padding: 11px;
+    font-size: 12px;
+  }
+  .building-label {
+    font-size: 10px;
+  }
+  .building-content h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .sidebar {
+    width: 210px;
+    transform: translateX(-100%);
+  }
+  .sidebar.open {
+    transform: translateX(0);
+    box-shadow: 0 0 0 100vmax #090f12b3;
+  }
+  .main-shell {
+    margin-left: 0;
+    width: 100%;
+  }
+  .brand {
+    font-size: 18px;
+  }
+  .mobile-menu {
+    color: #d0bb8c;
+  }
+  .topbar {
+    height: 44px;
+    padding: 0 14px;
+  }
+  .top-actions {
+    gap: 8px;
+  }
+  .season {
+    font-size: 8px;
+  }
+  .breadcrumb {
+    font-size: 11px;
+  }
+  .resources-bar {
+    padding: 9px 12px;
+    gap: 9px;
+  }
+  .resource {
+    gap: 6px;
+    border: 0;
+    padding: 0;
+  }
+  .resource strong {
+    font-size: 17px;
+  }
+  .resource small {
+    font-size: 8px;
+  }
+  .resource-icon {
+    display: none !important;
+  }
+  .deposit-shortcut {
+    width: 23px;
+    height: 23px;
+  }
+  main,
+  .view-cities main {
+    padding: 12px 10px 0;
+  }
+  .demo-note {
+    font-size: 9px;
+    line-height: 1.4;
+    padding: 8px 10px;
+  }
+  .demo-pill {
+    display: inline;
+    font-size: 7px;
+    margin-right: 5px;
+  }
+  .demo-note > span {
+    max-width: 68%;
+  }
+  .demo-note button {
+    font-size: 9px;
+  }
+  .city-tabs {
+    padding: 0 3px;
+  }
+  .city-tabs button {
+    padding: 10px 9px;
+    font-size: 12px;
+  }
+  .city-tabs .new-city {
+    font-size: 9px;
+  }
+  .city-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .city-panel {
+    border-right: 0;
+  }
+  .panel-heading {
+    padding: 11px 14px;
+    min-height: 58px;
+  }
+  .panel-heading h2 {
+    font-size: 23px;
+  }
+  .city-meta {
+    display: flex;
+    font-size: 8px;
+  }
+  .scene-scroll {
+    max-height: none;
+  }
+  .building-panel {
+    flex-direction: row;
+    border-top: 2px solid #77603d;
+  }
+  .building-art {
+    width: 30%;
+    height: auto;
+    min-height: 240px;
+    border: 0;
+    border-right: 1px solid #8e7b54;
+  }
+  .building-art > .building-sprite {
+    width: 140px;
+    height: 187px;
+    margin-top: -30px;
+    max-width: none;
+  }
+  .level-badge {
+    left: 50%;
+    right: auto;
+    bottom: 26px;
+    transform: translateX(-50%);
+    font-size: 8px;
+    white-space: nowrap;
+  }
+  .building-content {
+    width: 70%;
+    padding: 20px;
+  }
+  .building-content > p {
+    font-size: 11px;
+  }
+  .building-content h2 {
+    font-size: 26px;
+  }
+  .benefit {
+    font-size: 10px;
+  }
+  .bottom-grid {
+    gap: 13px;
+    margin-top: 13px;
+  }
+  .card {
+    padding: 17px;
+  }
+  .card-title h3 {
+    font-size: 15px;
+  }
+  .realm-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .realm-card > div:last-child {
+    padding: 15px;
+  }
+  .realm-card h2 {
+    font-size: 21px;
+  }
+  .realm-card > div:last-child > span {
+    font-size: 9px;
+    flex-wrap: wrap;
+  }
+  .mini-city {
+    height: 180px;
+  }
+  .mini-city .building-sprite {
+    width: 135px;
+    height: 180px;
+  }
+  .stat {
+    padding: 15px;
+  }
+  .stat strong {
+    font-size: 27px;
+  }
+  .stat small {
+    font-size: 9px;
+  }
+  .garrison .square-icon {
+    width: 35px;
+    height: 38px;
+  }
+  .garrison strong {
+    font-size: 15px;
+  }
+  .heading h1 {
+    font-size: 27px;
+  }
+  .map-controls > span {
+    display: none;
+  }
+  .map-cartouche {
+    font-size: 9px;
+    bottom: 12px;
+    left: 10px;
+    padding: 8px;
+  }
+  .map-footer {
+    font-size: 8px;
+    padding: 10px 12px;
+  }
+  .modal {
+    padding: 29px 23px;
+  }
+  .modal h2 {
+    font-size: 26px;
+  }
+  .toast {
+    font-size: 11px;
+  }
+}
+@media (max-width: 420px) {
+  .building-content {
+    padding: 16px;
+    width: 72%;
+  }
+  .building-art {
+    width: 28%;
+  }
+  .building-art > .building-sprite {
+    width: 110px;
+    height: 147px;
+  }
+  .city-meta {
+    display: none;
+  }
+  .resource strong {
+    font-size: 15px;
+  }
+  .resource small {
+    font-size: 7px;
+  }
+  .realm-grid {
+    grid-template-columns: 1fr;
+  }
+  .summary-grid {
+    gap: 7px;
+  }
+  .stat {
+    padding: 12px;
+  }
+  .stat small {
+    font-size: 8px;
+  }
+  .city-tabs button {
+    font-size: 11px;
+    padding: 10px 8px;
+  }
+  .production-grid {
+    gap: 6px;
+  }
+  .production-grid strong {
+    font-size: 16px;
+  }
+}
+.city-building {
+  transform: translate(-50%, -85%);
+}
+.back-to-city {
+  display: none;
+}
+@media (max-width: 800px) {
+  .back-to-city {
+    display: block;
+    font: 9px Tahoma;
+    color: #77613d;
+    margin: 0 0 15px;
+    padding: 0;
+  }
+  .building-panel {
+    scroll-margin-top: 12px;
+  }
+}
+.building-sprite.tier-1,
+.building-sprite.tier-2 {
+  background-image: url('/art/buildings-early.webp');
+}
+.building-sprite.tier-2:after {
+  content: '';
+  position: absolute;
+  width: 9%;
+  height: 16%;
+  right: 30%;
+  top: 28%;
+  background: #384c63;
+  border: 1px solid #cbb06c;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 76%, 0 100%);
+}
+.building-sprite.tier-4:after {
+  content: '';
+  position: absolute;
+  width: 9%;
+  height: 18%;
+  left: 24%;
+  top: 35%;
+  background: #20374c;
+  border: 1px solid #d2b768;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 76%, 0 100%);
+}

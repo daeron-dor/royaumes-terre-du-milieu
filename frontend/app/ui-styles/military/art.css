@@ -1,0 +1,341 @@
+/* military/art — voir docs/STYLES.md pour les responsabilités et la cascade. */ /* Military screens follow the approved Minas Tirith game-screen reference. */
+.army-screen,
+.codex {
+  --war-ink: #302819;
+  --war-brass: #a58d59;
+  --war-cloth: #142b3c;
+  --war-paper: #e5d5ac;
+}
+.army-screen .army-banner {
+  border: 4px ridge #8d7952;
+  border-radius: 0;
+  background:
+    linear-gradient(100deg, #102330ed, #203849dd),
+    url('/art/faction-cities.webp') center/cover;
+  box-shadow:
+    0 4px 10px #0005,
+    inset 0 0 0 1px #bca879;
+  padding: 14px 20px;
+  margin-bottom: 12px;
+  color: #f3e5be;
+}
+.army-screen .army-banner h2 {
+  font: 25px Georgia;
+  margin: 6px 0;
+}
+.army-screen .army-banner .eyebrow {
+  color: #c7b47d;
+}
+.army-screen .army-banner p {
+  color: #c8c6b5;
+  margin: 0;
+}
+.army-screen .army-banner > .unit-portrait {
+  width: 75px;
+  height: 82px;
+  border: 3px ridge #b59c66;
+  border-radius: 0;
+}
+.military-doctrine {
+  background: linear-gradient(90deg, #142937, #213a47);
+  color: #e5d3a3;
+  border: 1px solid #8e7b50;
+}
+.military-doctrine > summary {
+  padding: 12px 16px;
+  font: 16px Georgia;
+}
+.military-doctrine > summary span {
+  float: right;
+  font: 11px Arial;
+  color: #c1baa3;
+}
+.military-doctrine .faction-attributes {
+  margin: 0;
+  color: var(--war-ink);
+}
+.matchup-guide.card {
+  display: grid;
+  grid-template-columns: minmax(270px, 1fr) minmax(300px, 1.2fr);
+  column-gap: 22px;
+  padding: 0 18px 12px;
+  border: 4px ridge #8d7952;
+  border-radius: 0;
+  background:
+    radial-gradient(ellipse at 50% 0, #fff4ce80, transparent 70%),
+    repeating-linear-gradient(18deg, #a8905705 0 1px, transparent 1px 4px), #dfcda2;
+  box-shadow:
+    inset 0 0 22px #7c5c3333,
+    0 4px 9px #0004;
+  color: var(--war-ink);
+}
+.war-room-title {
+  grid-column: 1/-1;
+  margin: 0 -18px 14px;
+  padding: 10px 16px;
+  background: linear-gradient(#263e4c, #112635);
+  border-bottom: 3px ridge #a58d59;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #f2dfad;
+}
+.war-room-title > span {
+  font: 9px Arial;
+  letter-spacing: 1.6px;
+  color: #c0ac77;
+}
+.war-room-title h3 {
+  font: 20px Georgia;
+  margin: 0;
+}
+.war-room-title small {
+  margin-left: auto;
+  font: 10px Arial;
+  color: #c4c5b9;
+}
+.war-room-duel {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  padding-bottom: 12px;
+  grid-column: 1;
+  grid-row: 2/4;
+}
+.war-portrait {
+  display: block;
+  flex: 0 0 76px;
+  height: 94px;
+  background-image: url('/art/unit-portraits.webp');
+  background-size: 400% 300%;
+  border: 4px ridge #a28b5c;
+  box-shadow: 0 2px 6px #352c2366;
+}
+.war-room-duel > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.war-room-duel small {
+  font: 8px Arial;
+  letter-spacing: 1px;
+  color: #655031;
+}
+.war-room-duel strong {
+  font: 19px Georgia;
+}
+.war-room-duel span:not(.war-portrait) {
+  font: 11px Arial;
+  color: #6c5837;
+}
+.duel-cross {
+  font-size: 26px;
+  color: #6c512a;
+  font-weight: 400;
+}
+.matchup-controls {
+  grid-column: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 12px;
+}
+.matchup-controls label {
+  font-size: 10px;
+  gap: 4px;
+  color: #554123;
+}
+.matchup-controls select {
+  width: 100%;
+  font: 13px Georgia;
+  border: 2px ridge #bba373;
+  border-radius: 0;
+  background: #f1e4c1;
+  color: #352b1d;
+  padding: 6px;
+  box-shadow: inset 0 1px 4px #69533133;
+}
+.matchup-controls input {
+  accent-color: #3d5838;
+}
+.matchup-guide .match-result {
+  grid-column: 2;
+  background: #d4be8780;
+  border: 1px solid #a18b58;
+  border-radius: 0;
+  text-align: center;
+  margin: 9px 0 12px;
+  padding: 8px;
+  font: 14px Georgia;
+}
+.match-result strong {
+  font-size: 21px;
+}
+.matchup-guide > details {
+  grid-column: 1/-1;
+  border-top: 1px solid #ae986866;
+}
+.matchup-guide summary {
+  font: 12px Georgia;
+  padding: 7px 0;
+}
+.matchup-guide .rules-note {
+  margin: 0 0 8px;
+  font-size: 11px;
+}
+.match-table th {
+  background: #cab47d;
+  color: #43331c;
+}
+.army-screen .army-toolbar {
+  border: 3px ridge #8d7952;
+  border-radius: 0;
+  padding: 9px 12px;
+  background: linear-gradient(#243b48, #132a38);
+  color: #d9ca9e;
+}
+.army-tabs button {
+  font: 14px Georgia;
+  border-radius: 0;
+}
+.army-screen .unit-grid,
+.codex-units {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.unit-card {
+  border: 4px ridge #9b865b !important;
+  border-radius: 0 !important;
+  background:
+    radial-gradient(ellipse at top, #fff0c88c, transparent 80%),
+    repeating-linear-gradient(12deg, #aa8c4f06 0 1px, transparent 1px 5px), #e2d0a6 !important;
+  box-shadow:
+    inset 0 0 18px #8a692a33,
+    0 3px 8px #0004 !important;
+  color: #302819;
+}
+.unit-card .unit-head {
+  margin: -16px -16px 12px;
+  padding: 12px 14px;
+  background: linear-gradient(110deg, #132939, #29414a);
+  border-bottom: 3px ridge #aa935d;
+  color: #f1dfb0;
+}
+.unit-card .unit-head h3 {
+  font: 21px Georgia;
+  color: #f1dfb0;
+}
+.unit-card .unit-head small,
+.unit-card .unit-head span {
+  color: #c6c6b0;
+}
+.unit-card .unit-head .unit-portrait {
+  width: 78px;
+  height: 90px;
+  border: 3px ridge #b49c64;
+  border-radius: 0;
+  box-shadow: 0 2px 8px #0007;
+}
+.unit-card .signature-badge {
+  color: #ead394 !important;
+  border-color: #9e8c5b;
+  font-size: 8px;
+}
+.unit-card .unit-stats {
+  border-top: 1px solid #a18b58;
+  border-bottom: 1px solid #a18b58;
+  background: #c9b57d33;
+  padding: 9px 0;
+}
+.unit-card .unit-trait {
+  min-height: 0;
+  font: italic 12px/1.5 Georgia;
+}
+.unit-matchups {
+  font-size: 12px;
+}
+.unit-matchups > strong {
+  font: 15px Georgia;
+}
+.unit-matchups p {
+  line-height: 1.5;
+}
+.match-chips span {
+  border-radius: 0;
+  background: #f1e5c3;
+  padding: 4px 6px;
+}
+.unit-card .primary {
+  border: 3px ridge #9b8b55;
+  border-radius: 0;
+  background: linear-gradient(#38563b, #1f3828);
+  color: #f2e4ba;
+  font: 14px Georgia;
+}
+.unit-card .recruit-form input {
+  border-radius: 0;
+  background: #f0e2be;
+  color: #302819;
+  border: 1px solid #9b865b;
+}
+.unit-card.locked {
+  opacity: 1;
+}
+.unit-card.locked .primary {
+  background: linear-gradient(#6d6654, #4b4538);
+}
+@media (max-width: 1050px) {
+  .matchup-guide.card {
+    grid-template-columns: 1fr;
+  }
+  .war-room-duel {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .matchup-controls,
+  .matchup-guide .match-result {
+    grid-column: 1;
+  }
+  .war-room-title small {
+    display: none;
+  }
+  .unit-card .unit-head h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 650px) {
+  .army-screen .unit-grid,
+  .codex-units {
+    grid-template-columns: 1fr;
+  }
+  .military-doctrine > summary span {
+    display: none;
+  }
+  .war-room-title {
+    gap: 9px;
+  }
+  .war-room-title > span {
+    font-size: 7px;
+  }
+  .war-room-title h3 {
+    font-size: 18px;
+  }
+  .war-portrait {
+    flex-basis: 60px;
+    height: 75px;
+  }
+  .war-room-duel {
+    gap: 9px;
+  }
+  .war-room-duel strong {
+    font-size: 16px;
+  }
+  .matchup-controls {
+    grid-template-columns: 1fr 1fr;
+  }
+  .unit-card .unit-head {
+    margin: -16px -16px 12px;
+  }
+  .army-screen .army-banner h2 {
+    font-size: 20px;
+  }
+}

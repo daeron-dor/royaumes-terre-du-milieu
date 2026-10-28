@@ -1,0 +1,59 @@
+.balance-editor {
+  margin-top: 18px;
+}
+.balance-selectors,
+.balance-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 20px 0;
+}
+.balance-editor label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #30291c;
+}
+.balance-editor input,
+.balance-editor select {
+  width: 100%;
+  min-height: 40px;
+  padding: 8px;
+}
+.balance-editor small {
+  font:
+    12px Arial,
+    sans-serif;
+  color: #62543d;
+}
+.balance-editor p {
+  line-height: 1.65;
+}
+.balance-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 16px 0;
+}
+.balance-actions [aria-pressed='true'] {
+  outline: 2px solid var(--realm-metal);
+}
+.balance-editor [role='alert'] {
+  padding: 12px;
+  border: 1px solid #982f20;
+  color: #742215;
+}
+.balance-editor caption {
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+}
+@media (max-width: 550px) {
+  .balance-fields,
+  .balance-selectors {
+    grid-template-columns: 1fr;
+  }
+  .balance-actions button {
+    width: 100%;
+  }
+}

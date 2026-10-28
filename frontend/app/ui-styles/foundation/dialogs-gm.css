@@ -1,0 +1,198 @@
+/* foundation/dialogs-gm — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.timeline-row {
+  display: flex;
+  gap: 20px;
+  padding: 18px 5px;
+  border-bottom: 1px solid #e8eddd;
+}
+.timeline-row > span {
+  background: #edf1e2;
+  color: #8d9e72;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+}
+.timeline-row small {
+  font-size: 9px;
+  color: #a1ab91;
+}
+.timeline-row p {
+  margin: 8px 0 0;
+  font-size: 12px;
+}
+.gm-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 17px 0;
+  border-bottom: 1px solid #e8eddd;
+}
+.gm-row > div {
+  margin-right: auto;
+}
+.gm-row strong {
+  font-size: 11px;
+}
+.gm-row small {
+  display: block;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #91a07b;
+}
+.gm-row button {
+  padding: 9px;
+  font-size: 10px;
+}
+.inline-form {
+  display: flex;
+  gap: 12px;
+}
+.inline-form input,
+.inline-form select {
+  min-width: 0;
+  flex: 1;
+}
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: #16291fc4;
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  z-index: 70;
+}
+.modal {
+  width: 470px;
+  max-width: 100%;
+  max-height: 90vh;
+  overflow: auto;
+  background: #fbfaf3;
+  border: 1px solid #dce2cf;
+  border-radius: 12px;
+  padding: 35px;
+  box-shadow: 0 20px 100px #0004;
+  position: relative;
+}
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 14px;
+  color: #98a488;
+}
+.modal h2 {
+  font-size: 29px;
+  padding-right: 18px;
+}
+.modal > p {
+  color: #879577;
+}
+.modal label {
+  display: block;
+  color: #748363;
+  margin: 19px 0;
+}
+.modal input,
+.modal select,
+.inline-form input,
+.inline-form select {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d7dfca;
+  background: #fffef8;
+  border-radius: 5px;
+  color: #435b37;
+  margin-top: 8px;
+  outline-offset: 2px;
+}
+.inline-form input,
+.inline-form select {
+  margin: 0;
+}
+.segmented {
+  display: flex;
+  background: #eaf0df;
+  padding: 4px;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+.segmented button {
+  flex: 1;
+  padding: 10px;
+  font-size: 11px;
+}
+.segmented .on {
+  background: #fffef8;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px #0001;
+}
+.invite-code {
+  border: 1px dashed #c8d4b7;
+  padding: 20px;
+  text-align: center;
+  margin: 24px 0;
+  border-radius: 5px;
+}
+.invite-code small {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #92a178;
+}
+.invite-code strong {
+  display: block;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin: 15px 0;
+  color: #52703d;
+}
+.toast {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #263e2e;
+  color: #faf9e9;
+  padding: 17px 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 40px #0003;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  max-width: 90vw;
+}
+.toast button {
+  display: flex;
+}
+.loading {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #6b8050;
+}
+.loading h1 {
+  margin-top: 20px;
+}
+.success {
+  color: #819c60;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+.spin {
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

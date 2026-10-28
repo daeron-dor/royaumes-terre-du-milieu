@@ -1,0 +1,90 @@
+/* frame/city — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.city-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 224px;
+  gap: 0;
+  align-items: stretch;
+}
+.city-panel {
+  border: 0;
+  border-radius: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  background: #26382b;
+}
+.city-panel .panel-heading {
+  display: none;
+}
+.map-wrap {
+  padding: 0;
+  flex: 1;
+  display: flex;
+}
+.map-wrap > .game-city {
+  width: 100%;
+}
+.scene-scroll {
+  height: auto;
+  max-height: none;
+}
+.living-city .scene-stage {
+  min-width: 0 !important;
+  aspect-ratio: 0.94;
+  min-height: 600px;
+}
+.living-city .city-banner {
+  display: none;
+}
+.living-city .map-cartouche {
+  display: none;
+}
+.map-controls {
+  background: linear-gradient(#243b47, #12232e);
+  color: #e1ce9b;
+  border-top: 4px ridge var(--frame);
+  padding: 8px 12px;
+}
+.map-controls > span {
+  font: 12px Georgia;
+}
+.map-controls button {
+  color: #e1ce9b;
+  border: 1px solid #8b7954;
+  border-radius: 0;
+}
+.map-footer {
+  padding: 7px 12px;
+  font: 9px Georgia;
+  background: #162935;
+  color: #c7bd9f;
+  border-top: 1px solid #83744c;
+}
+.living-building .building-label {
+  font-size: 0;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+}
+.living-building .building-label b {
+  font: 12px Georgia;
+  padding: 3px 5px;
+  border: 2px ridge #baa570;
+  background: #152633;
+  color: #f2e4be;
+  display: inline-block;
+}
+.living-building.chosen .building-label,
+.living-building:hover .building-label,
+.living-building:focus-visible .building-label {
+  font: 11px Georgia;
+  background: #142534ef;
+  color: #f4e0a7;
+  border: 1px solid #b99f63;
+  padding: 4px 6px;
+  white-space: nowrap;
+}
+.living-building.chosen .building-label b {
+  margin-left: 5px;
+}

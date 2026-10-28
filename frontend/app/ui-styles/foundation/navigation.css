@@ -1,0 +1,208 @@
+/* foundation/navigation — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  width: 226px;
+  flex-shrink: 0;
+  background: #203b31;
+  color: #d6dfd6;
+  position: fixed;
+  inset: 0 auto 0 0;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 18px;
+  z-index: 30;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #f0e9cc;
+  padding: 0 4px;
+}
+.brand small {
+  display: block;
+  font: 8px Arial;
+  letter-spacing: 2.5px;
+  margin-top: 7px;
+  color: #aebcac;
+}
+.brand-mark {
+  color: #c6ab68;
+  border: 1px solid #64745b;
+  border-radius: 12px;
+  padding: 8px;
+  display: flex;
+}
+.campaign-tag {
+  font-size: 9px;
+  letter-spacing: 1.3px;
+  border-top: 1px solid #ffffff15;
+  border-bottom: 1px solid #ffffff15;
+  padding: 23px 8px;
+  margin: 30px 0 26px;
+  color: #b9c9b8;
+}
+.campaign-tag small {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0;
+  margin: 9px 0 0 15px;
+  color: #91a394;
+}
+.live-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #83a47a;
+  margin-right: 6px;
+}
+.nav-caption {
+  font-size: 9px;
+  color: #8da18f;
+  margin: 0 12px 14px;
+}
+.sidebar nav button {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 13px 15px;
+  width: 100%;
+  text-align: left;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #b7c6b9;
+}
+.sidebar nav button.active {
+  background: #3b5142;
+  color: #f2e7bc;
+  box-shadow: inset 3px 0 #b79b5a;
+}
+.nav-count {
+  margin-left: auto;
+  font-size: 10px;
+  background: #ffffff13;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+.city-nav {
+  margin-top: 31px;
+}
+.city-nav .nav-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.city-nav > button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 11px 15px;
+  font-size: 12px;
+  color: #9fb1a1;
+}
+.city-nav > button svg {
+  margin-left: auto;
+  color: #c2a968;
+}
+.city-nav > button.current {
+  color: #f2e8c5;
+}
+.city-dot {
+  width: 5px;
+  height: 5px;
+  background: #7a927e;
+  border-radius: 50%;
+}
+.sidebar-bottom {
+  margin-top: auto;
+  padding-top: 28px;
+}
+.gm-link {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #ffffff19;
+  border-radius: 5px;
+  padding: 13px 10px;
+  width: 100%;
+  font-size: 11px;
+}
+.gm-link > svg:last-child {
+  margin-left: auto;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 24px;
+}
+.avatar {
+  height: 33px;
+  width: 33px;
+  display: grid;
+  place-items: center;
+  background: #526249;
+  color: #e3cf90;
+  border-radius: 50%;
+  font-family: Georgia;
+}
+.profile small {
+  display: block;
+  font-size: 9px;
+  margin-top: 5px;
+  color: #92a793;
+}
+.profile button {
+  margin-left: auto;
+  padding: 2px;
+}
+.main-shell {
+  margin-left: 226px;
+  width: calc(100% - 226px);
+}
+.topbar {
+  height: 67px;
+  border-bottom: 1px solid #e4e5da;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 34px;
+  background: #fbfaf6;
+}
+.breadcrumb,
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 11px;
+  color: #839083;
+}
+.breadcrumb strong {
+  color: #354c3f;
+  font-weight: 500;
+}
+.icon-button {
+  border-left: 1px solid #e5e6dc;
+  padding-left: 20px;
+  display: flex;
+}
+.tiny-shield {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 33px;
+  color: #947b45;
+  background: #eee9d9;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+}
+.mobile-menu {
+  display: none;
+}

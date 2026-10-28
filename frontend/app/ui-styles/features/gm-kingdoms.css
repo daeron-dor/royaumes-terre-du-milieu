@@ -1,0 +1,32 @@
+/* features/gm-kingdoms — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.gm-kingdoms {
+  margin-bottom: 20px;
+}
+.gm-kingdom-selectors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.gm-kingdom-selectors label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.gm-kingdom-selectors select {
+  padding: 9px;
+  max-width: 100%;
+  background: #f1e4c1;
+  color: #392e1f;
+}
+.gm-kingdoms summary {
+  cursor: pointer;
+  padding: 12px 0;
+  font: 16px Georgia;
+}
+.gm-kingdoms .game-city {
+  max-width: 760px;
+}
+.gm-kingdoms > p {
+  font-size: 12px;
+}

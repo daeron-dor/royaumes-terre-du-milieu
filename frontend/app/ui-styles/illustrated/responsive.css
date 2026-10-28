@@ -1,0 +1,229 @@
+/* illustrated/responsive — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.modal {
+  width: 620px;
+}
+.modal .preset-row button {
+  min-width: 145px;
+}
+.setup-period {
+  display: flex;
+  gap: 12px;
+}
+.setup-period label {
+  flex: 1;
+}
+.mini-city {
+  background-image: url('/art/faction-cities.webp');
+  background-size: 300% 200%;
+  background-position: var(--tile-x) var(--tile-y);
+}
+@media (min-width: 1500px) {
+  .city-layout {
+    grid-template-columns: minmax(0, 1fr) 300px;
+  }
+  .scene-stage {
+    max-width: 950px;
+    margin: auto;
+  }
+  .unit-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 1150px) {
+  .unit-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .codex-layout {
+    grid-template-columns: 160px minmax(0, 1fr);
+  }
+  .codex-units {
+    grid-template-columns: 1fr;
+  }
+  .army-banner h2 {
+    font-size: 25px;
+  }
+  .muster-seal {
+    display: none;
+  }
+  .gm-order {
+    flex-wrap: wrap;
+  }
+  .gm-order > div {
+    flex: 1;
+    min-width: 150px;
+  }
+}
+@media (max-width: 800px) {
+  .city-layout {
+    grid-template-columns: 1fr;
+  }
+  .scene-stage {
+    min-width: 570px !important;
+  }
+  .building-panel {
+    flex-direction: row;
+  }
+  .building-art {
+    height: auto;
+    width: 30%;
+  }
+  .building-content {
+    width: 70%;
+  }
+  .army-banner {
+    padding: 16px;
+    gap: 12px;
+  }
+  .army-banner > .unit-portrait {
+    width: 65px;
+    height: 65px;
+  }
+  .army-banner h2 {
+    font-size: 22px;
+  }
+  .army-banner .eyebrow {
+    font-size: 7px;
+  }
+  .army-banner p {
+    font-size: 10px;
+  }
+  .army-toolbar {
+    gap: 10px;
+    padding: 12px;
+  }
+  .army-tabs {
+    margin-left: 0;
+    width: 100%;
+  }
+  .army-tabs button {
+    flex: 1;
+  }
+  .unit-grid {
+    gap: 10px;
+  }
+  .unit-card {
+    padding: 12px;
+  }
+  .unit-head {
+    gap: 8px;
+  }
+  .unit-head .unit-portrait {
+    width: 54px;
+    height: 54px;
+  }
+  .unit-head h3 {
+    font-size: 18px;
+  }
+  .codex-layout {
+    grid-template-columns: 1fr;
+  }
+  .faction-list {
+    display: flex;
+    overflow: auto;
+  }
+  .faction-list button {
+    min-width: 150px;
+  }
+  .codex-units {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .faction-landscape {
+    height: 300px;
+  }
+  .encounter-card {
+    flex-wrap: wrap;
+  }
+  .encounter-card .unit-stats {
+    min-width: 200px;
+  }
+  .heading {
+    align-items: flex-start;
+  }
+  .city-tabs {
+    overflow: auto;
+  }
+  .city-tabs button {
+    white-space: nowrap;
+  }
+  .unit-filter {
+    align-items: flex-start;
+  }
+  .unit-filter p {
+    max-width: 160px;
+  }
+  .transfer-form select {
+    flex-basis: 100%;
+  }
+  .garrison-detail {
+    flex-wrap: wrap;
+  }
+  .garrison-detail > div {
+    flex: 1;
+    min-width: 130px;
+  }
+}
+@media (max-width: 520px) {
+  .unit-grid,
+  .codex-units {
+    grid-template-columns: 1fr;
+  }
+  .unit-head .unit-portrait {
+    width: 72px;
+    height: 72px;
+  }
+  .unit-head h3 {
+    font-size: 23px;
+  }
+  .unit-trait {
+    min-height: 0;
+  }
+  .unit-card {
+    padding: 16px;
+  }
+  .heading h1 {
+    font-size: 25px;
+  }
+  .heading .eyebrow {
+    max-width: 220px;
+    line-height: 1.6;
+  }
+  .army-toolbar select {
+    max-width: 180px;
+  }
+  .unit-stats {
+    margin-top: 12px;
+  }
+  .army-banner h2 {
+    font-size: 20px;
+  }
+  .army-banner p {
+    line-height: 1.6;
+  }
+  .unit-filter {
+    flex-direction: column;
+  }
+  .unit-filter p {
+    max-width: none;
+  }
+  .preset-row button {
+    min-width: 45%;
+    font-size: 13px;
+  }
+  .faction-landscape {
+    height: 260px;
+  }
+  .rules-note {
+    font-size: 10px;
+  }
+  .gm-order .primary,
+  .gm-order .secondary {
+    padding: 9px;
+    font-size: 10px;
+  }
+  .building-label {
+    font-size: 10px;
+  }
+  .sidebar.open {
+    z-index: 50;
+  }
+}

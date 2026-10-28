@@ -1,0 +1,159 @@
+/* frame/resources-tabs — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.resources-bar {
+  height: 76px;
+  background: linear-gradient(#20313a, #0e1a24);
+  border: 3px ridge var(--frame);
+  color: #f2dfab;
+  min-width: 0;
+}
+.resource {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0;
+  padding: 4px 2px;
+  margin: 0;
+  border-right: 1px solid #a18b5c;
+  text-align: center;
+  position: relative;
+  min-width: 0;
+}
+.resource-icon,
+.gold .resource-icon,
+.iron .resource-icon {
+  width: 100%;
+  height: 25px;
+  background: none;
+  border-radius: 0;
+  color: #cfb575;
+  display: grid;
+  place-items: center;
+}
+.resource.gold .resource-icon {
+  color: #eac15b;
+}
+.resource.wood .resource-icon {
+  color: #bba17b;
+}
+.resource.stone .resource-icon {
+  color: #d2d1c7;
+}
+.resource.iron .resource-icon {
+  color: #aebdc5;
+}
+.resource.food .resource-icon {
+  color: #dfc075;
+}
+.resource > div > small {
+  display: none;
+}
+.resource strong {
+  font: 17px Georgia;
+  color: #f5e9ce;
+  letter-spacing: 0;
+}
+.resource-rate {
+  margin: 0;
+  font: 8px Arial;
+  color: #bfb99f;
+}
+.resource-rate small {
+  display: inline;
+  font: 8px Arial;
+  color: inherit;
+}
+.deposit-shortcut {
+  padding: 4px;
+  width: 25px;
+  color: #e1c989;
+  flex-shrink: 0;
+}
+.realm-top-nav {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#ffffff0c, #0004), var(--realm-cloth);
+  border: 4px ridge var(--frame);
+  height: 42px;
+}
+.realm-top-nav button {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  justify-content: center;
+  min-width: 125px;
+  padding: 6px 18px;
+  font: 16px Georgia;
+  color: #e4dfcf;
+  border-right: 1px solid #ae9968;
+}
+.realm-top-nav button.active {
+  color: #ffdf8f;
+  background: #d0ae5433;
+  box-shadow: inset 0 0 10px #0008;
+}
+.main-shell > main {
+  grid-column: 1/-1;
+  padding: 16px;
+  background: linear-gradient(#0c1c2580, #132832cc), var(--realm-cloth);
+  min-width: 0;
+}
+.main-shell .heading {
+  padding: 0 0 12px;
+  margin: 0;
+  color: #e9dbb4;
+}
+.heading h1 {
+  font: 25px Georgia;
+  letter-spacing: 0.2px;
+  margin: 5px 0;
+}
+.heading .eyebrow {
+  font-size: 8px;
+  color: #bda777;
+}
+.heading p {
+  font: 12px Georgia;
+  color: #c9c4ad;
+  margin: 0;
+}
+.view-cities main {
+  padding: 0;
+}
+.view-cities .heading {
+  display: none;
+}
+.demo-note {
+  margin: 8px;
+  padding: 7px 10px;
+  font: 10px Arial;
+  background: #e4d2a8;
+  color: #45381f;
+}
+.demo-note button {
+  font-size: 10px;
+}
+.city-tabs {
+  margin: 0;
+  padding: 4px 7px;
+  background: #182a33;
+  border-bottom: 3px ridge var(--frame);
+  gap: 4px;
+}
+.city-tabs button {
+  font: 11px Georgia;
+  padding: 7px 10px;
+  border-radius: 0;
+  color: #d6c7a0;
+}
+.city-tabs button.selected {
+  background: #b89a5740;
+  color: #ffe4a0;
+  border-color: #b69b63;
+}
+.city-tabs button span {
+  font-size: 7px;
+}
+.city-tabs .new-city {
+  margin-left: auto;
+}

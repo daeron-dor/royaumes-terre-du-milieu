@@ -1,0 +1,134 @@
+/* frame/panels — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.city-ledger {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  gap: 10px;
+  margin: 0;
+  border-top: 4px ridge var(--frame);
+}
+.city-ledger .card {
+  padding: 12px;
+}
+.city-ledger h3 {
+  font-size: 15px;
+}
+.city-ledger .quiet-state {
+  padding: 8px 0;
+}
+.city-ledger .quiet-state p {
+  font-size: 10px;
+}
+.card,
+.modal,
+.stat,
+.realm-card,
+.found-card,
+.building-panel,
+.faction-attributes,
+.notice {
+  border-radius: 0;
+  border: 3px ridge #a18d62;
+  background:
+    radial-gradient(ellipse at top, #fff2d180, transparent 80%),
+    repeating-linear-gradient(18deg, #9b805505 0 1px, transparent 1px 4px), var(--paper, #e6d6ae);
+  color: #332a1c;
+  box-shadow:
+    inset 0 0 16px #94703a22,
+    0 3px 8px #0003;
+}
+.card h2,
+.card h3 {
+  font-family: Georgia;
+}
+.stat strong,
+.realm-card h2,
+.found-card h3 {
+  color: #332a1c;
+}
+.stat small,
+.realm-card p,
+.realm-card > div:last-child > span,
+.found-card p {
+  color: #59482d;
+}
+.found-card:hover {
+  background: var(--paper, #e6d6ae);
+  border-color: #59482d;
+}
+.primary {
+  border: 3px ridge #a69360;
+  border-radius: 0;
+  background: linear-gradient(#38543b, #213c2a);
+  color: #f6e5ba;
+  font-family: Georgia;
+}
+.secondary {
+  border: 2px ridge #a28c5a;
+  border-radius: 0;
+  background: linear-gradient(#354a52, #1c303c);
+  color: #ead8a9;
+  font-family: Georgia;
+}
+input,
+select {
+  border-radius: 0 !important;
+}
+.modal {
+  --paper: #e8d6ab;
+}
+.modal h2,
+.modal h3,
+.modal label,
+.modal .costs,
+.modal .list-row strong {
+  color: #332a1c;
+}
+.modal > p,
+.modal .muted,
+.modal .hint,
+.modal .eyebrow,
+.modal-close {
+  color: #59482d;
+}
+.main-shell footer {
+  padding: 12px 10px;
+  margin: 0;
+  color: #b5ad92;
+  border-top: 3px ridge var(--frame);
+  font: 8px Georgia;
+}
+.section-toolbar h2,
+.footnote {
+  color: #e2d1a8;
+}
+.chronicles .timeline-row p {
+  color: #342b1d;
+}
+.codex .notice {
+  padding: 12px;
+  font-size: 11px;
+}
+.faction-list {
+  background: linear-gradient(#0002, #0004), var(--realm-cloth);
+  border: 3px ridge var(--frame);
+}
+.preset-row button {
+  border-radius: 0;
+  border: 2px ridge #9f8959;
+  background: #203542;
+  color: #d9cca7;
+}
+.preset-row button.on {
+  background: #b59958;
+  color: #231c10;
+}
+.rules-note {
+  color: #574429;
+}
+.army-screen .army-banner,
+.war-room-title,
+.army-screen .army-toolbar,
+.unit-card .unit-head {
+  background: linear-gradient(110deg, #0005, #ffffff10), var(--realm-cloth);
+}

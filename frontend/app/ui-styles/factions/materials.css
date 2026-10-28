@@ -1,0 +1,21 @@
+/* factions/materials — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.faction-shadow {
+  --paper: #cbbf9e;
+  --frame: #766854;
+}
+.faction-elven {
+  --paper: #e5e0bc;
+  --frame: #a6a081;
+}
+.faction-rohan {
+  --paper: #e2d1a5;
+  --frame: #8b7147;
+}
+.faction-dwarven {
+  --paper: #d6c8aa;
+  --frame: #99816a;
+}
+.faction-southern {
+  --paper: #ead2a1;
+  --frame: #a47d4b;
+}

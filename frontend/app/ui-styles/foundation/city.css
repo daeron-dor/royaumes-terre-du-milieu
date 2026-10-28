@@ -1,0 +1,238 @@
+/* foundation/city — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.city-tabs {
+  display: flex;
+  gap: 7px;
+  border-bottom: 1px solid #dfe3d4;
+  margin-bottom: 22px;
+}
+.city-tabs button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 13px 16px;
+  color: #919a85;
+  font-size: 12px;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+}
+.city-tabs button.selected {
+  color: #365139;
+  border-bottom-color: #516c43;
+}
+.city-tabs button span:not(.building-dot) {
+  letter-spacing: 0.6px;
+  background: #e8ecdf;
+  padding: 4px 5px;
+  border-radius: 3px;
+}
+.city-tabs .new-city {
+  font-size: 10px;
+}
+.building-dot {
+  height: 5px;
+  width: 5px;
+  background: #ba974d;
+  border-radius: 50%;
+}
+.city-layout {
+  grid-template-columns: minmax(0, 1fr) 276px;
+  gap: 20px;
+}
+.city-panel,
+.building-panel,
+.card,
+.stat,
+.realm-card {
+  border: 1px solid #e0e3d6;
+  background: #fffef9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 9px #34412903;
+}
+.panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 21px 24px 15px;
+}
+.panel-heading .eyebrow {
+  margin-bottom: 7px;
+}
+.panel-heading h2 {
+  font-size: 23px;
+}
+.city-meta {
+  gap: 15px;
+  color: #8e9782;
+}
+.city-meta span {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.map-wrap {
+  position: relative;
+  background: #edf0de;
+}
+.map-wrap > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 350px;
+}
+.map-tip {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9px;
+  white-space: nowrap;
+  padding: 8px 12px;
+  border-radius: 20px;
+  background: #fffff4d9;
+  color: #7b856c;
+  pointer-events: none;
+  border: 1px solid #dbe0c9;
+}
+.selection-ring {
+  opacity: 0;
+}
+.selected .selection-ring,
+[role='button']:hover .selection-ring,
+[role='button']:focus .selection-ring {
+  opacity: 1;
+}
+[role='button'] {
+  cursor: pointer;
+  outline: none;
+}
+[role='button']:focus .selection-ring {
+  stroke: #79682e;
+  stroke-width: 3;
+}
+.map-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  color: #8c9681;
+}
+.map-footer i,
+footer i,
+.realm-card i {
+  display: inline-block;
+  height: 3px;
+  width: 3px;
+  border-radius: 50%;
+  background: #a3ac95;
+  margin: 0 7px;
+  vertical-align: middle;
+}
+.building-panel {
+  display: flex;
+  flex-direction: column;
+}
+.building-art {
+  height: 175px;
+  background: radial-gradient(ellipse at center, #e8eddb, #f6f6ec 70%);
+  display: grid;
+  place-items: center;
+  border-bottom: 1px solid #e5e8db;
+}
+.building-art > svg {
+  width: 180px;
+  height: 170px;
+  z-index: 1;
+}
+.art-orbit {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 1px dashed #cbd4b6;
+  border-radius: 50%;
+  top: 25px;
+}
+.level-badge {
+  position: absolute;
+  bottom: 13px;
+  right: 14px;
+  padding: 5px 8px;
+  font-size: 8px;
+  color: #77835e;
+  border: 1px solid #d7ddc6;
+  border-radius: 4px;
+  background: #fcfcf2;
+}
+.building-content {
+  padding: 23px 20px;
+  flex: 1;
+}
+.building-content h2 {
+  margin-bottom: 10px;
+}
+.building-content > p {
+  color: #91977f;
+  line-height: 1.8;
+  min-height: 39px;
+  margin-bottom: 20px;
+}
+.benefit {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 0;
+  border-top: 1px solid #eceee2;
+  font-size: 10px;
+  color: #8a937c;
+}
+.benefit strong {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  color: #657c49;
+}
+.upgrade-divider {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e4e7d9;
+  margin-top: 8px;
+  padding-top: 19px;
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #8a9279;
+}
+.upgrade-divider strong {
+  font-size: 12px;
+  letter-spacing: 0;
+  color: #687e51;
+}
+.next-benefit {
+  margin-top: 12px;
+  color: #758958;
+}
+.costs {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  color: #858a70;
+}
+.costs span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.duration {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #9a9e8b;
+  font-size: 9px;
+  margin: 17px 0;
+}
+.hint {
+  display: block;
+  text-align: center;
+  color: #9ca28e;
+  line-height: 1.7;
+  margin: 11px 0 0;
+}

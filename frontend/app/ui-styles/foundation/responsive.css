@@ -1,0 +1,330 @@
+/* foundation/responsive — voir docs/STYLES.md pour les responsabilités et la cascade. */
+@media (min-width: 1550px) {
+  main {
+    padding-top: 40px;
+  }
+  .map-wrap > svg {
+    max-height: 590px;
+  }
+  .city-layout {
+    grid-template-columns: minmax(0, 1fr) 300px;
+  }
+  .building-art {
+    height: 200px;
+  }
+  .building-content {
+    padding: 27px;
+  }
+  .sidebar {
+    width: 242px;
+  }
+  .main-shell {
+    margin-left: 242px;
+    width: calc(100% - 242px);
+  }
+}
+@media (max-width: 1150px) {
+  .sidebar {
+    width: 196px;
+    padding: 25px 12px;
+  }
+  .main-shell {
+    margin-left: 196px;
+    width: calc(100% - 196px);
+  }
+  main {
+    padding: 26px 20px 0;
+  }
+  .resources-bar {
+    padding: 16px;
+    gap: 9px;
+  }
+  .resource {
+    gap: 7px;
+    padding-right: 9px;
+  }
+  .resource-icon {
+    width: 28px;
+    background: none !important;
+  }
+  .resource-rate {
+    display: none;
+  }
+  .city-layout {
+    grid-template-columns: minmax(0, 1fr) 245px;
+    gap: 14px;
+  }
+  .city-meta {
+    display: none;
+  }
+  .building-content {
+    padding: 20px 16px;
+  }
+  .map-wrap > svg {
+    min-height: 390px;
+  }
+  .city-tabs button {
+    padding: 12px 8px;
+    font-size: 10px;
+  }
+  .city-tabs .new-city {
+    font-size: 9px;
+  }
+  .city-tabs button span:not(.building-dot) {
+    display: none;
+  }
+  .heading h1 {
+    font-size: 30px;
+  }
+  .heading .secondary {
+    display: none;
+  }
+  .bottom-grid {
+    gap: 14px;
+  }
+  .card {
+    padding: 18px;
+  }
+  .production-grid {
+    gap: 5px;
+  }
+  .brand {
+    font-size: 12px;
+  }
+  .brand-mark {
+    padding: 6px;
+  }
+  .realm-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: 230px;
+    transition: transform 0.2s;
+  }
+  .sidebar.open {
+    transform: translateX(0);
+    box-shadow: 0 0 0 100vmax #17291b70;
+  }
+  .main-shell {
+    margin-left: 0;
+    width: 100%;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+  .topbar {
+    padding: 0 20px;
+    height: 58px;
+    gap: 10px;
+  }
+  .breadcrumb {
+    margin-right: auto;
+    font-size: 10px;
+    gap: 8px;
+  }
+  .top-actions {
+    gap: 10px;
+  }
+  .season {
+    font-size: 8px;
+  }
+  .tiny-shield {
+    display: none;
+  }
+  .resource {
+    padding: 0;
+    border: 0;
+  }
+  .resources-bar {
+    padding: 13px 17px;
+    gap: 10px;
+  }
+  .resource-icon {
+    display: none;
+  }
+  .resource strong {
+    font-size: 15px;
+  }
+  .resource small {
+    font-size: 8px;
+  }
+  .deposit-shortcut {
+    flex-shrink: 0;
+  }
+  main {
+    padding: 25px 16px 0;
+  }
+  .heading h1 {
+    font-size: 29px;
+  }
+  .heading p {
+    font-size: 11px;
+  }
+  .eyebrow {
+    font-size: 7px;
+    letter-spacing: 1.2px;
+  }
+  .demo-note {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  .demo-note > span {
+    max-width: 65%;
+  }
+  .demo-pill {
+    display: block;
+    margin-bottom: 3px;
+  }
+  .demo-note button {
+    font-size: 9px;
+  }
+  .city-tabs {
+    overflow: auto;
+    white-space: nowrap;
+    gap: 1px;
+  }
+  .city-tabs .new-city {
+    margin-left: 0;
+  }
+  .city-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .map-wrap > svg {
+    min-height: 0;
+  }
+  .building-panel {
+    flex-direction: row;
+  }
+  .building-art {
+    width: 34%;
+    height: auto;
+    min-height: 260px;
+    border-bottom: 0;
+    border-right: 1px solid #e5e8db;
+    overflow: hidden;
+  }
+  .building-art > svg {
+    width: 155px;
+    max-width: 100%;
+    height: 180px;
+  }
+  .building-content {
+    width: 66%;
+    padding: 22px;
+  }
+  .building-content > p {
+    min-height: 0;
+  }
+  .art-orbit {
+    width: 100px;
+    height: 100px;
+    top: 60px;
+  }
+  .level-badge {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    bottom: 35px;
+  }
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+  .production-grid {
+    gap: 15px;
+  }
+  .summary-grid {
+    gap: 10px;
+  }
+  .stat {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 10px;
+  }
+  .stat strong {
+    font-size: 25px;
+  }
+  .stat small {
+    font-size: 9px;
+    line-height: 1.5;
+  }
+  .realm-grid {
+    gap: 12px;
+  }
+  .realm-card > div:last-child {
+    padding: 16px;
+  }
+  .realm-card h2 {
+    font-size: 20px;
+  }
+  .realm-card > div:last-child > span {
+    font-size: 8px;
+  }
+  .garrison {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .garrison > b {
+    margin-right: 0;
+  }
+  .garrison .secondary {
+    margin-left: auto;
+  }
+  .inline-form {
+    flex-wrap: wrap;
+  }
+  .inline-form select {
+    min-width: 100%;
+  }
+  .section-toolbar h2 {
+    font-size: 23px;
+  }
+  footer {
+    flex-direction: column;
+    font-size: 8px;
+    line-height: 1.6;
+  }
+  .modal {
+    padding: 28px 23px;
+  }
+  .modal h2 {
+    font-size: 26px;
+  }
+  .map-footer {
+    font-size: 8px;
+    padding: 13px;
+  }
+  .map-tip {
+    font-size: 8px;
+    bottom: 8px;
+  }
+  .toast {
+    width: max-content;
+    max-width: 92vw;
+    font-size: 11px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+.chosen .selection-ring {
+  opacity: 1;
+}
+.map-tip {
+  top: 12px;
+  bottom: auto;
+  left: 12px;
+  transform: none;
+  font-size: 8px;
+  padding: 6px 9px;
+}
+.city-tabs::-webkit-scrollbar {
+  display: none;
+}

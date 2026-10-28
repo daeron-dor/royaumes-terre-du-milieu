@@ -1,0 +1,25 @@
+/* military/unlocks — voir docs/STYLES.md pour les responsabilités et la cascade. */
+
+.recruitment-roadmap {
+  margin: 16px 0;
+}
+.recruitment-roadmap p {
+  line-height: 1.6;
+  font-size: 13px;
+}
+.recruitment-roadmap summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 12px 0;
+}
+.unlock-list > div {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid #b8a87b;
+  font-size: 13px;
+}
+.unlock-list .unlocked strong {
+  color: #315632;
+}

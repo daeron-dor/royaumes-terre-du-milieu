@@ -1,0 +1,186 @@
+/* frame/adviser — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.city-adviser {
+  border-left: 5px ridge var(--frame);
+  background:
+    radial-gradient(ellipse at 30% 30%, #fff1cc88, transparent),
+    repeating-linear-gradient(12deg, #a98c5808 0 1px, transparent 1px 4px), var(--paper);
+  color: #302819;
+  min-width: 0;
+}
+.adviser-standard {
+  height: 102px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  background: linear-gradient(90deg, #0004, transparent, #0005), var(--realm-cloth);
+  color: var(--realm-metal);
+  border-bottom: 4px ridge var(--frame);
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 50% 100%, 0 82%);
+}
+.adviser-standard svg {
+  width: 50px;
+  height: 59px;
+}
+.adviser-standard span {
+  font: 9px Georgia;
+}
+.adviser-garrison,
+.adviser-construction {
+  padding: 12px;
+  border-bottom: 4px double #9b8150;
+}
+.city-adviser h3 {
+  font: 20px Georgia;
+  margin: 0 0 10px;
+}
+.adviser-troops {
+  display: flex;
+  gap: 7px;
+}
+.adviser-troops button {
+  min-width: 0;
+  flex: 1;
+  position: relative;
+  padding: 0;
+}
+.adviser-troops .unit-portrait {
+  display: block;
+  width: 100%;
+  height: 67px;
+  border: 3px ridge #a68d58;
+  border-radius: 0;
+}
+.adviser-troops b {
+  display: block;
+  background: #14252e;
+  color: #f7e8be;
+  font: 16px Georgia;
+  border: 1px solid #99804f;
+  margin-top: -3px;
+}
+.adviser-troops small {
+  display: block;
+  font: 9px Georgia;
+  margin-top: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.adviser-link {
+  font: 10px Georgia;
+  text-decoration: underline;
+  margin-top: 9px;
+  padding: 0;
+  color: #654f2c;
+}
+.adviser-construction p,
+.adviser-troops p {
+  font: 12px/1.5 Georgia;
+  margin: 0;
+  color: #675336;
+}
+.adviser-build {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.adviser-build .architecture-sprite {
+  width: 55px;
+}
+.adviser-build strong {
+  font: 13px Georgia;
+}
+.adviser-build small {
+  display: block;
+  font: 10px Georgia;
+  margin-top: 6px;
+}
+.progress {
+  border: 2px ridge #aa9257;
+  border-radius: 0;
+  background: #6e6147;
+  height: 10px;
+}
+.progress > span {
+  background: linear-gradient(#e6cc73, #a8822c);
+  border-radius: 0;
+}
+.city-adviser .building-panel {
+  background: none;
+  border: 0;
+  box-shadow: none;
+  border-radius: 0;
+  display: block;
+  position: static;
+}
+.city-adviser .building-art {
+  height: 105px;
+  width: 100%;
+  background: transparent;
+}
+.city-adviser .building-art > .architecture-sprite {
+  width: 120px;
+}
+.city-adviser .level-badge {
+  font: 9px Georgia;
+  bottom: 3px;
+  background: #152836;
+  color: #e9d9a8;
+  border: 1px solid #a68b50;
+  border-radius: 0;
+}
+.city-adviser .building-content {
+  padding: 12px;
+  width: auto;
+}
+.city-adviser .building-content h2 {
+  font: 21px Georgia;
+  margin: 6px 0;
+}
+.city-adviser .building-content p {
+  font: 11px/1.5 Georgia;
+  margin-bottom: 10px;
+}
+.city-adviser .building-content .eyebrow {
+  font-size: 8px;
+}
+.city-adviser .evolution-link {
+  font: 10px Georgia;
+  margin-bottom: 10px;
+}
+.city-adviser .benefit {
+  font: 10px Georgia;
+  padding: 8px 0;
+  gap: 5px;
+}
+.city-adviser .benefit strong {
+  font-size: 12px;
+}
+.city-adviser .upgrade-divider {
+  font-size: 8px;
+  padding-top: 9px;
+  margin-top: 8px;
+}
+.city-adviser .next-benefit {
+  font-size: 10px;
+  margin: 7px 0;
+}
+.city-adviser .costs {
+  flex-wrap: wrap;
+}
+.city-adviser .costs span {
+  font-size: 11px;
+}
+.city-adviser .duration {
+  font-size: 10px;
+  margin: 9px 0;
+}
+.city-adviser .primary {
+  font: 12px Georgia;
+  padding: 10px 5px;
+}
+.city-adviser .hint {
+  font-size: 9px;
+}

@@ -1,0 +1,222 @@
+/* frame/navigation — voir docs/STYLES.md pour les responsabilités et la cascade. */ /* Shared game frame, based on the approved illustrated city-screen reference. */
+body {
+  background: #3f4a40 url('/art/faction-cities.webp') 0 0/300% 200% fixed;
+  color: #30291c;
+  font-family: Georgia, 'Times New Roman', serif;
+}
+.app-shell {
+  --frame: #8b7b59;
+  --paper: #e6d6ae;
+  --realm-cloth: #182e48;
+  --realm-metal: #e9e8d9;
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  max-width: 1580px;
+  margin: 24px auto;
+  min-height: calc(100vh - 48px);
+  border: 8px ridge var(--frame);
+  box-shadow:
+    0 0 0 2px #171c1a,
+    0 14px 50px #0009;
+  background: #18262b;
+  align-items: start;
+  position: relative;
+}
+.sidebar {
+  position: relative;
+  inset: auto;
+  width: auto;
+  min-height: 100%;
+  padding: 0 8px 15px;
+  border-right: 6px ridge var(--frame);
+  background:
+    repeating-linear-gradient(90deg, #fff2 0 1px, transparent 1px 5px),
+    linear-gradient(90deg, #0005, transparent 35%, #fff1 50%, #0004), var(--realm-cloth);
+  color: #efe4bf;
+  z-index: 20;
+}
+.realm-overlook {
+  display: block;
+  position: relative;
+  width: calc(100% + 16px);
+  height: 140px;
+  margin: 0 -8px;
+  border: 5px ridge var(--frame);
+  background-image: url('/art/faction-cities.webp');
+  background-size: 300% 200%;
+  background-position: var(--tile-x) var(--tile-y);
+  box-shadow: inset 0 0 18px #0008;
+}
+.realm-overlook span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 7px 4px;
+  background: #142b39df;
+  color: #ead7a6;
+  font: 13px Georgia;
+}
+.brand {
+  flex-direction: column;
+  text-align: center;
+  padding: 15px 0 10px;
+  font: 12px Georgia;
+  letter-spacing: 1.8px;
+  gap: 8px;
+  color: var(--realm-metal);
+}
+.brand-mark {
+  display: block;
+  border: 0;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  width: 69px;
+  height: 86px;
+  color: var(--realm-metal);
+}
+.brand-mark svg {
+  width: 100%;
+  height: 100%;
+}
+.brand small {
+  font: 9px Georgia;
+  color: #e0d4b4;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+.campaign-tag {
+  padding: 9px 3px;
+  margin: 8px 0 12px;
+  font: 8px Arial;
+  color: #c6c4b5;
+}
+.campaign-tag small {
+  font: 9px Georgia;
+  color: #d1cbb5;
+  margin: 5px 0;
+}
+.sidebar .nav-caption {
+  font: 8px Arial;
+  letter-spacing: 1.3px;
+  margin: 9px 3px;
+  color: #c3b896;
+}
+.sidebar nav button {
+  font: 15px Georgia;
+  padding: 10px 7px;
+  gap: 8px;
+  border-radius: 0;
+  color: #e7e0cd;
+  margin: 0;
+  border-bottom: 1px solid #d8be711c;
+}
+.sidebar nav button.active {
+  border: 1px solid #b69b58;
+  box-shadow: inset 0 0 8px #e9d59333;
+  background: linear-gradient(90deg, #c5a25655, transparent);
+  color: #fff0b9;
+}
+.sidebar nav button svg {
+  width: 15px;
+}
+.sidebar .nav-count {
+  font: 9px Arial;
+  background: #0004;
+}
+.city-nav {
+  margin-top: 24px;
+  border-top: 4px ridge var(--frame);
+  padding-top: 7px;
+}
+.city-nav > button {
+  padding: 5px 2px;
+  gap: 7px;
+  border-bottom: 1px solid #af975550;
+  font: 12px Georgia;
+  color: #d6d2bd;
+}
+.city-nav > button.current {
+  background: #b5984933;
+  color: #ffe4a2;
+}
+.city-thumbnail {
+  width: 44px;
+  height: 38px;
+  flex-shrink: 0;
+  border: 2px ridge #b2a06a;
+  background-image: url('/art/faction-cities.webp');
+  background-size: 300% 200%;
+  background-position: var(--tile-x) var(--tile-y);
+}
+.sidebar-bottom {
+  margin-top: 24px;
+  padding-top: 0;
+}
+.gm-link {
+  font: 11px Georgia;
+  border: 1px solid #af975566;
+  border-radius: 0;
+  padding: 10px 5px;
+}
+.profile {
+  gap: 5px;
+  margin-top: 15px;
+}
+.profile small {
+  color: #cac4aa;
+  font-size: 8px;
+}
+.profile strong {
+  font-size: 10px;
+}
+.profile .avatar {
+  width: 24px;
+  height: 24px;
+  background: #0003;
+  color: var(--realm-metal);
+}
+.main-shell {
+  display: grid;
+  grid-template-columns: minmax(250px, 0.85fr) minmax(400px, 1.4fr);
+  width: auto;
+  margin: 0;
+  min-width: 0;
+}
+.topbar {
+  height: 76px;
+  padding: 9px 12px;
+  background: radial-gradient(ellipse, #f8e8bf, #c7b183);
+  border: 3px ridge var(--frame);
+  color: #2f291e;
+  position: relative;
+}
+.city-title {
+  min-width: 0;
+  text-align: center;
+  flex: 1;
+}
+.city-title h1 {
+  font: 25px Georgia;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0 0 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.city-title > span {
+  font: 11px Georgia;
+}
+.top-actions {
+  gap: 5px;
+}
+.top-actions .season,
+.tiny-shield {
+  display: none;
+}
+.icon-button {
+  padding: 5px;
+  border: 0;
+}

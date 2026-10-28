@@ -1,0 +1,135 @@
+/* city/labels-adviser — voir docs/STYLES.md pour les responsabilités et la cascade. */
+/* Clear ground-anchored labels; hover never changes their position or size. */
+.living-building .building-label,
+.living-building.chosen .building-label,
+.living-building:hover .building-label,
+.living-building:focus-visible .building-label {
+  top: auto;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 6px;
+  border: 1px solid #bfa66e;
+  background: #142532f2;
+  color: #f5e8c9;
+  font: 11px Georgia;
+  white-space: nowrap;
+  box-shadow: 0 2px 5px #0008;
+  border-radius: 3px;
+  pointer-events: none;
+}
+.living-building .building-label:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: -9px;
+  height: 8px;
+  width: 1px;
+  background: #e6cf94;
+}
+.living-building .building-label b,
+.living-building.chosen .building-label b {
+  font: bold 10px Arial;
+  padding: 2px 3px;
+  border: 0;
+  border-left: 1px solid #bfa66e88;
+  background: none;
+  color: #ffe3a0;
+  margin: 0;
+}
+.living-building.chosen .building-label {
+  outline: 2px solid #efd58e;
+  background: #344532;
+}
+.living-building .construction-badge {
+  top: calc(100% + 23px);
+  font-size: 9px;
+}
+.city-guide {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  background: #e6d6ae;
+  border-bottom: 3px ridge var(--frame);
+  color: #3d311e;
+}
+.city-guide strong {
+  font: 17px Georgia;
+}
+.city-guide span {
+  font: 12px/1.5 Georgia;
+}
+.city-details {
+  background: var(--realm-cloth);
+  color: #ead9ae;
+}
+.city-details > summary {
+  cursor: pointer;
+  padding: 14px 16px;
+  font: 13px Georgia;
+  border-top: 3px ridge var(--frame);
+}
+.city-adviser {
+  display: flex;
+  flex-direction: column;
+}
+.city-adviser .building-panel {
+  order: 1;
+  border-bottom: 4px double #9b8150;
+}
+.adviser-standard {
+  order: 0;
+  height: 75px;
+}
+.adviser-standard svg {
+  height: 42px;
+}
+.adviser-construction {
+  order: 2;
+}
+.adviser-garrison {
+  order: 3;
+}
+@media (min-width: 761px) {
+  .view-cities .city-tabs {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .city-guide {
+    display: block;
+    padding: 10px;
+  }
+  .city-guide span {
+    display: block;
+    margin-top: 5px;
+    font-size: 11px;
+  }
+  .living-building .building-label,
+  .living-building.chosen .building-label,
+  .living-building:hover .building-label,
+  .living-building:focus-visible .building-label {
+    gap: 2px;
+    font-size: 9px;
+    padding: 3px;
+    bottom: -14px;
+  }
+  .living-building .building-label b {
+    font-size: 8px;
+    padding: 1px 2px;
+  }
+  .city-adviser .building-panel {
+    display: grid;
+  }
+  .adviser-standard {
+    display: none;
+  }
+  .map-controls > span {
+    font-size: 10px;
+  }
+}

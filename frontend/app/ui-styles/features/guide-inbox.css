@@ -1,0 +1,157 @@
+/* features/guide-inbox — voir docs/STYLES.md pour les responsabilités et la cascade. */
+
+/* First steps and the GM decision queue share the faction parchment. */
+.campaign-guide {
+  margin: 16px 0;
+  border: 1px solid var(--realm-metal, #ae914c);
+  background: #ece0bf;
+  color: #302b20;
+  padding: 14px 18px;
+  border-radius: 4px;
+}
+.campaign-guide summary {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.campaign-guide summary span {
+  font-size: 12px;
+  font-weight: 400;
+}
+.guide-steps {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+.guide-steps article {
+  border-left: 2px solid #ae914c;
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.guide-steps strong {
+  font-size: 14px;
+}
+.guide-steps strong b {
+  margin-right: 8px;
+}
+.guide-steps .done strong {
+  color: #315632;
+}
+.guide-steps p,
+.guide-note {
+  font-size: 12px;
+  line-height: 1.6;
+}
+.guide-steps p {
+  flex: 1;
+  margin: 0;
+}
+.guide-note {
+  margin: 16px 0 0;
+}
+.guide-steps button {
+  white-space: normal;
+  font-size: 12px;
+  align-self: flex-start;
+}
+.gm-inbox {
+  margin-bottom: 20px;
+}
+.inbox-title {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+.inbox-title h2 {
+  margin: 8px 0;
+}
+.inbox-title > span {
+  white-space: nowrap;
+  font-size: 13px;
+}
+.inbox-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+.inbox-filters [aria-pressed='true'] {
+  background: var(--realm-cloth, #182d3b);
+  color: #fff;
+}
+.inbox-row {
+  padding: 18px 0;
+  border-top: 1px solid #b9a77d;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+.inbox-row small {
+  font-size: 11px;
+}
+.inbox-row h3 {
+  margin: 8px 0;
+}
+.inbox-row p {
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.6;
+}
+.inbox-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+.inbox-empty {
+  padding: 20px 0;
+  color: #315632;
+}
+.gm-settings > summary {
+  padding: 6px 0;
+}
+@media (max-width: 1100px) {
+  .guide-steps {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .inbox-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .guide-steps {
+    grid-template-columns: 1fr;
+  }
+  .inbox-actions {
+    width: 100%;
+    flex-shrink: 1;
+  }
+  .inbox-actions button {
+    white-space: normal;
+    flex: 1;
+  }
+  .campaign-guide {
+    padding: 12px;
+  }
+  .inbox-title {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.app-shell .inbox-filters button[aria-pressed='true'] {
+  outline: 2px solid var(--realm-metal);
+  outline-offset: 2px;
+  background: #213e31 !important;
+  color: #fff !important;
+}

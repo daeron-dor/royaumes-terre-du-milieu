@@ -1,0 +1,26 @@
+/* factions/landscapes — voir docs/STYLES.md pour les responsabilités et la cascade. */
+/* Campaign expansion: painted cities, bronze framing and army ledgers. */
+.theme-gondor {
+  --tile-x: 0%;
+  --tile-y: 0%;
+}
+.theme-rohan {
+  --tile-x: 50%;
+  --tile-y: 0%;
+}
+.theme-elven {
+  --tile-x: 100%;
+  --tile-y: 0%;
+}
+.theme-dwarven {
+  --tile-x: 0%;
+  --tile-y: 100%;
+}
+.theme-shadow {
+  --tile-x: 50%;
+  --tile-y: 100%;
+}
+.theme-southern {
+  --tile-x: 100%;
+  --tile-y: 100%;
+}

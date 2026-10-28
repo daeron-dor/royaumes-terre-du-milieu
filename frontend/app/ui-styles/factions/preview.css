@@ -1,0 +1,186 @@
+/* factions/preview — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.styles-link {
+  display: block;
+  padding: 12px 5px;
+  margin-top: 12px;
+  font: 11px Georgia;
+  color: #e7d6a7;
+  border: 1px solid #ad965c66;
+}
+.style-preview {
+  --realm-cloth: #182e48;
+  --realm-metal: #e9e8d9;
+  width: min(1180px, 96vw);
+  margin: 24px auto;
+  padding: 0 !important;
+  color: #302819;
+  border: 7px ridge #97845a;
+  background: #dfd1ad;
+  box-shadow: 0 12px 40px #0008;
+}
+.style-preview-heading {
+  padding: 18px 22px;
+  background: linear-gradient(90deg, #0004, transparent), var(--realm-cloth);
+  color: #efe3be;
+}
+.style-preview-heading a {
+  font-size: 12px;
+  text-decoration: underline;
+}
+.style-preview-heading h1 {
+  font: 26px Georgia;
+  color: #efe3be;
+  margin: 12px 0 6px;
+}
+.style-preview-heading p {
+  margin: 0;
+  font-size: 11px;
+}
+.style-choices {
+  display: flex;
+  background: var(--realm-cloth);
+  border-top: 2px ridge #b39b66;
+  border-bottom: 3px ridge #b39b66;
+}
+.style-choices button {
+  flex: 1;
+  padding: 12px;
+  font: 16px Georgia;
+  color: #e6d6aa;
+  border-right: 1px solid #b39b6666;
+}
+.style-choices button[aria-pressed='true'] {
+  background: #cfb47544;
+  color: #ffe5a2;
+  box-shadow: inset 0 -3px #d9bd72;
+}
+.style-settings {
+  padding: 12px 18px;
+  display: flex;
+  gap: 20px;
+  border-bottom: 3px ridge #a18d62;
+}
+.style-settings label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+}
+.style-settings select {
+  background: #f1e8cc;
+  color: #3e321e;
+  padding: 6px;
+  border: 1px solid #a18d62;
+  max-width: 100%;
+}
+.style-city-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 230px;
+}
+.style-city-layout > section {
+  min-width: 0;
+}
+.style-city-name {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  padding: 12px 16px;
+  background: var(--realm-cloth);
+  color: var(--realm-metal);
+}
+.style-city-name > svg {
+  width: 35px;
+  height: 42px;
+}
+.style-city-name h2 {
+  font: 23px Georgia;
+  color: var(--realm-metal);
+  margin: 0 0 5px;
+}
+.style-city-name p {
+  font-size: 11px;
+  margin: 0;
+  color: #ded5b6;
+}
+.style-city-layout > aside {
+  padding: 0 14px 18px;
+  border-left: 4px ridge #a18d62;
+  background: linear-gradient(#f1e3bb, #d9c69c);
+}
+.style-city-layout > aside > .adviser-standard {
+  margin: 0 -14px 12px;
+}
+.style-city-layout > aside > .architecture-sprite {
+  width: 180px;
+  margin: auto;
+}
+.style-city-layout > aside h2 {
+  font: 22px Georgia;
+  color: #40311d;
+  margin: 10px 0;
+}
+.style-city-layout > aside h3 {
+  font: 17px Georgia;
+  color: #40311d;
+  margin-top: 24px;
+}
+.style-city-layout > aside p {
+  font: 12px/1.7 Georgia;
+  color: #5d4a2c;
+}
+.style-city-layout > aside .style-preview-note {
+  font-size: 10px;
+  border-top: 1px solid #a18d6266;
+  padding-top: 14px;
+}
+.style-preview .scene-stage {
+  min-width: 0 !important;
+  min-height: 0;
+  aspect-ratio: 1;
+}
+.style-preview .map-controls {
+  position: static;
+  justify-content: flex-end;
+}
+.style-preview .map-controls > span {
+  margin-right: auto;
+}
+.style-preview .scene-scroll {
+  overflow: hidden;
+}
+.style-preview .game-city {
+  border: 0;
+}
+@media (max-width: 700px) {
+  .style-preview {
+    width: 100%;
+    margin: 0;
+    border-width: 3px;
+  }
+  .style-city-layout {
+    grid-template-columns: 1fr;
+  }
+  .style-city-layout > aside {
+    border-left: 0;
+    border-top: 4px ridge #a18d62;
+  }
+  .style-settings {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .style-choices button {
+    font-size: 12px;
+  }
+  .style-preview-heading h1 {
+    font-size: 22px;
+  }
+  .style-city-layout > aside > .architecture-sprite {
+    width: 150px;
+  }
+  .style-city-layout > aside > .adviser-standard {
+    display: none;
+  }
+}
+.style-city-layout > aside > .architecture-sprite {
+  margin: 48px auto 0;
+}

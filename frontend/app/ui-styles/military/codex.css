@@ -1,0 +1,83 @@
+/* military/codex — voir docs/STYLES.md pour les responsabilités et la cascade. */
+.codex-layout {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 18px;
+}
+.faction-list {
+  background: #1d2d36;
+  border: 1px solid #726044;
+  align-self: start;
+  padding: 6px;
+}
+.faction-list button {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid #64705c44;
+  padding: 12px 7px;
+  color: #bfbda8;
+  font: 16px Georgia;
+}
+.faction-list button.on {
+  background: #a38a5340;
+  color: #ead49a;
+}
+.faction-list small {
+  display: block;
+  font: 9px Arial;
+  margin-top: 5px;
+  color: #8f9d95;
+}
+.faction-medallion {
+  width: 30px;
+  height: 36px;
+  background: #344850;
+  display: grid;
+  place-items: center;
+  border: 1px solid #ad9563;
+  flex-shrink: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 0 80%);
+}
+.faction-landscape {
+  height: 340px;
+  position: relative;
+  background-image: url('/art/faction-cities.webp');
+  background-size: 300% 200%;
+  background-position: var(--tile-x) var(--tile-y);
+  border: 3px double #9a824e;
+}
+.faction-landscape > div {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 40px 25px 18px;
+  background: linear-gradient(transparent, #101c23f0);
+  color: #e6d3a2;
+}
+.faction-landscape h2 {
+  font-size: 36px;
+  margin: 6px 0;
+}
+.faction-landscape p {
+  margin: 0;
+  font: italic 15px Georgia;
+}
+.faction-landscape span {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.codex-units {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.source-links a {
+  font-size: 11px;
+  text-decoration: underline;
+}

@@ -1,0 +1,5188 @@
+{
+  "factions": {
+    "kingsmen": {
+      "name": "Hommes du Roi",
+      "people": "Hommes númenóréens",
+      "theme": "gondor",
+      "color": "#9a7149",
+      "windows": [
+        [
+          2,
+          2251,
+          3318
+        ]
+      ],
+      "cities": [
+        "Cour d’Armenelos",
+        "Quartier royal",
+        "Domaine des partisans"
+      ],
+      "motto": "La puissance des rois",
+      "note": "Parti politique de Númenor, pas un royaume distinct. Jouable séparément pour les conflits internes ; les domaines sont des abstractions et ne constituent pas des possessions exclusives face à Númenor."
+    },
+    "andunie": {
+      "name": "Fidèles d’Andúnië",
+      "people": "Hommes númenóréens",
+      "theme": "gondor",
+      "color": "#608d9d",
+      "windows": [
+        [
+          2,
+          2251,
+          3318
+        ]
+      ],
+      "cities": [
+        "Maison des Fidèles",
+        "Refuge de l’Ouest",
+        "Quartier des Elfes-amis"
+      ],
+      "motto": "Garder l’amitié de l’Ouest",
+      "note": "Parti des Fidèles conduit par les seigneurs d’Andúnië. Les domaines abstraits suivent la communauté, y compris ses déplacements ; Pelargir reste une implantation distincte de campagne."
+    },
+    "blacknumenor": {
+      "name": "Númenóréens noirs",
+      "people": "Hommes númenóréens",
+      "theme": "southern",
+      "color": "#785861",
+      "windows": [
+        [
+          2,
+          3262,
+          3441
+        ]
+      ],
+      "cities": [
+        "Forteresse du littoral sud",
+        "Domaine de Herumor",
+        "Domaine de Fuinur"
+      ],
+      "motto": "Les seigneurs du Sud",
+      "note": "Coalition de campagne des seigneurs númenóréens liés à Sauron. 3262–3441 est une fenêtre de scénario : les dates précises des domaines de Herumor et Fuinur ne sont pas connues. Districts abstraits, séparés d’Umbar pour le jeu."
+    },
+    "edhellond": {
+      "name": "Edhellond",
+      "people": "Elfes sindar & sylvains",
+      "theme": "elven",
+      "color": "#72a4a0",
+      "windows": [
+        [
+          2,
+          1,
+          3441
+        ],
+        [
+          3,
+          1,
+          1980
+        ]
+      ],
+      "cities": [
+        "Havre d’Edhellond",
+        "Rives du Morthond",
+        "Quartier des navigateurs"
+      ],
+      "motto": "Les voiles du havre elfique",
+      "note": "Communauté portuaire, pas royaume. Les récits divergent sur sa fondation à la fin du Premier ou au début du Deuxième Âge ; disponibilité dès l’an 1 par convention de campagne."
+    },
+    "bluedwarves": {
+      "name": "Nains des Montagnes Bleues",
+      "people": "Nains",
+      "theme": "dwarven",
+      "color": "#7e8992",
+      "windows": [
+        [
+          2,
+          1,
+          3441
+        ],
+        [
+          3,
+          1,
+          3021
+        ]
+      ],
+      "cities": [
+        "Salles des Ered Luin",
+        "Mines orientales",
+        "Forges des survivants"
+      ],
+      "motto": "Les forges demeurent",
+      "note": "Communautés restées dans les Ered Luin après la ruine de Nogrod et Belegost. Beaucoup migrent vers Khazad-dûm vers 40 D.A. ; domaines génériques, sans capitale inventée."
+    },
+    "gwathuirim": {
+      "name": "Gwathuirim",
+      "people": "Hommes des forêts",
+      "theme": "rohan",
+      "color": "#738251",
+      "windows": [
+        [
+          2,
+          1,
+          3441
+        ]
+      ],
+      "cities": [
+        "Camp du Minhiriath",
+        "Refuge de l’Enedwaith",
+        "Rives du Gwathló"
+      ],
+      "motto": "Défendre les terres boisées",
+      "note": "Coalition de peuples forestiers confrontés à l’expansion númenóréenne, sans État unifié. Les domaines et la disponibilité sur tout l’Âge sont des conventions ; leur occupation évolue avec les défrichements."
+    },
+    "hithlum": {
+      "name": "Hithlum",
+      "people": "Elfes noldor",
+      "theme": "elven",
+      "color": "#698798",
+      "windows": [
+        [
+          1,
+          5,
+          471
+        ]
+      ],
+      "cities": [
+        "Eithel Sirion",
+        "Mithrim",
+        "Cols des Ered Wethrin"
+      ],
+      "motto": "Sous les bannières de Fingolfin",
+      "note": "Domaine elfique avant la Nirnaeth Arnoediad ; les domaines secondaires sont des régions de campagne."
+    },
+    "maedhros": {
+      "name": "Marche de Maedhros",
+      "people": "Elfes noldor",
+      "theme": "elven",
+      "color": "#a36153",
+      "windows": [
+        [
+          1,
+          7,
+          471
+        ]
+      ],
+      "cities": [
+        "Himring",
+        "Trouée de Maglor",
+        "Marches orientales"
+      ],
+      "motto": "La colline toujours froide",
+      "note": "Coalition des domaines orientaux des fils de Fëanor, avant leur chute."
+    },
+    "falas": {
+      "name": "Falas",
+      "people": "Elfes sindar",
+      "theme": "elven",
+      "color": "#63989a",
+      "windows": [
+        [
+          1,
+          1,
+          472
+        ]
+      ],
+      "cities": [
+        "Brithombar",
+        "Eglarest",
+        "Côte du Falas"
+      ],
+      "motto": "Les havres de Círdan",
+      "note": "Les havres sont détruits en 473 P.A. ; la côte représente un district."
+    },
+    "ossiriand": {
+      "name": "Ossiriand",
+      "people": "Elfes verts",
+      "theme": "elven",
+      "color": "#648b43",
+      "windows": [
+        [
+          1,
+          135,
+          587
+        ]
+      ],
+      "cities": [
+        "Forêts de l’Ossiriand",
+        "Rives du Gelion",
+        "Vallée de l’Ascar"
+      ],
+      "motto": "Le pays des Sept Rivières",
+      "note": "Peuple forestier jouable, sans royaume centralisé ; domaines régionaux et borne finale de scénario."
+    },
+    "imladris": {
+      "name": "Imladris",
+      "people": "Elfes",
+      "theme": "elven",
+      "color": "#819bac",
+      "windows": [
+        [
+          2,
+          1697,
+          3441
+        ],
+        [
+          3,
+          1,
+          3021
+        ]
+      ],
+      "cities": [
+        "Maison d’Elrond",
+        "Vallée d’Imladris",
+        "Gué du Bruinen"
+      ],
+      "motto": "Le dernier refuge",
+      "note": "Refuge fondé en 1697 D.A., traité comme faction de campagne plutôt que comme royaume."
+    },
+    "pelargir": {
+      "name": "Fidèles de Pelargir",
+      "people": "Hommes númenóréens",
+      "theme": "gondor",
+      "color": "#4f8c9a",
+      "windows": [
+        [
+          2,
+          2350,
+          3319
+        ]
+      ],
+      "cities": [
+        "Pelargir",
+        "Quais de l’Anduin",
+        "Domaine des Fidèles"
+      ],
+      "motto": "Fidèles à l’Ouest",
+      "note": "Établissement des Fidèles avant la fondation du Gondor ; districts secondaires de jeu."
+    },
+    "vinyalonde": {
+      "name": "Vinyalondë",
+      "people": "Hommes númenóréens",
+      "theme": "southern",
+      "color": "#aa9869",
+      "windows": [
+        [
+          2,
+          800,
+          1700
+        ]
+      ],
+      "cities": [
+        "Vinyalondë",
+        "Estuaire du Gwathló",
+        "Chantiers du Havre"
+      ],
+      "motto": "Les navigateurs de l’Ouest",
+      "note": "Comptoir númenóréen, pas royaume indépendant. Fondation située entre 750 et 800 ; fenêtre 800–1700 choisie pour la campagne."
+    },
+    "cardolan": {
+      "name": "Cardolan",
+      "people": "Hommes dúnedain",
+      "theme": "gondor",
+      "color": "#936d66",
+      "windows": [
+        [
+          3,
+          861,
+          1409
+        ]
+      ],
+      "cities": [
+        "Tyrn Gorthad",
+        "Domaine du Minhiriath",
+        "Marches du Cardolan"
+      ],
+      "motto": "Les collines rouges",
+      "note": "Royaume issu de la division de l’Arnor. La faction représente le royaume avant sa dévastation ; des survivants subsistent ensuite."
+    },
+    "rhudaur": {
+      "name": "Rhudaur",
+      "people": "Hommes",
+      "theme": "rohan",
+      "color": "#8b8268",
+      "windows": [
+        [
+          3,
+          861,
+          1408
+        ]
+      ],
+      "cities": [
+        "Collines du Rhudaur",
+        "Rives du Mitheithel",
+        "Forêts orientales"
+      ],
+      "motto": "Les terres des collines",
+      "note": "Domaines régionaux de campagne ; dirigeants et allégeance changent avant la domination d’Angmar."
+    },
+    "ironhills": {
+      "name": "Monts du Fer",
+      "people": "Nains",
+      "theme": "dwarven",
+      "color": "#8c7970",
+      "windows": [
+        [
+          3,
+          2590,
+          3021
+        ],
+        [
+          4,
+          1,
+          1000
+        ]
+      ],
+      "cities": [
+        "Salles des Monts du Fer",
+        "Mines orientales",
+        "Forges du domaine"
+      ],
+      "motto": "Le fer et la fidélité",
+      "note": "Seigneurie de Grór à partir de 2590 T.A. ; districts secondaires de jeu, borne du Quatrième Âge conventionnelle."
+    },
+    "dunland": {
+      "name": "Pays de Dun",
+      "people": "Hommes dunlendings",
+      "theme": "rohan",
+      "color": "#89684c",
+      "windows": [
+        [
+          3,
+          2510,
+          3021
+        ]
+      ],
+      "cities": [
+        "Hautes terres du Pays de Dun",
+        "Camp des clans",
+        "Marches de l’Isen"
+      ],
+      "motto": "Les clans des hautes terres",
+      "note": "Coalition de clans ; 2510 est une borne de scénario liée à la fondation du Rohan, pas l’apparition du peuple."
+    },
+    "beornings": {
+      "name": "Beornides",
+      "people": "Hommes",
+      "theme": "rohan",
+      "color": "#887449",
+      "windows": [
+        [
+          3,
+          2941,
+          3021
+        ]
+      ],
+      "cities": [
+        "Domaine de Beorn",
+        "Carrock",
+        "Gués de l’Anduin"
+      ],
+      "motto": "Gardiens des passages",
+      "note": "Peuple de la vallée de l’Anduin ; les domaines représentent des régions, pas trois villes."
+    },
+    "gondolin": {
+      "name": "Gondolin",
+      "people": "Elfes noldor",
+      "theme": "elven",
+      "color": "#9ab4b5",
+      "windows": [
+        [
+          1,
+          116,
+          509
+        ]
+      ],
+      "cities": [
+        "Gondolin",
+        "Porte du Roi",
+        "Quartier de la Fontaine"
+      ],
+      "motto": "La cité cachée",
+      "note": "Les villes secondaires représentent des districts de campagne. Chute en 510 P.A."
+    },
+    "nargothrond": {
+      "name": "Nargothrond",
+      "people": "Elfes noldor",
+      "theme": "elven",
+      "color": "#9aa67b",
+      "windows": [
+        [
+          1,
+          102,
+          494
+        ]
+      ],
+      "cities": [
+        "Nargothrond",
+        "Rives du Narog",
+        "Avant-poste de Taur-en-Faroth"
+      ],
+      "motto": "Les salles du Narog",
+      "note": ""
+    },
+    "doriath": {
+      "name": "Doriath",
+      "people": "Elfes sindar",
+      "theme": "elven",
+      "color": "#64886d",
+      "windows": [
+        [
+          1,
+          1,
+          505
+        ]
+      ],
+      "cities": [
+        "Menegroth",
+        "Neldoreth",
+        "Région"
+      ],
+      "motto": "Sous la Ceinture de Melian",
+      "note": "Chronologie simplifiée : royaumes du Beleriand avant leurs chutes."
+    },
+    "edain": {
+      "name": "Maisons des Edain",
+      "people": "Hommes",
+      "theme": "rohan",
+      "color": "#a18b5b",
+      "windows": [
+        [
+          1,
+          310,
+          587
+        ]
+      ],
+      "cities": [
+        "Dor-lómin",
+        "Brethil",
+        "Ladros"
+      ],
+      "motto": "Les amis des Elfes",
+      "note": "Coalition de campagne des trois Maisons ; ne représente pas un royaume unifié."
+    },
+    "belegost": {
+      "name": "Belegost & Nogrod",
+      "people": "Nains",
+      "theme": "dwarven",
+      "color": "#a47a4b",
+      "windows": [
+        [
+          1,
+          1,
+          587
+        ]
+      ],
+      "cities": [
+        "Belegost",
+        "Nogrod",
+        "Cols de l’Ered Luin"
+      ],
+      "motto": "Les forges des Montagnes Bleues",
+      "note": "Coalition de campagne des deux cités naines."
+    },
+    "angband": {
+      "name": "Angband",
+      "people": "Orques & créatures",
+      "theme": "shadow",
+      "color": "#9f4a35",
+      "windows": [
+        [
+          1,
+          1,
+          587
+        ]
+      ],
+      "cities": [
+        "Angband",
+        "Thangorodrim",
+        "Avant-poste du Nord"
+      ],
+      "motto": "Les armées de Morgoth",
+      "note": ""
+    },
+    "numenor": {
+      "name": "Númenor",
+      "people": "Hommes númenóréens",
+      "theme": "gondor",
+      "color": "#447b9c",
+      "windows": [
+        [
+          2,
+          32,
+          3318
+        ]
+      ],
+      "cities": [
+        "Armenelos",
+        "Rómenna",
+        "Andúnië"
+      ],
+      "motto": "Les rois de la Mer",
+      "note": "Disparaît lors de la Submersion en 3319 D.A."
+    },
+    "lindon": {
+      "name": "Lindon",
+      "people": "Elfes",
+      "theme": "elven",
+      "color": "#7c9eaa",
+      "windows": [
+        [
+          2,
+          1,
+          3441
+        ],
+        [
+          3,
+          1,
+          3021
+        ],
+        [
+          4,
+          1,
+          120
+        ]
+      ],
+      "cities": [
+        "Mithlond",
+        "Harlond",
+        "Forlond"
+      ],
+      "motto": "Les Havres de l’Ouest",
+      "note": "Au Quatrième Âge, présence elfique déclinante ; borne de campagne conventionnelle."
+    },
+    "eregion": {
+      "name": "Eregion",
+      "people": "Elfes noldor",
+      "theme": "elven",
+      "color": "#a0ab9c",
+      "windows": [
+        [
+          2,
+          750,
+          1696
+        ]
+      ],
+      "cities": [
+        "Ost-in-Edhil",
+        "Gwaith-i-Mírdain",
+        "Rives du Glanduin"
+      ],
+      "motto": "Les maîtres des forges",
+      "note": ""
+    },
+    "khazad": {
+      "name": "Khazad-dûm",
+      "people": "Nains",
+      "theme": "dwarven",
+      "color": "#a68b5d",
+      "windows": [
+        [
+          1,
+          1,
+          590
+        ],
+        [
+          2,
+          1,
+          3441
+        ],
+        [
+          3,
+          1,
+          1979
+        ]
+      ],
+      "cities": [
+        "Khazad-dûm",
+        "Porte de l’Ouest",
+        "Grande Salle"
+      ],
+      "motto": "Sous les montagnes",
+      "note": "Les deux villes secondaires sont des districts. Évacuation après le réveil du Balrog en 1980 T.A."
+    },
+    "gondor": {
+      "name": "Gondor",
+      "people": "Hommes",
+      "theme": "gondor",
+      "color": "#547a9b",
+      "windows": [
+        [
+          2,
+          3320,
+          3441
+        ],
+        [
+          3,
+          1,
+          3021
+        ]
+      ],
+      "cities": [
+        "Minas Tirith",
+        "Pelargir",
+        "Osgiliath"
+      ],
+      "motto": "L’Arbre Blanc",
+      "note": "Minas Tirith est nommée Minas Anor avant 2002 T.A."
+    },
+    "arnor": {
+      "name": "Arnor",
+      "people": "Hommes dúnedain",
+      "theme": "gondor",
+      "color": "#587d80",
+      "windows": [
+        [
+          2,
+          3320,
+          3441
+        ],
+        [
+          3,
+          1,
+          860
+        ]
+      ],
+      "cities": [
+        "Annúminas",
+        "Fornost",
+        "Tharbad"
+      ],
+      "motto": "Le royaume du Nord",
+      "note": ""
+    },
+    "arthedain": {
+      "name": "Arthedain",
+      "people": "Hommes dúnedain",
+      "theme": "gondor",
+      "color": "#658692",
+      "windows": [
+        [
+          3,
+          861,
+          1973
+        ]
+      ],
+      "cities": [
+        "Fornost",
+        "Annúminas",
+        "Amon Sûl"
+      ],
+      "motto": "Les derniers rois du Nord",
+      "note": "Districts de départ abstraits ; frontières changeantes au cours des guerres."
+    },
+    "angmar": {
+      "name": "Angmar",
+      "people": "Hommes & Orques",
+      "theme": "shadow",
+      "color": "#777785",
+      "windows": [
+        [
+          3,
+          1300,
+          1974
+        ]
+      ],
+      "cities": [
+        "Carn Dûm",
+        "Fort du Nord",
+        "Cols d’Angmar"
+      ],
+      "motto": "Le Royaume du Roi-Sorcier",
+      "note": ""
+    },
+    "rohan": {
+      "name": "Rohan",
+      "people": "Hommes rohirrim",
+      "theme": "rohan",
+      "color": "#718347",
+      "windows": [
+        [
+          3,
+          2510,
+          3021
+        ],
+        [
+          4,
+          1,
+          1000
+        ]
+      ],
+      "cities": [
+        "Edoras",
+        "Fort-le-Cor",
+        "Aldburg"
+      ],
+      "motto": "Les Seigneurs des Chevaux",
+      "note": ""
+    },
+    "elves": {
+      "name": "Lothlórien",
+      "people": "Elfes sylvains",
+      "theme": "elven",
+      "color": "#aa9957",
+      "windows": [
+        [
+          2,
+          1,
+          3441
+        ],
+        [
+          3,
+          1,
+          3021
+        ]
+      ],
+      "cities": [
+        "Caras Galadhon",
+        "Cerin Amroth",
+        "Nimrodel"
+      ],
+      "motto": "Sous les feuilles d’or",
+      "note": "Les noms de districts sont représentatifs du royaume, pas une reconstruction de chaque date."
+    },
+    "woodland": {
+      "name": "Royaume sylvestre",
+      "people": "Elfes sylvains",
+      "theme": "elven",
+      "color": "#5e8052",
+      "windows": [
+        [
+          2,
+          750,
+          3441
+        ],
+        [
+          3,
+          1,
+          3021
+        ],
+        [
+          4,
+          1,
+          120
+        ]
+      ],
+      "cities": [
+        "Palais du Roi",
+        "Lisière de la Forêt",
+        "Rives de la Forêt"
+      ],
+      "motto": "Sous la voûte des arbres",
+      "note": ""
+    },
+    "dwarves": {
+      "name": "Erebor",
+      "people": "Nains",
+      "theme": "dwarven",
+      "color": "#9c754d",
+      "windows": [
+        [
+          3,
+          1999,
+          2209
+        ],
+        [
+          3,
+          2590,
+          2769
+        ],
+        [
+          3,
+          2941,
+          3021
+        ],
+        [
+          4,
+          1,
+          1000
+        ]
+      ],
+      "cities": [
+        "Erebor",
+        "Grandes Forges",
+        "Porte du Royaume"
+      ],
+      "motto": "Le Royaume sous la Montagne",
+      "note": ""
+    },
+    "dale": {
+      "name": "Dale",
+      "people": "Hommes du Nord",
+      "theme": "rohan",
+      "color": "#94784b",
+      "windows": [
+        [
+          3,
+          2590,
+          2769
+        ],
+        [
+          3,
+          2941,
+          3021
+        ],
+        [
+          4,
+          1,
+          1000
+        ]
+      ],
+      "cities": [
+        "Dale",
+        "Marché du Nord",
+        "Rives de la Rivière"
+      ],
+      "motto": "Les héritiers de Bard",
+      "note": "2590 est un début de scénario conventionnel, la fondation précise de Dale est inconnue."
+    },
+    "mordor": {
+      "name": "Mordor",
+      "people": "Orques",
+      "theme": "shadow",
+      "color": "#9d4938",
+      "windows": [
+        [
+          2,
+          1000,
+          3441
+        ],
+        [
+          3,
+          1,
+          3019
+        ]
+      ],
+      "cities": [
+        "Barad-dûr",
+        "Nurn",
+        "Morannon"
+      ],
+      "motto": "L’Œil sans paupière",
+      "note": "La puissance et l’occupation du pays varient selon la date ; la campagne simplifie ces phases."
+    },
+    "isengard": {
+      "name": "Isengard de Saroumane",
+      "people": "Uruk-hai & Hommes",
+      "theme": "shadow",
+      "color": "#9a987f",
+      "windows": [
+        [
+          3,
+          2953,
+          3019
+        ]
+      ],
+      "cities": [
+        "Orthanc",
+        "Forges d’Isengard",
+        "Camp du Nan Curunír"
+      ],
+      "motto": "La Main Blanche",
+      "note": "Les Uruk-hai de l’Isengard sont limités aux dernières années avant la Guerre de l’Anneau."
+    },
+    "harad": {
+      "name": "Harad",
+      "people": "Hommes haradrim",
+      "theme": "southern",
+      "color": "#ad6c45",
+      "windows": [
+        [
+          2,
+          1,
+          3441
+        ],
+        [
+          3,
+          1,
+          3021
+        ],
+        [
+          4,
+          1,
+          1000
+        ]
+      ],
+      "cities": [
+        "Cité du Harad",
+        "Oasis du Sud",
+        "Camp des caravanes"
+      ],
+      "motto": "Sous les bannières écarlates",
+      "note": "Coalition régionale ; les noms génériques évitent d’inventer des cités canoniques."
+    },
+    "rhun": {
+      "name": "Rhûn",
+      "people": "Hommes orientaux",
+      "theme": "southern",
+      "color": "#9c8b4f",
+      "windows": [
+        [
+          2,
+          1,
+          3441
+        ],
+        [
+          3,
+          1,
+          3021
+        ],
+        [
+          4,
+          1,
+          1000
+        ]
+      ],
+      "cities": [
+        "Rives de la Mer de Rhûn",
+        "Camp de l’Est",
+        "Cité des plaines"
+      ],
+      "motto": "Les peuples de l’Est",
+      "note": "Coalition de campagne ; l’équipement n’est pas imposé comme canonique."
+    },
+    "umbar": {
+      "name": "Umbar",
+      "people": "Hommes",
+      "theme": "southern",
+      "color": "#567f86",
+      "windows": [
+        [
+          2,
+          2280,
+          3441
+        ],
+        [
+          3,
+          1,
+          3021
+        ],
+        [
+          4,
+          1,
+          1000
+        ]
+      ],
+      "cities": [
+        "Umbar",
+        "Grand Port",
+        "Tour du Havre"
+      ],
+      "motto": "Les voiles du Sud",
+      "note": "Son allégeance change selon les époques ; les Corsaires sont limités à la fin du Troisième Âge."
+    },
+    "moria": {
+      "name": "Orques des Monts Brumeux",
+      "people": "Orques & Gobelins",
+      "theme": "shadow",
+      "color": "#6d7764",
+      "windows": [
+        [
+          3,
+          2480,
+          3019
+        ]
+      ],
+      "cities": [
+        "Moria",
+        "Gundabad",
+        "Gobelinville"
+      ],
+      "motto": "Dans les profondeurs",
+      "note": "Coalition de campagne. Le Fléau de Durin est une rencontre indépendante, pas leur soldat."
+    },
+    "reunited": {
+      "name": "Royaume Réunifié",
+      "people": "Hommes dúnedain",
+      "theme": "gondor",
+      "color": "#5f7e9b",
+      "windows": [
+        [
+          4,
+          1,
+          1000
+        ]
+      ],
+      "cities": [
+        "Minas Tirith",
+        "Annúminas",
+        "Fornost"
+      ],
+      "motto": "Le retour du Roi",
+      "note": ""
+    }
+  },
+  "units": [
+    {
+      "id": "royal_arbalest",
+      "name": "Batterie royale",
+      "kind": "Siège",
+      "factions": [
+        "kingsmen"
+      ],
+      "race": "Homme",
+      "attack": 140,
+      "defense": 25,
+      "hp": 260,
+      "range": 12,
+      "speed": 1,
+      "morale": 78,
+      "level": 40,
+      "slots": 8,
+      "cost": {
+        "gold": 1907,
+        "wood": 1144,
+        "stone": 0,
+        "iron": 572,
+        "food": 763
+      },
+      "upkeep": {
+        "gold": 13.35,
+        "food": 22.88
+      },
+      "portrait": 11,
+      "trait": "Batterie coûteuse de longue portée, vulnérable au contact. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "royal_lancers",
+      "name": "Lanciers du sceptre",
+      "kind": "Infanterie",
+      "factions": [
+        "kingsmen"
+      ],
+      "race": "Homme",
+      "attack": 40,
+      "defense": 62,
+      "hp": 120,
+      "range": 2,
+      "speed": 3,
+      "morale": 84,
+      "level": 18,
+      "slots": 1,
+      "cost": {
+        "gold": 159,
+        "wood": 0,
+        "stone": 0,
+        "iron": 49,
+        "food": 64
+      },
+      "upkeep": {
+        "gold": 1.12,
+        "food": 1.91
+      },
+      "portrait": 0,
+      "trait": "Ligne de piques défensive, faible mobilité. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "faithful_archers",
+      "name": "Archers des Elfes-amis",
+      "kind": "Archers",
+      "factions": [
+        "andunie"
+      ],
+      "race": "Homme",
+      "attack": 55,
+      "defense": 28,
+      "hp": 85,
+      "range": 9,
+      "speed": 6,
+      "morale": 90,
+      "level": 14,
+      "slots": 1,
+      "cost": {
+        "gold": 160,
+        "wood": 40,
+        "stone": 0,
+        "iron": 48,
+        "food": 64
+      },
+      "upkeep": {
+        "gold": 1.12,
+        "food": 1.92
+      },
+      "portrait": 1,
+      "trait": "Tir précis ; faible résistance aux charges. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "exile_vanguard",
+      "name": "Avant-garde des Fidèles",
+      "kind": "Élite",
+      "factions": [
+        "andunie"
+      ],
+      "race": "Homme",
+      "attack": 71,
+      "defense": 64,
+      "hp": 155,
+      "range": 1,
+      "speed": 6,
+      "morale": 95,
+      "level": 30,
+      "slots": 3,
+      "cost": {
+        "gold": 605,
+        "wood": 0,
+        "stone": 0,
+        "iron": 303,
+        "food": 242
+      },
+      "upkeep": {
+        "gold": 4.23,
+        "food": 7.25
+      },
+      "portrait": 3,
+      "trait": "Vétérans mobiles, moins blindés que la phalange royale. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "south_lancers",
+      "name": "Cavaliers du littoral",
+      "kind": "Cavalerie",
+      "mount": "Cheval",
+      "cavalryWeight": "Légère",
+      "factions": [
+        "blacknumenor"
+      ],
+      "race": "Homme",
+      "attack": 74,
+      "defense": 39,
+      "hp": 140,
+      "range": 1,
+      "speed": 9,
+      "morale": 75,
+      "level": 16,
+      "slots": 2,
+      "cost": {
+        "gold": 278,
+        "wood": 0,
+        "stone": 0,
+        "iron": 85,
+        "food": 112
+      },
+      "upkeep": {
+        "gold": 1.96,
+        "food": 3.33
+      },
+      "portrait": 3,
+      "trait": "Force de charge rapide, défense limitée. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "tribute_bows",
+      "name": "Archers des comptoirs",
+      "kind": "Archers",
+      "factions": [
+        "blacknumenor"
+      ],
+      "race": "Homme",
+      "attack": 49,
+      "defense": 22,
+      "hp": 80,
+      "range": 8,
+      "speed": 5,
+      "morale": 62,
+      "level": 14,
+      "slots": 1,
+      "cost": {
+        "gold": 130,
+        "wood": 34,
+        "stone": 0,
+        "iron": 40,
+        "food": 52
+      },
+      "upkeep": {
+        "gold": 0.92,
+        "food": 1.56
+      },
+      "portrait": 1,
+      "trait": "Troupes de soutien moins coûteuses que les gardes. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "harbor_bows",
+      "name": "Archers du Morthond",
+      "kind": "Archers",
+      "factions": [
+        "edhellond"
+      ],
+      "race": "Elfe",
+      "attack": 65,
+      "defense": 29,
+      "hp": 90,
+      "range": 10,
+      "speed": 6,
+      "morale": 86,
+      "level": 22,
+      "slots": 1,
+      "cost": {
+        "gold": 318,
+        "wood": 81,
+        "stone": 0,
+        "iron": 96,
+        "food": 128
+      },
+      "upkeep": {
+        "gold": 2.22,
+        "food": 3.81
+      },
+      "portrait": 4,
+      "trait": "Surveillance à longue portée ; besoin d’une ligne protectrice. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "haven_elite",
+      "name": "Veilleurs du dernier quai",
+      "kind": "Élite",
+      "factions": [
+        "edhellond"
+      ],
+      "race": "Elfe",
+      "attack": 62,
+      "defense": 77,
+      "hp": 145,
+      "range": 1,
+      "speed": 5,
+      "morale": 94,
+      "level": 30,
+      "slots": 3,
+      "cost": {
+        "gold": 586,
+        "wood": 0,
+        "stone": 0,
+        "iron": 295,
+        "food": 235
+      },
+      "upkeep": {
+        "gold": 4.12,
+        "food": 7.03
+      },
+      "portrait": 4,
+      "trait": "Garde défensive du havre, coûteuse à remplacer. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "blue_crossbows",
+      "name": "Arbalétriers des forges",
+      "kind": "Archers",
+      "factions": [
+        "bluedwarves"
+      ],
+      "race": "Nain",
+      "attack": 68,
+      "defense": 43,
+      "hp": 115,
+      "range": 7,
+      "speed": 3,
+      "morale": 84,
+      "level": 22,
+      "slots": 1,
+      "cost": {
+        "gold": 304,
+        "wood": 78,
+        "stone": 0,
+        "iron": 93,
+        "food": 122
+      },
+      "upkeep": {
+        "gold": 2.14,
+        "food": 3.64
+      },
+      "portrait": 5,
+      "trait": "Adaptation de campagne : tirs puissants, mobilité réduite. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "blue_siege",
+      "name": "Baliste des Ered Luin",
+      "kind": "Siège",
+      "factions": [
+        "bluedwarves"
+      ],
+      "race": "Nain",
+      "attack": 130,
+      "defense": 40,
+      "hp": 300,
+      "range": 11,
+      "speed": 1,
+      "morale": 88,
+      "level": 40,
+      "slots": 8,
+      "cost": {
+        "gold": 1761,
+        "wood": 1056,
+        "stone": 0,
+        "iron": 528,
+        "food": 704
+      },
+      "upkeep": {
+        "gold": 12.32,
+        "food": 21.12
+      },
+      "portrait": 11,
+      "trait": "Machine résistante mais lente ; forte consommation de bois. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "forest_javelins",
+      "name": "Javeliniers des sous-bois",
+      "kind": "Archers",
+      "factions": [
+        "gwathuirim"
+      ],
+      "race": "Homme",
+      "attack": 49,
+      "defense": 19,
+      "hp": 70,
+      "range": 4,
+      "speed": 9,
+      "morale": 65,
+      "level": 14,
+      "slots": 1,
+      "cost": {
+        "gold": 100,
+        "wood": 26,
+        "stone": 0,
+        "iron": 30,
+        "food": 40
+      },
+      "upkeep": {
+        "gold": 0.7,
+        "food": 1.2
+      },
+      "portrait": 1,
+      "trait": "Harceleurs rapides de courte portée, fragiles en mêlée. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "forest_wardens",
+      "name": "Défenseurs des refuges",
+      "kind": "Élite",
+      "factions": [
+        "gwathuirim"
+      ],
+      "race": "Homme",
+      "attack": 55,
+      "defense": 51,
+      "hp": 125,
+      "range": 1,
+      "speed": 7,
+      "morale": 82,
+      "level": 24,
+      "slots": 3,
+      "cost": {
+        "gold": 296,
+        "wood": 0,
+        "stone": 0,
+        "iron": 150,
+        "food": 119
+      },
+      "upkeep": {
+        "gold": 2.08,
+        "food": 3.55
+      },
+      "portrait": 0,
+      "trait": "Infanterie légère endurante, armure modeste. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "west_spears",
+      "name": "Lances de l’Ouest",
+      "kind": "Infanterie",
+      "factions": [
+        "numenor"
+      ],
+      "race": "Homme",
+      "attack": 50,
+      "defense": 60,
+      "hp": 125,
+      "range": 2,
+      "speed": 4,
+      "morale": 85,
+      "level": 18,
+      "slots": 1,
+      "cost": {
+        "gold": 184,
+        "wood": 0,
+        "stone": 0,
+        "iron": 57,
+        "food": 74
+      },
+      "upkeep": {
+        "gold": 1.3,
+        "food": 2.2
+      },
+      "portrait": 0,
+      "trait": "Formation polyvalente, plus chère que les levées ordinaires. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "west_engine",
+      "name": "Baliste des navigateurs",
+      "kind": "Siège",
+      "factions": [
+        "numenor"
+      ],
+      "race": "Homme",
+      "attack": 150,
+      "defense": 28,
+      "hp": 260,
+      "range": 13,
+      "speed": 1,
+      "morale": 85,
+      "level": 40,
+      "slots": 8,
+      "cost": {
+        "gold": 2005,
+        "wood": 1203,
+        "stone": 0,
+        "iron": 602,
+        "food": 802
+      },
+      "upkeep": {
+        "gold": 14.03,
+        "food": 24.05
+      },
+      "portrait": 11,
+      "trait": "Très longue portée, lente et gourmande en matériaux. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "anduin_pikes",
+      "name": "Piquiers de l’Anduin",
+      "kind": "Infanterie",
+      "factions": [
+        "pelargir"
+      ],
+      "race": "Homme",
+      "attack": 39,
+      "defense": 62,
+      "hp": 110,
+      "range": 2,
+      "speed": 4,
+      "morale": 78,
+      "level": 18,
+      "slots": 1,
+      "cost": {
+        "gold": 147,
+        "wood": 0,
+        "stone": 0,
+        "iron": 44,
+        "food": 59
+      },
+      "upkeep": {
+        "gold": 1.03,
+        "food": 1.76
+      },
+      "portrait": 0,
+      "trait": "Ligne défensive des quais ; puissance offensive modérée. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "port_bows",
+      "name": "Archers des quais",
+      "kind": "Archers",
+      "factions": [
+        "pelargir"
+      ],
+      "race": "Homme",
+      "attack": 57,
+      "defense": 30,
+      "hp": 90,
+      "range": 8,
+      "speed": 6,
+      "morale": 79,
+      "level": 22,
+      "slots": 1,
+      "cost": {
+        "gold": 246,
+        "wood": 64,
+        "stone": 0,
+        "iron": 76,
+        "food": 99
+      },
+      "upkeep": {
+        "gold": 1.7,
+        "food": 2.95
+      },
+      "portrait": 1,
+      "trait": "Tireurs polyvalents pour protéger les domaines du port. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "timber_axemen",
+      "name": "Haches des chantiers",
+      "kind": "Infanterie",
+      "factions": [
+        "vinyalonde"
+      ],
+      "race": "Homme",
+      "attack": 56,
+      "defense": 26,
+      "hp": 100,
+      "range": 1,
+      "speed": 5,
+      "morale": 66,
+      "level": 16,
+      "slots": 1,
+      "cost": {
+        "gold": 112,
+        "wood": 0,
+        "stone": 0,
+        "iron": 34,
+        "food": 45
+      },
+      "upkeep": {
+        "gold": 0.78,
+        "food": 1.33
+      },
+      "portrait": 0,
+      "trait": "Attaque élevée pour le prix, protection limitée. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "dock_ballista",
+      "name": "Baliste de chantier",
+      "kind": "Siège",
+      "factions": [
+        "vinyalonde"
+      ],
+      "race": "Homme",
+      "attack": 105,
+      "defense": 18,
+      "hp": 210,
+      "range": 10,
+      "speed": 1,
+      "morale": 68,
+      "level": 40,
+      "slots": 8,
+      "cost": {
+        "gold": 1369,
+        "wood": 822,
+        "stone": 0,
+        "iron": 411,
+        "food": 548
+      },
+      "upkeep": {
+        "gold": 9.58,
+        "food": 16.43
+      },
+      "portrait": 11,
+      "trait": "Engin accessible plus tôt, moins puissant qu’une batterie lourde. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "highking_lances",
+      "name": "Lances du Lindon",
+      "kind": "Infanterie",
+      "factions": [
+        "lindon"
+      ],
+      "race": "Elfe",
+      "attack": 60,
+      "defense": 71,
+      "hp": 130,
+      "range": 2,
+      "speed": 5,
+      "morale": 92,
+      "level": 18,
+      "slots": 1,
+      "cost": {
+        "gold": 269,
+        "wood": 0,
+        "stone": 0,
+        "iron": 81,
+        "food": 108
+      },
+      "upkeep": {
+        "gold": 1.88,
+        "food": 3.23
+      },
+      "portrait": 4,
+      "trait": "Formation solide de vétérans, mobilité modérée. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "haven_riders",
+      "name": "Cavaliers des Havres",
+      "kind": "Cavalerie",
+      "mount": "Cheval",
+      "cavalryWeight": "Lourde",
+      "factions": [
+        "lindon"
+      ],
+      "race": "Elfe",
+      "attack": 72,
+      "defense": 52,
+      "hp": 145,
+      "range": 1,
+      "speed": 10,
+      "morale": 91,
+      "level": 32,
+      "slots": 2,
+      "cost": {
+        "gold": 680,
+        "wood": 0,
+        "stone": 0,
+        "iron": 204,
+        "food": 272
+      },
+      "upkeep": {
+        "gold": 4.76,
+        "food": 8.16
+      },
+      "portrait": 4,
+      "trait": "Réserve rapide et coûteuse pour soutenir les lignes. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "forge_guard",
+      "name": "Gardes des forges",
+      "kind": "Élite",
+      "factions": [
+        "eregion"
+      ],
+      "race": "Elfe",
+      "attack": 70,
+      "defense": 72,
+      "hp": 150,
+      "range": 1,
+      "speed": 4,
+      "morale": 90,
+      "level": 24,
+      "slots": 3,
+      "cost": {
+        "gold": 452,
+        "wood": 0,
+        "stone": 0,
+        "iron": 228,
+        "food": 181
+      },
+      "upkeep": {
+        "gold": 3.17,
+        "food": 5.41
+      },
+      "portrait": 4,
+      "trait": "Équipement lourd, consommation importante de fer. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "smith_engine",
+      "name": "Baliste des artisans",
+      "kind": "Siège",
+      "factions": [
+        "eregion"
+      ],
+      "race": "Elfe",
+      "attack": 145,
+      "defense": 35,
+      "hp": 280,
+      "range": 12,
+      "speed": 1,
+      "morale": 90,
+      "level": 40,
+      "slots": 8,
+      "cost": {
+        "gold": 1956,
+        "wood": 1174,
+        "stone": 0,
+        "iron": 587,
+        "food": 783
+      },
+      "upkeep": {
+        "gold": 13.69,
+        "food": 23.47
+      },
+      "portrait": 11,
+      "trait": "Engin de précision ; protège peu ses servants au contact. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "gate_guard",
+      "name": "Gardiens des portes",
+      "kind": "Élite",
+      "factions": [
+        "khazad"
+      ],
+      "race": "Nain",
+      "attack": 62,
+      "defense": 96,
+      "hp": 220,
+      "range": 1,
+      "speed": 2,
+      "morale": 98,
+      "level": 30,
+      "slots": 3,
+      "cost": {
+        "gold": 680,
+        "wood": 0,
+        "stone": 0,
+        "iron": 340,
+        "food": 272
+      },
+      "upkeep": {
+        "gold": 4.76,
+        "food": 8.16
+      },
+      "portrait": 5,
+      "trait": "Très grande résistance et faible vitesse. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "deep_axes",
+      "name": "Haches des galeries",
+      "kind": "Infanterie",
+      "factions": [
+        "khazad"
+      ],
+      "race": "Nain",
+      "attack": 65,
+      "defense": 56,
+      "hp": 150,
+      "range": 1,
+      "speed": 3,
+      "morale": 88,
+      "level": 16,
+      "slots": 1,
+      "cost": {
+        "gold": 189,
+        "wood": 0,
+        "stone": 0,
+        "iron": 58,
+        "food": 76
+      },
+      "upkeep": {
+        "gold": 1.31,
+        "food": 2.27
+      },
+      "portrait": 5,
+      "trait": "Infanterie de choc des profondeurs, sans mobilité montée. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "valley_riders",
+      "name": "Cavaliers de la vallée",
+      "kind": "Cavalerie",
+      "mount": "Cheval",
+      "cavalryWeight": "Légère",
+      "factions": [
+        "imladris"
+      ],
+      "race": "Elfe",
+      "attack": 66,
+      "defense": 50,
+      "hp": 125,
+      "range": 1,
+      "speed": 11,
+      "morale": 92,
+      "level": 16,
+      "slots": 2,
+      "cost": {
+        "gold": 334,
+        "wood": 0,
+        "stone": 0,
+        "iron": 100,
+        "food": 134
+      },
+      "upkeep": {
+        "gold": 2.33,
+        "food": 4
+      },
+      "portrait": 4,
+      "trait": "Reconnaissance rapide ; effectifs coûteux. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "refuge_veterans",
+      "name": "Vétérans du refuge",
+      "kind": "Élite",
+      "factions": [
+        "imladris"
+      ],
+      "race": "Elfe",
+      "attack": 77,
+      "defense": 73,
+      "hp": 155,
+      "range": 1,
+      "speed": 6,
+      "morale": 96,
+      "level": 30,
+      "slots": 3,
+      "cost": {
+        "gold": 662,
+        "wood": 0,
+        "stone": 0,
+        "iron": 333,
+        "food": 265
+      },
+      "upkeep": {
+        "gold": 4.61,
+        "food": 7.93
+      },
+      "portrait": 4,
+      "trait": "Garde polyvalente et disciplinée, réservée aux casernes avancées. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "gold_bows",
+      "name": "Archers des hautes branches",
+      "kind": "Archers",
+      "factions": [
+        "elves"
+      ],
+      "race": "Elfe",
+      "attack": 72,
+      "defense": 25,
+      "hp": 85,
+      "range": 11,
+      "speed": 7,
+      "morale": 89,
+      "level": 22,
+      "slots": 1,
+      "cost": {
+        "gold": 362,
+        "wood": 93,
+        "stone": 0,
+        "iron": 110,
+        "food": 145
+      },
+      "upkeep": {
+        "gold": 2.54,
+        "food": 4.33
+      },
+      "portrait": 4,
+      "trait": "Longue portée ; très vulnérables sans écran d’infanterie. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "forest_sentinels",
+      "name": "Sentinelles des bois",
+      "kind": "Infanterie",
+      "factions": [
+        "elves"
+      ],
+      "race": "Elfe",
+      "attack": 48,
+      "defense": 58,
+      "hp": 105,
+      "range": 1,
+      "speed": 7,
+      "morale": 87,
+      "level": 16,
+      "slots": 1,
+      "cost": {
+        "gold": 189,
+        "wood": 0,
+        "stone": 0,
+        "iron": 58,
+        "food": 76
+      },
+      "upkeep": {
+        "gold": 1.31,
+        "food": 2.27
+      },
+      "portrait": 4,
+      "trait": "Protection mobile des archers, armure intermédiaire. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "woodland_scouts",
+      "name": "Éclaireurs de la Grande Forêt",
+      "kind": "Archers",
+      "factions": [
+        "woodland"
+      ],
+      "race": "Elfe",
+      "attack": 51,
+      "defense": 20,
+      "hp": 70,
+      "range": 8,
+      "speed": 9,
+      "morale": 78,
+      "level": 14,
+      "slots": 1,
+      "cost": {
+        "gold": 150,
+        "wood": 38,
+        "stone": 0,
+        "iron": 46,
+        "food": 60
+      },
+      "upkeep": {
+        "gold": 1.06,
+        "food": 1.8
+      },
+      "portrait": 4,
+      "trait": "Tireurs légers à forte mobilité. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "woodland_spears",
+      "name": "Lances sylvestres",
+      "kind": "Infanterie",
+      "factions": [
+        "woodland"
+      ],
+      "race": "Elfe",
+      "attack": 57,
+      "defense": 65,
+      "hp": 120,
+      "range": 2,
+      "speed": 6,
+      "morale": 86,
+      "level": 18,
+      "slots": 1,
+      "cost": {
+        "gold": 257,
+        "wood": 0,
+        "stone": 0,
+        "iron": 79,
+        "food": 103
+      },
+      "upkeep": {
+        "gold": 1.81,
+        "food": 3.08
+      },
+      "portrait": 4,
+      "trait": "Formation défensive pour protéger les chemins forestiers. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "white_shields",
+      "name": "Boucliers de l’Anduin",
+      "kind": "Infanterie",
+      "factions": [
+        "gondor"
+      ],
+      "race": "Homme",
+      "attack": 43,
+      "defense": 65,
+      "hp": 115,
+      "range": 1,
+      "speed": 4,
+      "morale": 80,
+      "level": 16,
+      "slots": 1,
+      "cost": {
+        "gold": 145,
+        "wood": 0,
+        "stone": 0,
+        "iron": 45,
+        "food": 58
+      },
+      "upkeep": {
+        "gold": 1.02,
+        "food": 1.73
+      },
+      "portrait": 0,
+      "trait": "Rempart d’infanterie, attaque modérée. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "stone_engine",
+      "name": "Baliste des murailles",
+      "kind": "Siège",
+      "factions": [
+        "gondor"
+      ],
+      "race": "Homme",
+      "attack": 135,
+      "defense": 40,
+      "hp": 290,
+      "range": 11,
+      "speed": 1,
+      "morale": 85,
+      "level": 40,
+      "slots": 8,
+      "cost": {
+        "gold": 1858,
+        "wood": 1115,
+        "stone": 0,
+        "iron": 558,
+        "food": 744
+      },
+      "upkeep": {
+        "gold": 13,
+        "food": 22.29
+      },
+      "portrait": 11,
+      "trait": "Engin robuste pour défendre une cité, très lent. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "north_riders",
+      "name": "Cavaliers du royaume du Nord",
+      "kind": "Cavalerie",
+      "mount": "Cheval",
+      "cavalryWeight": "Légère",
+      "factions": [
+        "arnor"
+      ],
+      "race": "Homme",
+      "attack": 59,
+      "defense": 42,
+      "hp": 120,
+      "range": 1,
+      "speed": 10,
+      "morale": 82,
+      "level": 16,
+      "slots": 2,
+      "cost": {
+        "gold": 267,
+        "wood": 0,
+        "stone": 0,
+        "iron": 80,
+        "food": 107
+      },
+      "upkeep": {
+        "gold": 1.87,
+        "food": 3.2
+      },
+      "portrait": 2,
+      "trait": "Réserve mobile pour relier les domaines éloignés. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "north_watch",
+      "name": "Veilleurs des routes",
+      "kind": "Archers",
+      "factions": [
+        "arnor"
+      ],
+      "race": "Homme",
+      "attack": 47,
+      "defense": 29,
+      "hp": 85,
+      "range": 8,
+      "speed": 7,
+      "morale": 80,
+      "level": 14,
+      "slots": 1,
+      "cost": {
+        "gold": 140,
+        "wood": 36,
+        "stone": 0,
+        "iron": 42,
+        "food": 56
+      },
+      "upkeep": {
+        "gold": 0.98,
+        "food": 1.68
+      },
+      "portrait": 1,
+      "trait": "Reconnaissance et tir polyvalent. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "desert_riders",
+      "name": "Cavaliers des caravanes",
+      "kind": "Cavalerie",
+      "mount": "Cheval",
+      "cavalryWeight": "Légère",
+      "factions": [
+        "harad"
+      ],
+      "race": "Homme",
+      "attack": 53,
+      "defense": 28,
+      "hp": 105,
+      "range": 1,
+      "speed": 11,
+      "morale": 68,
+      "level": 16,
+      "slots": 2,
+      "cost": {
+        "gold": 189,
+        "wood": 0,
+        "stone": 0,
+        "iron": 58,
+        "food": 76
+      },
+      "upkeep": {
+        "gold": 1.31,
+        "food": 2.27
+      },
+      "portrait": 2,
+      "trait": "Mobilité élevée, faible résistance aux lignes de piques. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "south_guard",
+      "name": "Gardes des bannières du Sud",
+      "kind": "Élite",
+      "factions": [
+        "harad"
+      ],
+      "race": "Homme",
+      "attack": 69,
+      "defense": 57,
+      "hp": 155,
+      "range": 1,
+      "speed": 5,
+      "morale": 86,
+      "level": 30,
+      "slots": 3,
+      "cost": {
+        "gold": 529,
+        "wood": 0,
+        "stone": 0,
+        "iron": 265,
+        "food": 212
+      },
+      "upkeep": {
+        "gold": 3.7,
+        "food": 6.35
+      },
+      "portrait": 0,
+      "trait": "Infanterie de choc pour soutenir les troupes légères. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "east_shields",
+      "name": "Boucliers de l’Est",
+      "kind": "Infanterie",
+      "factions": [
+        "rhun"
+      ],
+      "race": "Homme",
+      "attack": 50,
+      "defense": 75,
+      "hp": 135,
+      "range": 1,
+      "speed": 3,
+      "morale": 84,
+      "level": 16,
+      "slots": 1,
+      "cost": {
+        "gold": 189,
+        "wood": 0,
+        "stone": 0,
+        "iron": 58,
+        "food": 76
+      },
+      "upkeep": {
+        "gold": 1.31,
+        "food": 2.27
+      },
+      "portrait": 0,
+      "trait": "Ligne très solide, faible mobilité. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "steppe_riders",
+      "name": "Cavaliers des plaines orientales",
+      "kind": "Cavalerie",
+      "mount": "Cheval",
+      "cavalryWeight": "Légère",
+      "factions": [
+        "rhun"
+      ],
+      "race": "Homme",
+      "attack": 65,
+      "defense": 35,
+      "hp": 125,
+      "range": 1,
+      "speed": 10,
+      "morale": 76,
+      "level": 16,
+      "slots": 2,
+      "cost": {
+        "gold": 256,
+        "wood": 0,
+        "stone": 0,
+        "iron": 78,
+        "food": 103
+      },
+      "upkeep": {
+        "gold": 1.8,
+        "food": 3.07
+      },
+      "portrait": 2,
+      "trait": "Charge offensive ; équipement de campagne non canonique. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "port_raiders",
+      "name": "Raideurs du Grand Port",
+      "kind": "Infanterie",
+      "factions": [
+        "umbar"
+      ],
+      "race": "Homme",
+      "attack": 55,
+      "defense": 25,
+      "hp": 90,
+      "range": 1,
+      "speed": 7,
+      "morale": 65,
+      "level": 16,
+      "slots": 1,
+      "cost": {
+        "gold": 123,
+        "wood": 0,
+        "stone": 0,
+        "iron": 38,
+        "food": 49
+      },
+      "upkeep": {
+        "gold": 0.87,
+        "food": 1.47
+      },
+      "portrait": 0,
+      "trait": "Attaque et mobilité élevées, armure légère ; pas de flotte simulée. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "harbor_engine",
+      "name": "Baliste du Grand Port",
+      "kind": "Siège",
+      "factions": [
+        "umbar"
+      ],
+      "race": "Homme",
+      "attack": 110,
+      "defense": 23,
+      "hp": 225,
+      "range": 10,
+      "speed": 1,
+      "morale": 72,
+      "level": 40,
+      "slots": 8,
+      "cost": {
+        "gold": 1443,
+        "wood": 866,
+        "stone": 0,
+        "iron": 436,
+        "food": 577
+      },
+      "upkeep": {
+        "gold": 10.12,
+        "food": 17.31
+      },
+      "portrait": 11,
+      "trait": "Artillerie de soutien des comptoirs. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "orc_pikes",
+      "name": "Piquiers de la Tour sombre",
+      "kind": "Infanterie",
+      "factions": [
+        "mordor"
+      ],
+      "race": "Orque",
+      "attack": 36,
+      "defense": 48,
+      "hp": 90,
+      "range": 2,
+      "speed": 4,
+      "morale": 45,
+      "level": 18,
+      "slots": 1,
+      "cost": {
+        "gold": 86,
+        "wood": 0,
+        "stone": 0,
+        "iron": 27,
+        "food": 35
+      },
+      "upkeep": {
+        "gold": 0.61,
+        "food": 1.03
+      },
+      "portrait": 6,
+      "trait": "Ligne économique, moral faible. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "mordor_engine",
+      "name": "Bélier de la Tour sombre",
+      "kind": "Siège",
+      "factions": [
+        "mordor"
+      ],
+      "race": "Orque",
+      "attack": 155,
+      "defense": 55,
+      "hp": 340,
+      "range": 1,
+      "speed": 2,
+      "morale": 55,
+      "level": 40,
+      "slots": 8,
+      "cost": {
+        "gold": 1272,
+        "wood": 763,
+        "stone": 0,
+        "iron": 382,
+        "food": 509
+      },
+      "upkeep": {
+        "gold": 8.9,
+        "food": 15.25
+      },
+      "portrait": 11,
+      "trait": "Bélier de contact : aucune capacité de tir, fort besoin de protection. Formation et statistiques propres à la campagne.",
+      "signature": true
+    },
+    {
+      "id": "heavy_horse",
+      "name": "Cavalier lourd",
+      "race": "Homme",
+      "kind": "Cavalerie",
+      "factions": [
+        "kingsmen",
+        "andunie",
+        "blacknumenor",
+        "gwathuirim",
+        "pelargir",
+        "vinyalonde",
+        "cardolan",
+        "rhudaur",
+        "dunland",
+        "beornings",
+        "edain",
+        "numenor",
+        "gondor",
+        "arnor",
+        "arthedain",
+        "rohan",
+        "dale",
+        "harad",
+        "rhun",
+        "umbar",
+        "reunited"
+      ],
+      "attack": 70,
+      "defense": 58,
+      "hp": 155,
+      "range": 1,
+      "speed": 7,
+      "morale": 78,
+      "level": 26,
+      "slots": 3,
+      "cost": {
+        "gold": 500,
+        "wood": 0,
+        "stone": 0,
+        "iron": 160,
+        "food": 200
+      },
+      "upkeep": {
+        "gold": 3,
+        "food": 5
+      },
+      "portrait": 3,
+      "trait": "Charge puissante, coûteuse et vulnérable aux piques. Profil de campagne.",
+      "mount": "Cheval",
+      "cavalryWeight": "Lourde"
+    },
+    {
+      "id": "elf_rider",
+      "name": "Éclaireur elfique monté",
+      "race": "Elfe",
+      "kind": "Cavalerie",
+      "factions": [
+        "edhellond",
+        "hithlum",
+        "maedhros",
+        "falas",
+        "ossiriand",
+        "imladris",
+        "gondolin",
+        "nargothrond",
+        "doriath",
+        "lindon",
+        "eregion",
+        "elves",
+        "woodland"
+      ],
+      "attack": 49,
+      "defense": 31,
+      "hp": 100,
+      "range": 1,
+      "speed": 11,
+      "morale": 85,
+      "level": 12,
+      "slots": 2,
+      "cost": {
+        "gold": 187,
+        "wood": 0,
+        "stone": 0,
+        "iron": 61,
+        "food": 75
+      },
+      "upkeep": {
+        "gold": 1.12,
+        "food": 1.87
+      },
+      "portrait": 4,
+      "trait": "Reconnaissance à cheval : rapide mais fragile. Formation de campagne.",
+      "mount": "Cheval",
+      "cavalryWeight": "Légère"
+    },
+    {
+      "id": "elf_heavy_rider",
+      "name": "Lancier elfique monté",
+      "race": "Elfe",
+      "kind": "Cavalerie",
+      "factions": [
+        "edhellond",
+        "hithlum",
+        "maedhros",
+        "falas",
+        "ossiriand",
+        "imladris",
+        "gondolin",
+        "nargothrond",
+        "doriath",
+        "lindon",
+        "eregion",
+        "elves",
+        "woodland"
+      ],
+      "attack": 74,
+      "defense": 58,
+      "hp": 140,
+      "range": 1,
+      "speed": 8,
+      "morale": 92,
+      "level": 32,
+      "slots": 3,
+      "cost": {
+        "gold": 740,
+        "wood": 0,
+        "stone": 0,
+        "iron": 240,
+        "food": 296
+      },
+      "upkeep": {
+        "gold": 4.44,
+        "food": 7.4
+      },
+      "portrait": 4,
+      "trait": "Cavalerie lourde à cheval, effectifs coûteux. Formation de campagne.",
+      "mount": "Cheval",
+      "cavalryWeight": "Lourde"
+    },
+    {
+      "id": "dwarf_pony",
+      "name": "Éclaireur nain sur poney",
+      "race": "Nain",
+      "kind": "Cavalerie",
+      "factions": [
+        "bluedwarves",
+        "ironhills",
+        "belegost",
+        "khazad",
+        "dwarves"
+      ],
+      "attack": 38,
+      "defense": 42,
+      "hp": 120,
+      "range": 1,
+      "speed": 8,
+      "morale": 80,
+      "level": 12,
+      "slots": 2,
+      "cost": {
+        "gold": 160,
+        "wood": 0,
+        "stone": 0,
+        "iron": 52,
+        "food": 64
+      },
+      "upkeep": {
+        "gold": 0.96,
+        "food": 1.6
+      },
+      "portrait": 5,
+      "trait": "Mobilité de reconnaissance, faible charge. Adaptation de campagne : les poneys de voyage ne prouvent pas une cavalerie de bataille dans les livres.",
+      "mount": "Poney",
+      "cavalryWeight": "Légère"
+    },
+    {
+      "id": "dwarf_boar",
+      "name": "Chevaucheur de sanglier cuirassé",
+      "race": "Nain",
+      "kind": "Cavalerie",
+      "factions": [
+        "bluedwarves",
+        "ironhills",
+        "belegost",
+        "khazad",
+        "dwarves"
+      ],
+      "attack": 74,
+      "defense": 70,
+      "hp": 195,
+      "range": 1,
+      "speed": 6,
+      "morale": 88,
+      "level": 32,
+      "slots": 4,
+      "cost": {
+        "gold": 840,
+        "wood": 0,
+        "stone": 0,
+        "iron": 272,
+        "food": 336
+      },
+      "upkeep": {
+        "gold": 6.4,
+        "food": 12
+      },
+      "portrait": 5,
+      "trait": "Charge lourde, lente pour une monture et coûteuse en ravitaillement. Adaptation de campagne inspirée des montures du LOTR Mod ; non canonique aux livres.",
+      "mount": "Sanglier",
+      "cavalryWeight": "Lourde"
+    },
+    {
+      "id": "heavy_warg",
+      "name": "Chevaucheur de Warg cuirassé",
+      "race": "Orque",
+      "kind": "Cavalerie",
+      "factions": [
+        "angband",
+        "mordor",
+        "angmar",
+        "moria",
+        "isengard"
+      ],
+      "attack": 76,
+      "defense": 49,
+      "hp": 155,
+      "range": 1,
+      "speed": 8,
+      "morale": 62,
+      "level": 26,
+      "slots": 3,
+      "cost": {
+        "gold": 484,
+        "wood": 0,
+        "stone": 0,
+        "iron": 157,
+        "food": 194
+      },
+      "upkeep": {
+        "gold": 2.9,
+        "food": 4.83
+      },
+      "portrait": 6,
+      "trait": "Charge de choc, moral modeste. Adaptation de campagne ; très vulnérable aux piquiers.",
+      "mount": "Warg",
+      "cavalryWeight": "Lourde"
+    },
+    {
+      "id": "militia",
+      "name": "Milicien",
+      "race": "Homme",
+      "kind": "Infanterie",
+      "factions": [
+        "kingsmen",
+        "andunie",
+        "blacknumenor",
+        "gwathuirim",
+        "pelargir",
+        "vinyalonde",
+        "cardolan",
+        "rhudaur",
+        "dunland",
+        "beornings",
+        "edain",
+        "numenor",
+        "gondor",
+        "arnor",
+        "arthedain",
+        "rohan",
+        "dale",
+        "harad",
+        "rhun",
+        "umbar",
+        "reunited"
+      ],
+      "attack": 18,
+      "defense": 15,
+      "hp": 55,
+      "range": 1,
+      "speed": 5,
+      "morale": 45,
+      "level": 1,
+      "slots": 1,
+      "cost": {
+        "gold": 15,
+        "wood": 0,
+        "stone": 0,
+        "iron": 5,
+        "food": 6
+      },
+      "upkeep": {
+        "gold": 0.09,
+        "food": 0.15
+      },
+      "portrait": 0,
+      "trait": "Troupe économique, protection limitée."
+    },
+    {
+      "id": "spearman",
+      "name": "Lancier",
+      "race": "Homme",
+      "kind": "Infanterie",
+      "factions": [
+        "kingsmen",
+        "andunie",
+        "blacknumenor",
+        "gwathuirim",
+        "pelargir",
+        "vinyalonde",
+        "cardolan",
+        "rhudaur",
+        "dunland",
+        "beornings",
+        "edain",
+        "numenor",
+        "gondor",
+        "arnor",
+        "arthedain",
+        "rohan",
+        "dale",
+        "harad",
+        "rhun",
+        "umbar",
+        "reunited"
+      ],
+      "attack": 28,
+      "defense": 40,
+      "hp": 85,
+      "range": 1,
+      "speed": 4,
+      "morale": 60,
+      "level": 1,
+      "slots": 1,
+      "cost": {
+        "gold": 25,
+        "wood": 0,
+        "stone": 0,
+        "iron": 8,
+        "food": 10
+      },
+      "upkeep": {
+        "gold": 0.15,
+        "food": 0.25
+      },
+      "portrait": 0,
+      "trait": "Formation défensive ; utile contre une charge à arbitrer par le GM."
+    },
+    {
+      "id": "bowman",
+      "name": "Archer",
+      "race": "Homme",
+      "kind": "Archers",
+      "factions": [
+        "kingsmen",
+        "andunie",
+        "blacknumenor",
+        "gwathuirim",
+        "pelargir",
+        "vinyalonde",
+        "cardolan",
+        "rhudaur",
+        "dunland",
+        "beornings",
+        "edain",
+        "numenor",
+        "gondor",
+        "arnor",
+        "arthedain",
+        "rohan",
+        "dale",
+        "harad",
+        "rhun",
+        "umbar",
+        "reunited"
+      ],
+      "attack": 34,
+      "defense": 14,
+      "hp": 55,
+      "range": 7,
+      "speed": 5,
+      "morale": 55,
+      "level": 3,
+      "slots": 1,
+      "cost": {
+        "gold": 30,
+        "wood": 8,
+        "stone": 0,
+        "iron": 10,
+        "food": 12
+      },
+      "upkeep": {
+        "gold": 0.18,
+        "food": 0.3
+      },
+      "portrait": 1,
+      "trait": "Tir à distance, vulnérable au contact."
+    },
+    {
+      "id": "swordsman",
+      "name": "Homme d’armes",
+      "race": "Homme",
+      "kind": "Infanterie",
+      "factions": [
+        "kingsmen",
+        "andunie",
+        "blacknumenor",
+        "gwathuirim",
+        "pelargir",
+        "vinyalonde",
+        "cardolan",
+        "rhudaur",
+        "dunland",
+        "beornings",
+        "edain",
+        "numenor",
+        "gondor",
+        "arnor",
+        "arthedain",
+        "rohan",
+        "dale",
+        "harad",
+        "rhun",
+        "umbar",
+        "reunited"
+      ],
+      "attack": 42,
+      "defense": 38,
+      "hp": 100,
+      "range": 1,
+      "speed": 4,
+      "morale": 65,
+      "level": 8,
+      "slots": 1,
+      "cost": {
+        "gold": 60,
+        "wood": 0,
+        "stone": 0,
+        "iron": 20,
+        "food": 24
+      },
+      "upkeep": {
+        "gold": 0.36,
+        "food": 0.6
+      },
+      "portrait": 0,
+      "trait": "Infanterie polyvalente."
+    },
+    {
+      "id": "rider",
+      "name": "Cavalier léger",
+      "race": "Homme",
+      "kind": "Cavalerie",
+      "factions": [
+        "kingsmen",
+        "andunie",
+        "blacknumenor",
+        "gwathuirim",
+        "pelargir",
+        "vinyalonde",
+        "cardolan",
+        "rhudaur",
+        "dunland",
+        "beornings",
+        "edain",
+        "numenor",
+        "gondor",
+        "arnor",
+        "arthedain",
+        "rohan",
+        "dale",
+        "harad",
+        "rhun",
+        "umbar",
+        "reunited"
+      ],
+      "attack": 48,
+      "defense": 28,
+      "hp": 115,
+      "range": 1,
+      "speed": 9,
+      "morale": 65,
+      "level": 12,
+      "slots": 2,
+      "cost": {
+        "gold": 125,
+        "wood": 0,
+        "stone": 0,
+        "iron": 41,
+        "food": 50
+      },
+      "upkeep": {
+        "gold": 0.75,
+        "food": 1.24
+      },
+      "portrait": 2,
+      "trait": "Mobilité élevée ; nécessite du ravitaillement.",
+      "mount": "Cheval",
+      "cavalryWeight": "Légère"
+    },
+    {
+      "id": "tower_guard",
+      "name": "Garde de la Citadelle",
+      "race": "Homme",
+      "kind": "Élite",
+      "factions": [
+        "gondor",
+        "reunited"
+      ],
+      "attack": 58,
+      "defense": 75,
+      "hp": 150,
+      "range": 1,
+      "speed": 3,
+      "morale": 95,
+      "level": 30,
+      "slots": 1,
+      "cost": {
+        "gold": 492,
+        "wood": 0,
+        "stone": 0,
+        "iron": 159,
+        "food": 197
+      },
+      "upkeep": {
+        "gold": 2.95,
+        "food": 4.91
+      },
+      "portrait": 3,
+      "trait": "Excellente discipline, garde défensive."
+    },
+    {
+      "id": "ithilien",
+      "name": "Rôdeur d’Ithilien",
+      "race": "Homme",
+      "kind": "Archers",
+      "factions": [
+        "gondor",
+        "reunited"
+      ],
+      "attack": 64,
+      "defense": 32,
+      "hp": 85,
+      "range": 9,
+      "speed": 6,
+      "morale": 80,
+      "level": 20,
+      "slots": 1,
+      "cost": {
+        "gold": 281,
+        "wood": 73,
+        "stone": 0,
+        "iron": 91,
+        "food": 113
+      },
+      "upkeep": {
+        "gold": 1.68,
+        "food": 2.8
+      },
+      "portrait": 1,
+      "trait": "Reconnaissance et embuscades, arbitrées par le GM.",
+      "windows": [
+        [
+          3,
+          2900,
+          3021
+        ],
+        [
+          4,
+          1,
+          120
+        ]
+      ]
+    },
+    {
+      "id": "swan_knight",
+      "name": "Chevalier de Dol Amroth",
+      "race": "Homme",
+      "kind": "Cavalerie",
+      "factions": [
+        "gondor",
+        "reunited"
+      ],
+      "attack": 86,
+      "defense": 66,
+      "hp": 170,
+      "range": 1,
+      "speed": 8,
+      "morale": 95,
+      "level": 32,
+      "slots": 3,
+      "cost": {
+        "gold": 760,
+        "wood": 0,
+        "stone": 0,
+        "iron": 244,
+        "food": 304
+      },
+      "upkeep": {
+        "gold": 4.56,
+        "food": 7.6
+      },
+      "portrait": 3,
+      "trait": "Cavalerie lourde ; charge puissante.",
+      "mount": "Cheval",
+      "cavalryWeight": "Lourde",
+      "windows": [
+        [
+          3,
+          1981,
+          3021
+        ],
+        [
+          4,
+          1,
+          1000
+        ]
+      ]
+    },
+    {
+      "id": "rohirrim",
+      "name": "Cavalier du Riddermark",
+      "race": "Homme",
+      "kind": "Cavalerie",
+      "factions": [
+        "rohan"
+      ],
+      "attack": 67,
+      "defense": 40,
+      "hp": 135,
+      "range": 1,
+      "speed": 10,
+      "morale": 85,
+      "level": 16,
+      "slots": 2,
+      "cost": {
+        "gold": 212,
+        "wood": 0,
+        "stone": 0,
+        "iron": 69,
+        "food": 85
+      },
+      "upkeep": {
+        "gold": 1.27,
+        "food": 2.11
+      },
+      "portrait": 2,
+      "trait": "Mobilité et charge caractéristiques des Rohirrim.",
+      "mount": "Cheval",
+      "cavalryWeight": "Légère"
+    },
+    {
+      "id": "horse_archer",
+      "name": "Archer monté",
+      "race": "Homme",
+      "kind": "Cavalerie",
+      "factions": [
+        "rohan",
+        "rhun"
+      ],
+      "attack": 46,
+      "defense": 25,
+      "hp": 95,
+      "range": 6,
+      "speed": 10,
+      "morale": 70,
+      "level": 22,
+      "slots": 2,
+      "cost": {
+        "gold": 289,
+        "wood": 0,
+        "stone": 0,
+        "iron": 93,
+        "food": 116
+      },
+      "upkeep": {
+        "gold": 1.73,
+        "food": 2.89
+      },
+      "portrait": 2,
+      "trait": "Tir mobile ; moins résistant en mêlée.",
+      "mount": "Cheval",
+      "cavalryWeight": "Archers montés"
+    },
+    {
+      "id": "royal_guard",
+      "name": "Garde de la Maison du Roi",
+      "race": "Homme",
+      "kind": "Cavalerie",
+      "factions": [
+        "rohan"
+      ],
+      "attack": 83,
+      "defense": 68,
+      "hp": 180,
+      "range": 1,
+      "speed": 9,
+      "morale": 98,
+      "level": 32,
+      "slots": 3,
+      "cost": {
+        "gold": 740,
+        "wood": 0,
+        "stone": 0,
+        "iron": 240,
+        "food": 296
+      },
+      "upkeep": {
+        "gold": 4.44,
+        "food": 7.4
+      },
+      "portrait": 3,
+      "trait": "Garde montée du souverain.",
+      "mount": "Cheval",
+      "cavalryWeight": "Lourde"
+    },
+    {
+      "id": "numenor_guard",
+      "name": "Garde númenóréen",
+      "race": "Homme",
+      "kind": "Élite",
+      "factions": [
+        "numenor",
+        "pelargir",
+        "vinyalonde",
+        "kingsmen",
+        "andunie",
+        "blacknumenor"
+      ],
+      "attack": 67,
+      "defense": 65,
+      "hp": 160,
+      "range": 1,
+      "speed": 4,
+      "morale": 90,
+      "level": 24,
+      "slots": 1,
+      "cost": {
+        "gold": 374,
+        "wood": 0,
+        "stone": 0,
+        "iron": 122,
+        "food": 150
+      },
+      "upkeep": {
+        "gold": 2.24,
+        "food": 3.73
+      },
+      "portrait": 3,
+      "trait": "Puissance et discipline des Hommes de l’Ouest."
+    },
+    {
+      "id": "steel_bow",
+      "name": "Archer númenóréen",
+      "race": "Homme",
+      "kind": "Archers",
+      "factions": [
+        "numenor",
+        "pelargir",
+        "vinyalonde",
+        "kingsmen",
+        "andunie",
+        "blacknumenor"
+      ],
+      "attack": 75,
+      "defense": 35,
+      "hp": 100,
+      "range": 10,
+      "speed": 4,
+      "morale": 85,
+      "level": 20,
+      "slots": 1,
+      "cost": {
+        "gold": 334,
+        "wood": 86,
+        "stone": 0,
+        "iron": 107,
+        "food": 134
+      },
+      "upkeep": {
+        "gold": 2,
+        "food": 3.33
+      },
+      "portrait": 1,
+      "trait": "Grand arc ; portée élevée."
+    },
+    {
+      "id": "dunedain",
+      "name": "Rôdeur dúnadan",
+      "race": "Homme",
+      "kind": "Archers",
+      "factions": [
+        "arnor",
+        "arthedain",
+        "reunited",
+        "cardolan"
+      ],
+      "attack": 61,
+      "defense": 40,
+      "hp": 105,
+      "range": 8,
+      "speed": 7,
+      "morale": 90,
+      "level": 20,
+      "slots": 1,
+      "cost": {
+        "gold": 294,
+        "wood": 75,
+        "stone": 0,
+        "iron": 97,
+        "food": 118
+      },
+      "upkeep": {
+        "gold": 1.76,
+        "food": 2.93
+      },
+      "portrait": 1,
+      "trait": "Éclaireur endurant, effectifs coûteux."
+    },
+    {
+      "id": "dale_bow",
+      "name": "Archer de Dale",
+      "race": "Homme",
+      "kind": "Archers",
+      "factions": [
+        "dale"
+      ],
+      "attack": 56,
+      "defense": 27,
+      "hp": 80,
+      "range": 9,
+      "speed": 5,
+      "morale": 78,
+      "level": 5,
+      "slots": 1,
+      "cost": {
+        "gold": 75,
+        "wood": 19,
+        "stone": 0,
+        "iron": 24,
+        "food": 30
+      },
+      "upkeep": {
+        "gold": 0.45,
+        "food": 0.75
+      },
+      "portrait": 1,
+      "trait": "Tireur du royaume de Bard.",
+      "windows": [
+        [
+          3,
+          2941,
+          3021
+        ],
+        [
+          4,
+          1,
+          1000
+        ]
+      ]
+    },
+    {
+      "id": "elf_spear",
+      "name": "Lancier elfique",
+      "race": "Elfe",
+      "kind": "Infanterie",
+      "factions": [
+        "edhellond",
+        "hithlum",
+        "maedhros",
+        "falas",
+        "ossiriand",
+        "imladris",
+        "gondolin",
+        "nargothrond",
+        "doriath",
+        "lindon",
+        "eregion",
+        "elves",
+        "woodland"
+      ],
+      "attack": 43,
+      "defense": 53,
+      "hp": 95,
+      "range": 1,
+      "speed": 6,
+      "morale": 85,
+      "level": 1,
+      "slots": 1,
+      "cost": {
+        "gold": 55,
+        "wood": 0,
+        "stone": 0,
+        "iron": 18,
+        "food": 22
+      },
+      "upkeep": {
+        "gold": 0.33,
+        "food": 0.55
+      },
+      "portrait": 4,
+      "trait": "Discipline elfique, coût supérieur à une levée humaine."
+    },
+    {
+      "id": "elf_bow",
+      "name": "Archer elfique",
+      "race": "Elfe",
+      "kind": "Archers",
+      "factions": [
+        "edhellond",
+        "hithlum",
+        "maedhros",
+        "falas",
+        "ossiriand",
+        "imladris",
+        "gondolin",
+        "nargothrond",
+        "doriath",
+        "lindon",
+        "eregion",
+        "elves",
+        "woodland"
+      ],
+      "attack": 66,
+      "defense": 28,
+      "hp": 75,
+      "range": 10,
+      "speed": 7,
+      "morale": 85,
+      "level": 5,
+      "slots": 1,
+      "cost": {
+        "gold": 90,
+        "wood": 23,
+        "stone": 0,
+        "iron": 29,
+        "food": 36
+      },
+      "upkeep": {
+        "gold": 0.54,
+        "food": 0.9
+      },
+      "portrait": 4,
+      "trait": "Précision et longue portée."
+    },
+    {
+      "id": "noldor",
+      "name": "Guerrier noldo",
+      "race": "Elfe",
+      "kind": "Élite",
+      "factions": [
+        "gondolin",
+        "nargothrond",
+        "lindon",
+        "eregion",
+        "hithlum",
+        "maedhros",
+        "imladris"
+      ],
+      "attack": 83,
+      "defense": 72,
+      "hp": 150,
+      "range": 1,
+      "speed": 6,
+      "morale": 98,
+      "level": 30,
+      "slots": 1,
+      "cost": {
+        "gold": 643,
+        "wood": 0,
+        "stone": 0,
+        "iron": 208,
+        "food": 257
+      },
+      "upkeep": {
+        "gold": 3.85,
+        "food": 6.42
+      },
+      "portrait": 4,
+      "trait": "Vétéran lourd des royaumes noldor."
+    },
+    {
+      "id": "sindar",
+      "name": "Garde sinda",
+      "race": "Elfe",
+      "kind": "Élite",
+      "factions": [
+        "doriath",
+        "woodland",
+        "elves",
+        "falas",
+        "ossiriand",
+        "edhellond"
+      ],
+      "attack": 61,
+      "defense": 56,
+      "hp": 105,
+      "range": 7,
+      "speed": 8,
+      "morale": 90,
+      "level": 24,
+      "slots": 1,
+      "cost": {
+        "gold": 389,
+        "wood": 0,
+        "stone": 0,
+        "iron": 125,
+        "food": 156
+      },
+      "upkeep": {
+        "gold": 2.33,
+        "food": 3.89
+      },
+      "portrait": 4,
+      "trait": "Adapté à la guerre forestière."
+    },
+    {
+      "id": "dwarf_axe",
+      "name": "Guerrier à la hache",
+      "race": "Nain",
+      "kind": "Infanterie",
+      "factions": [
+        "bluedwarves",
+        "ironhills",
+        "belegost",
+        "khazad",
+        "dwarves"
+      ],
+      "attack": 47,
+      "defense": 58,
+      "hp": 135,
+      "range": 1,
+      "speed": 3,
+      "morale": 88,
+      "level": 1,
+      "slots": 1,
+      "cost": {
+        "gold": 55,
+        "wood": 0,
+        "stone": 0,
+        "iron": 18,
+        "food": 22
+      },
+      "upkeep": {
+        "gold": 0.33,
+        "food": 0.55
+      },
+      "portrait": 5,
+      "trait": "Robuste et lent."
+    },
+    {
+      "id": "dwarf_shield",
+      "name": "Garde au bouclier",
+      "race": "Nain",
+      "kind": "Élite",
+      "factions": [
+        "bluedwarves",
+        "ironhills",
+        "belegost",
+        "khazad",
+        "dwarves"
+      ],
+      "attack": 58,
+      "defense": 88,
+      "hp": 190,
+      "range": 1,
+      "speed": 2,
+      "morale": 98,
+      "level": 24,
+      "slots": 1,
+      "cost": {
+        "gold": 420,
+        "wood": 0,
+        "stone": 0,
+        "iron": 137,
+        "food": 168
+      },
+      "upkeep": {
+        "gold": 2.52,
+        "food": 4.2
+      },
+      "portrait": 5,
+      "trait": "Très forte résistance, faible mobilité."
+    },
+    {
+      "id": "dwarf_throw",
+      "name": "Lanceur de haches",
+      "race": "Nain",
+      "kind": "Archers",
+      "factions": [
+        "bluedwarves",
+        "ironhills",
+        "belegost",
+        "khazad",
+        "dwarves"
+      ],
+      "attack": 54,
+      "defense": 40,
+      "hp": 115,
+      "range": 4,
+      "speed": 3,
+      "morale": 85,
+      "level": 5,
+      "slots": 1,
+      "cost": {
+        "gold": 75,
+        "wood": 19,
+        "stone": 0,
+        "iron": 24,
+        "food": 30
+      },
+      "upkeep": {
+        "gold": 0.45,
+        "food": 0.75
+      },
+      "portrait": 5,
+      "trait": "Projectile de courte portée."
+    },
+    {
+      "id": "orc",
+      "name": "Guerrier orque",
+      "race": "Orque",
+      "kind": "Infanterie",
+      "factions": [
+        "angband",
+        "mordor",
+        "angmar",
+        "moria",
+        "isengard"
+      ],
+      "attack": 30,
+      "defense": 20,
+      "hp": 65,
+      "range": 1,
+      "speed": 5,
+      "morale": 35,
+      "level": 1,
+      "slots": 1,
+      "cost": {
+        "gold": 18,
+        "wood": 0,
+        "stone": 0,
+        "iron": 6,
+        "food": 8
+      },
+      "upkeep": {
+        "gold": 0.11,
+        "food": 0.18
+      },
+      "portrait": 6,
+      "trait": "Nombreux et bon marché, moral faible."
+    },
+    {
+      "id": "orc_bow",
+      "name": "Archer orque",
+      "race": "Orque",
+      "kind": "Archers",
+      "factions": [
+        "angband",
+        "mordor",
+        "angmar",
+        "moria",
+        "isengard"
+      ],
+      "attack": 32,
+      "defense": 12,
+      "hp": 50,
+      "range": 6,
+      "speed": 5,
+      "morale": 30,
+      "level": 3,
+      "slots": 1,
+      "cost": {
+        "gold": 22,
+        "wood": 6,
+        "stone": 0,
+        "iron": 8,
+        "food": 9
+      },
+      "upkeep": {
+        "gold": 0.13,
+        "food": 0.22
+      },
+      "portrait": 6,
+      "trait": "Tireur économique et fragile."
+    },
+    {
+      "id": "warg",
+      "name": "Chevaucheur de Warg",
+      "race": "Orque",
+      "kind": "Cavalerie",
+      "factions": [
+        "angband",
+        "mordor",
+        "angmar",
+        "moria",
+        "isengard"
+      ],
+      "attack": 56,
+      "defense": 28,
+      "hp": 110,
+      "range": 1,
+      "speed": 10,
+      "morale": 50,
+      "level": 12,
+      "slots": 2,
+      "cost": {
+        "gold": 143,
+        "wood": 0,
+        "stone": 0,
+        "iron": 47,
+        "food": 57
+      },
+      "upkeep": {
+        "gold": 0.85,
+        "food": 1.42
+      },
+      "portrait": 6,
+      "trait": "Éclaireur et harceleur monté.",
+      "mount": "Warg",
+      "cavalryWeight": "Légère"
+    },
+    {
+      "id": "uruk",
+      "name": "Uruk du Mordor",
+      "race": "Uruk",
+      "kind": "Infanterie",
+      "factions": [
+        "mordor"
+      ],
+      "attack": 57,
+      "defense": 48,
+      "hp": 125,
+      "range": 1,
+      "speed": 5,
+      "morale": 65,
+      "level": 20,
+      "slots": 1,
+      "cost": {
+        "gold": 201,
+        "wood": 0,
+        "stone": 0,
+        "iron": 64,
+        "food": 81
+      },
+      "upkeep": {
+        "gold": 1.2,
+        "food": 2
+      },
+      "portrait": 7,
+      "trait": "Infanterie orque renforcée.",
+      "windows": [
+        [
+          3,
+          2475,
+          3019
+        ]
+      ]
+    },
+    {
+      "id": "uruk_pike",
+      "name": "Piquier uruk-hai",
+      "race": "Uruk-hai",
+      "kind": "Infanterie",
+      "factions": [
+        "isengard"
+      ],
+      "attack": 54,
+      "defense": 69,
+      "hp": 140,
+      "range": 2,
+      "speed": 5,
+      "morale": 80,
+      "level": 10,
+      "slots": 1,
+      "cost": {
+        "gold": 125,
+        "wood": 0,
+        "stone": 0,
+        "iron": 41,
+        "food": 50
+      },
+      "upkeep": {
+        "gold": 0.75,
+        "food": 1.24
+      },
+      "portrait": 7,
+      "trait": "Longues piques ; rôle anti-cavalerie.",
+      "windows": [
+        [
+          3,
+          3000,
+          3019
+        ]
+      ]
+    },
+    {
+      "id": "uruk_blade",
+      "name": "Épéiste uruk-hai",
+      "race": "Uruk-hai",
+      "kind": "Infanterie",
+      "factions": [
+        "isengard"
+      ],
+      "attack": 68,
+      "defense": 58,
+      "hp": 150,
+      "range": 1,
+      "speed": 6,
+      "morale": 80,
+      "level": 8,
+      "slots": 1,
+      "cost": {
+        "gold": 120,
+        "wood": 0,
+        "stone": 0,
+        "iron": 39,
+        "food": 48
+      },
+      "upkeep": {
+        "gold": 0.72,
+        "food": 1.2
+      },
+      "portrait": 7,
+      "trait": "Infanterie d’assaut de Saroumane.",
+      "windows": [
+        [
+          3,
+          3000,
+          3019
+        ]
+      ]
+    },
+    {
+      "id": "uruk_crossbow",
+      "name": "Arbalétrier uruk-hai",
+      "race": "Uruk-hai",
+      "kind": "Archers",
+      "factions": [
+        "isengard"
+      ],
+      "attack": 72,
+      "defense": 30,
+      "hp": 105,
+      "range": 8,
+      "speed": 4,
+      "morale": 75,
+      "level": 20,
+      "slots": 1,
+      "cost": {
+        "gold": 267,
+        "wood": 67,
+        "stone": 0,
+        "iron": 86,
+        "food": 107
+      },
+      "upkeep": {
+        "gold": 1.6,
+        "food": 2.67
+      },
+      "portrait": 7,
+      "trait": "Adaptation de jeu inspirée des représentations visuelles ; pas un type nommé dans le récit.",
+      "windows": [
+        [
+          3,
+          3000,
+          3019
+        ]
+      ]
+    },
+    {
+      "id": "troll",
+      "name": "Troll des cavernes",
+      "race": "Troll",
+      "kind": "Créature",
+      "factions": [
+        "angband",
+        "moria",
+        "angmar",
+        "mordor"
+      ],
+      "attack": 115,
+      "defense": 60,
+      "hp": 460,
+      "range": 1,
+      "speed": 3,
+      "morale": 55,
+      "level": 32,
+      "slots": 8,
+      "cost": {
+        "gold": 1680,
+        "wood": 0,
+        "stone": 0,
+        "iron": 540,
+        "food": 672
+      },
+      "upkeep": {
+        "gold": 12,
+        "food": 40
+      },
+      "portrait": 8,
+      "trait": "Briseur de ligne, lent et coûteux.",
+      "limit": 15
+    },
+    {
+      "id": "olog",
+      "name": "Olog-hai",
+      "race": "Troll",
+      "kind": "Créature",
+      "factions": [
+        "mordor"
+      ],
+      "attack": 155,
+      "defense": 100,
+      "hp": 650,
+      "range": 1,
+      "speed": 4,
+      "morale": 80,
+      "level": 38,
+      "slots": 12,
+      "cost": {
+        "gold": 3267,
+        "wood": 0,
+        "stone": 0,
+        "iron": 1046,
+        "food": 1307
+      },
+      "upkeep": {
+        "gold": 23.33,
+        "food": 70
+      },
+      "portrait": 8,
+      "trait": "Troll de guerre de la fin du Troisième Âge.",
+      "windows": [
+        [
+          3,
+          3000,
+          3019
+        ]
+      ],
+      "limit": 10
+    },
+    {
+      "id": "harad_spear",
+      "name": "Lancier haradrim",
+      "race": "Homme",
+      "kind": "Infanterie",
+      "factions": [
+        "harad"
+      ],
+      "attack": 38,
+      "defense": 39,
+      "hp": 85,
+      "range": 1,
+      "speed": 6,
+      "morale": 65,
+      "level": 1,
+      "slots": 1,
+      "cost": {
+        "gold": 32,
+        "wood": 0,
+        "stone": 0,
+        "iron": 11,
+        "food": 13
+      },
+      "upkeep": {
+        "gold": 0.19,
+        "food": 0.32
+      },
+      "portrait": 0,
+      "trait": "Formation souple du Sud."
+    },
+    {
+      "id": "harad_bow",
+      "name": "Archer haradrim",
+      "race": "Homme",
+      "kind": "Archers",
+      "factions": [
+        "harad"
+      ],
+      "attack": 48,
+      "defense": 20,
+      "hp": 65,
+      "range": 8,
+      "speed": 6,
+      "morale": 65,
+      "level": 5,
+      "slots": 1,
+      "cost": {
+        "gold": 55,
+        "wood": 14,
+        "stone": 0,
+        "iron": 18,
+        "food": 22
+      },
+      "upkeep": {
+        "gold": 0.33,
+        "food": 0.55
+      },
+      "portrait": 1,
+      "trait": "Tireur des armées du Sud."
+    },
+    {
+      "id": "mumak",
+      "name": "Mûmak de guerre",
+      "race": "Mûmak",
+      "kind": "Créature",
+      "factions": [
+        "harad"
+      ],
+      "attack": 210,
+      "defense": 115,
+      "hp": 1500,
+      "range": 5,
+      "speed": 3,
+      "morale": 75,
+      "level": 38,
+      "slots": 25,
+      "cost": {
+        "gold": 8400,
+        "wood": 0,
+        "stone": 0,
+        "iron": 2688,
+        "food": 3360
+      },
+      "upkeep": {
+        "gold": 56,
+        "food": 186.67
+      },
+      "portrait": 9,
+      "trait": "Équipage compris. Effroi et piétinement à arbitrer par le GM.",
+      "windows": [
+        [
+          3,
+          2900,
+          3019
+        ]
+      ],
+      "limit": 6
+    },
+    {
+      "id": "easterling_pike",
+      "name": "Piquier oriental",
+      "race": "Homme",
+      "kind": "Infanterie",
+      "factions": [
+        "rhun"
+      ],
+      "attack": 45,
+      "defense": 59,
+      "hp": 110,
+      "range": 2,
+      "speed": 4,
+      "morale": 80,
+      "level": 10,
+      "slots": 1,
+      "cost": {
+        "gold": 102,
+        "wood": 0,
+        "stone": 0,
+        "iron": 33,
+        "food": 41
+      },
+      "upkeep": {
+        "gold": 0.61,
+        "food": 1.01
+      },
+      "portrait": 0,
+      "trait": "Formation serrée ; choix d’équipement pour l’équilibrage du jeu."
+    },
+    {
+      "id": "corsair",
+      "name": "Corsaire d’Umbar",
+      "race": "Homme",
+      "kind": "Infanterie",
+      "factions": [
+        "umbar"
+      ],
+      "attack": 50,
+      "defense": 27,
+      "hp": 85,
+      "range": 1,
+      "speed": 6,
+      "morale": 65,
+      "level": 8,
+      "slots": 1,
+      "cost": {
+        "gold": 74,
+        "wood": 0,
+        "stone": 0,
+        "iron": 24,
+        "food": 30
+      },
+      "upkeep": {
+        "gold": 0.44,
+        "food": 0.73
+      },
+      "portrait": 0,
+      "trait": "Combattant de raid ; aucune flotte simulée dans cette édition.",
+      "windows": [
+        [
+          3,
+          1448,
+          3019
+        ]
+      ]
+    },
+    {
+      "id": "clan_axe",
+      "name": "Hache des clans",
+      "race": "Homme",
+      "kind": "Infanterie",
+      "factions": [
+        "dunland"
+      ],
+      "attack": 55,
+      "defense": 28,
+      "hp": 110,
+      "range": 1,
+      "speed": 5,
+      "morale": 70,
+      "level": 8,
+      "slots": 1,
+      "cost": {
+        "gold": 74,
+        "wood": 0,
+        "stone": 0,
+        "iron": 24,
+        "food": 30
+      },
+      "upkeep": {
+        "gold": 0.44,
+        "food": 0.73
+      },
+      "portrait": 0,
+      "trait": "Guerrier de clan ; profil créé pour l’équilibrage."
+    },
+    {
+      "id": "vale_guard",
+      "name": "Gardien des gués",
+      "race": "Homme",
+      "kind": "Élite",
+      "factions": [
+        "beornings"
+      ],
+      "attack": 68,
+      "defense": 62,
+      "hp": 175,
+      "range": 1,
+      "speed": 5,
+      "morale": 90,
+      "level": 24,
+      "slots": 1,
+      "cost": {
+        "gold": 420,
+        "wood": 0,
+        "stone": 0,
+        "iron": 137,
+        "food": 168
+      },
+      "upkeep": {
+        "gold": 2.52,
+        "food": 4.2
+      },
+      "portrait": 0,
+      "trait": "Défenseur de la vallée ; aucune transformation en ours accordée aux soldats."
+    },
+    {
+      "id": "royal_phalanx",
+      "name": "Phalange du Roi",
+      "race": "Homme",
+      "kind": "Élite",
+      "factions": [
+        "kingsmen"
+      ],
+      "attack": 66,
+      "defense": 82,
+      "hp": 175,
+      "range": 2,
+      "speed": 3,
+      "morale": 92,
+      "level": 30,
+      "slots": 1,
+      "cost": {
+        "gold": 624,
+        "wood": 0,
+        "stone": 0,
+        "iron": 201,
+        "food": 250
+      },
+      "upkeep": {
+        "gold": 3.74,
+        "food": 6.23
+      },
+      "portrait": 3,
+      "trait": "Infanterie lourde et lente du parti royal ; nom et profil de jeu.",
+      "windows": [
+        [
+          2,
+          2251,
+          3318
+        ]
+      ]
+    },
+    {
+      "id": "faithful_guard",
+      "name": "Garde des Fidèles",
+      "race": "Homme",
+      "kind": "Élite",
+      "factions": [
+        "andunie",
+        "pelargir"
+      ],
+      "attack": 62,
+      "defense": 72,
+      "hp": 155,
+      "range": 1,
+      "speed": 5,
+      "morale": 96,
+      "level": 24,
+      "slots": 1,
+      "cost": {
+        "gold": 436,
+        "wood": 0,
+        "stone": 0,
+        "iron": 140,
+        "food": 175
+      },
+      "upkeep": {
+        "gold": 2.61,
+        "food": 4.36
+      },
+      "portrait": 0,
+      "trait": "Protection de la communauté ; nom et profil de jeu.",
+      "windows": [
+        [
+          2,
+          2251,
+          3319
+        ]
+      ]
+    },
+    {
+      "id": "coastal_marine",
+      "name": "Soldat des havres",
+      "race": "Homme",
+      "kind": "Infanterie",
+      "factions": [
+        "numenor",
+        "vinyalonde",
+        "pelargir",
+        "umbar",
+        "kingsmen",
+        "andunie"
+      ],
+      "attack": 48,
+      "defense": 37,
+      "hp": 105,
+      "range": 1,
+      "speed": 6,
+      "morale": 76,
+      "level": 8,
+      "slots": 1,
+      "cost": {
+        "gold": 87,
+        "wood": 0,
+        "stone": 0,
+        "iron": 28,
+        "food": 35
+      },
+      "upkeep": {
+        "gold": 0.52,
+        "food": 0.87
+      },
+      "portrait": 0,
+      "trait": "Infanterie des établissements maritimes ; aucune navigation simulée.",
+      "windows": [
+        [
+          2,
+          600,
+          3441
+        ]
+      ]
+    },
+    {
+      "id": "black_guard",
+      "name": "Garde du littoral noir",
+      "race": "Homme",
+      "kind": "Élite",
+      "factions": [
+        "blacknumenor"
+      ],
+      "attack": 80,
+      "defense": 59,
+      "hp": 165,
+      "range": 1,
+      "speed": 4,
+      "morale": 83,
+      "level": 30,
+      "slots": 1,
+      "cost": {
+        "gold": 624,
+        "wood": 0,
+        "stone": 0,
+        "iron": 201,
+        "food": 250
+      },
+      "upkeep": {
+        "gold": 3.74,
+        "food": 6.23
+      },
+      "portrait": 3,
+      "trait": "Troupe lourde des seigneurs du Sud ; profil de campagne, sans pouvoir surnaturel.",
+      "windows": [
+        [
+          2,
+          3262,
+          3441
+        ]
+      ]
+    },
+    {
+      "id": "haven_warden",
+      "name": "Gardien d’Edhellond",
+      "race": "Elfe",
+      "kind": "Infanterie",
+      "factions": [
+        "edhellond"
+      ],
+      "attack": 52,
+      "defense": 61,
+      "hp": 115,
+      "range": 1,
+      "speed": 6,
+      "morale": 88,
+      "level": 8,
+      "slots": 1,
+      "cost": {
+        "gold": 114,
+        "wood": 0,
+        "stone": 0,
+        "iron": 38,
+        "food": 46
+      },
+      "upkeep": {
+        "gold": 0.68,
+        "food": 1.13
+      },
+      "portrait": 4,
+      "trait": "Défenseur du havre ; nom et statistiques créés pour le jeu."
+    },
+    {
+      "id": "blue_hammer",
+      "name": "Marteau des Ered Luin",
+      "race": "Nain",
+      "kind": "Élite",
+      "factions": [
+        "bluedwarves"
+      ],
+      "attack": 76,
+      "defense": 75,
+      "hp": 180,
+      "range": 1,
+      "speed": 2,
+      "morale": 92,
+      "level": 30,
+      "slots": 1,
+      "cost": {
+        "gold": 586,
+        "wood": 0,
+        "stone": 0,
+        "iron": 189,
+        "food": 235
+      },
+      "upkeep": {
+        "gold": 3.51,
+        "food": 5.86
+      },
+      "portrait": 5,
+      "trait": "Infanterie de choc lente ; profil de campagne inspiré des artisans nains."
+    },
+    {
+      "id": "forest_scout",
+      "name": "Éclaireur du Gwathló",
+      "race": "Homme",
+      "kind": "Archers",
+      "factions": [
+        "gwathuirim"
+      ],
+      "attack": 43,
+      "defense": 20,
+      "hp": 65,
+      "range": 7,
+      "speed": 8,
+      "morale": 64,
+      "level": 1,
+      "slots": 1,
+      "cost": {
+        "gold": 40,
+        "wood": 10,
+        "stone": 0,
+        "iron": 13,
+        "food": 16
+      },
+      "upkeep": {
+        "gold": 0.24,
+        "food": 0.4
+      },
+      "portrait": 1,
+      "trait": "Éclaireur léger ; les embuscades sont arbitrées par le GM."
+    },
+    {
+      "id": "forest_axe",
+      "name": "Hache des bois",
+      "race": "Homme",
+      "kind": "Infanterie",
+      "factions": [
+        "gwathuirim"
+      ],
+      "attack": 55,
+      "defense": 33,
+      "hp": 110,
+      "range": 1,
+      "speed": 6,
+      "morale": 72,
+      "level": 8,
+      "slots": 1,
+      "cost": {
+        "gold": 80,
+        "wood": 0,
+        "stone": 0,
+        "iron": 27,
+        "food": 32
+      },
+      "upkeep": {
+        "gold": 0.48,
+        "food": 0.8
+      },
+      "portrait": 0,
+      "trait": "Combattant des communautés forestières ; nom et profil de jeu."
+    },
+    {
+      "id": "ballista",
+      "name": "Baliste",
+      "race": "Équipage",
+      "kind": "Siège",
+      "factions": [
+        "kingsmen",
+        "andunie",
+        "blacknumenor",
+        "edhellond",
+        "bluedwarves",
+        "gwathuirim",
+        "hithlum",
+        "maedhros",
+        "falas",
+        "ossiriand",
+        "imladris",
+        "pelargir",
+        "vinyalonde",
+        "cardolan",
+        "rhudaur",
+        "ironhills",
+        "dunland",
+        "beornings",
+        "gondolin",
+        "nargothrond",
+        "doriath",
+        "edain",
+        "belegost",
+        "angband",
+        "numenor",
+        "lindon",
+        "eregion",
+        "khazad",
+        "gondor",
+        "arnor",
+        "arthedain",
+        "angmar",
+        "rohan",
+        "elves",
+        "woodland",
+        "dwarves",
+        "dale",
+        "mordor",
+        "isengard",
+        "harad",
+        "rhun",
+        "umbar",
+        "moria",
+        "reunited"
+      ],
+      "attack": 120,
+      "defense": 18,
+      "hp": 220,
+      "range": 12,
+      "speed": 1,
+      "morale": 70,
+      "level": 36,
+      "slots": 8,
+      "cost": {
+        "gold": 1556,
+        "wood": 978,
+        "stone": 0,
+        "iron": 400,
+        "food": 134
+      },
+      "upkeep": {
+        "gold": 8.89,
+        "food": 8.89
+      },
+      "portrait": 11,
+      "trait": "Machine de siège. Valeurs de campagne, pas statistiques Minecraft."
+    },
+    {
+      "id": "balrog",
+      "name": "Balrog de Morgoth",
+      "race": "Maia",
+      "kind": "Créature",
+      "factions": [
+        "angband"
+      ],
+      "attack": 420,
+      "defense": 260,
+      "hp": 3200,
+      "range": 4,
+      "speed": 6,
+      "morale": 100,
+      "level": 40,
+      "slots": 100,
+      "cost": {
+        "gold": 8000,
+        "wood": 0,
+        "stone": 0,
+        "iron": 2560,
+        "food": 3200
+      },
+      "upkeep": {
+        "gold": 50,
+        "food": 0
+      },
+      "portrait": 10,
+      "trait": "Exception légendaire sous contrôle du GM. Limite commune à toute la campagne.",
+      "limit": 3,
+      "legendary": true
+    },
+    {
+      "id": "durins_bane",
+      "name": "Fléau de Durin",
+      "race": "Maia",
+      "kind": "Créature",
+      "factions": [
+        "moria"
+      ],
+      "attack": 450,
+      "defense": 280,
+      "hp": 3500,
+      "range": 4,
+      "speed": 6,
+      "morale": 100,
+      "level": 40,
+      "slots": 0,
+      "cost": {
+        "gold": 0,
+        "wood": 0,
+        "stone": 0,
+        "iron": 0,
+        "food": 0
+      },
+      "upkeep": {
+        "gold": 0,
+        "food": 0
+      },
+      "portrait": 10,
+      "trait": "Rencontre indépendante : jamais recrutée ni contrôlée par les Orques.",
+      "windows": [
+        [
+          3,
+          1980,
+          3018
+        ]
+      ],
+      "limit": 1,
+      "legendary": true,
+      "eventOnly": true
+    },
+    {
+      "id": "legacy",
+      "name": "Vétéran de campagne",
+      "race": "Divers",
+      "kind": "Infanterie",
+      "factions": [],
+      "attack": 35,
+      "defense": 30,
+      "hp": 90,
+      "range": 1,
+      "speed": 5,
+      "morale": 65,
+      "level": 1,
+      "slots": 1,
+      "cost": {
+        "gold": 25,
+        "wood": 0,
+        "stone": 0,
+        "iron": 8,
+        "food": 10
+      },
+      "upkeep": {
+        "gold": 0.15,
+        "food": 0.25
+      },
+      "portrait": 0,
+      "trait": "Effectif conservé depuis la première version ; non recrutable."
+    }
+  ],
+  "doctrines": {
+    "kingsmen": {
+      "name": "Légions royales",
+      "strategy": "Financer une élite lourde pour tenir la ligne ; payer ses besoins en nourriture et sa faible mobilité.",
+      "production": {
+        "gold": 15,
+        "food": -10
+      },
+      "specialty": "Élite",
+      "stats": {
+        "defense": 15,
+        "speed": -10
+      },
+      "recruitGold": 0,
+      "upkeepFood": 10
+    },
+    "andunie": {
+      "name": "Résistance des Fidèles",
+      "strategy": "Préserver le moral des vétérans et le ravitaillement ; compenser des forges limitées.",
+      "production": {
+        "food": 15,
+        "iron": -15
+      },
+      "specialty": "Élite",
+      "stats": {
+        "morale": 10,
+        "defense": 10
+      },
+      "recruitGold": 0,
+      "upkeepFood": -5
+    },
+    "blacknumenor": {
+      "name": "Domination du littoral",
+      "strategy": "Privilégier une élite offensive ; soutenir son ravitaillement.",
+      "production": {
+        "gold": 15,
+        "food": -15
+      },
+      "specialty": "Élite",
+      "stats": {
+        "attack": 15,
+        "defense": -5
+      },
+      "recruitGold": -5,
+      "upkeepFood": 15
+    },
+    "edhellond": {
+      "name": "Veilleurs du havre",
+      "strategy": "Former des défenseurs mobiles grâce aux revenus portuaires.",
+      "production": {
+        "gold": 15,
+        "stone": -15
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "defense": 10,
+        "speed": 10
+      },
+      "recruitGold": -5,
+      "upkeepFood": 0
+    },
+    "bluedwarves": {
+      "name": "Forges des survivants",
+      "strategy": "Produire le fer des armures lourdes et importer des vivres.",
+      "production": {
+        "iron": 25,
+        "food": -15
+      },
+      "specialty": "Élite",
+      "stats": {
+        "defense": 15,
+        "speed": -10
+      },
+      "recruitGold": -10,
+      "upkeepFood": 10
+    },
+    "gwathuirim": {
+      "name": "Guerre des bois",
+      "strategy": "Recruter des éclaireurs rapides et peu coûteux ; éviter les lignes lourdes.",
+      "production": {
+        "wood": 20,
+        "iron": -20
+      },
+      "specialty": "Archers",
+      "stats": {
+        "speed": 20,
+        "defense": -10
+      },
+      "recruitGold": -15,
+      "upkeepFood": -15
+    },
+    "numenor": {
+      "name": "Arcs de l’Ouest et puissance maritime",
+      "strategy": "Soutenir des archers puissants par les ports et les récoltes ; payer leur équipement de qualité.",
+      "production": {
+        "gold": 15,
+        "food": 10,
+        "iron": -15,
+        "wood": -10
+      },
+      "specialty": "Archers",
+      "stats": {
+        "attack": 10,
+        "range": 10
+      },
+      "recruitGold": 5,
+      "upkeepFood": 5
+    },
+    "pelargir": {
+      "name": "Logistique de l’Anduin",
+      "strategy": "Ravitaillement efficace et défense des quais ; carrières moins productives.",
+      "production": {
+        "gold": 15,
+        "stone": -15
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "defense": 10
+      },
+      "recruitGold": -5,
+      "upkeepFood": -5
+    },
+    "vinyalonde": {
+      "name": "Chantiers des navigateurs",
+      "strategy": "Fournir du bois aux machines de siège ; mobilité et vivres limités.",
+      "production": {
+        "wood": 25,
+        "food": -15
+      },
+      "specialty": "Siège",
+      "stats": {
+        "hp": 15,
+        "speed": -10
+      },
+      "recruitGold": -5,
+      "upkeepFood": 5
+    },
+    "lindon": {
+      "name": "Lances et havres du Haut Roi",
+      "strategy": "Commerce des havres et infanterie disciplinée ; mines et vivres moins abondants.",
+      "production": {
+        "gold": 15,
+        "wood": 10,
+        "iron": -15,
+        "food": -5
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "defense": 15,
+        "morale": 5
+      },
+      "recruitGold": 0,
+      "upkeepFood": 0
+    },
+    "eregion": {
+      "name": "Artisanat des Noldor",
+      "strategy": "Équiper une élite bien armée avec les forges ; consacrer moins de ressources aux récoltes et au bois.",
+      "production": {
+        "iron": 25,
+        "gold": 10,
+        "food": -15,
+        "wood": -10
+      },
+      "specialty": "Élite",
+      "stats": {
+        "attack": 10,
+        "defense": 5
+      },
+      "recruitGold": 0,
+      "upkeepFood": 5
+    },
+    "khazad": {
+      "name": "Richesse sous la montagne",
+      "strategy": "Bâtir une élite très résistante alimentée par les mines.",
+      "production": {
+        "stone": 20,
+        "iron": 15,
+        "food": -20
+      },
+      "specialty": "Élite",
+      "stats": {
+        "defense": 15,
+        "speed": -10
+      },
+      "recruitGold": -5,
+      "upkeepFood": 10
+    },
+    "imladris": {
+      "name": "Refuge et savoir des vétérans",
+      "strategy": "Préserver une élite disciplinée avec un ravitaillement soigné ; compenser des mines limitées.",
+      "production": {
+        "food": 10,
+        "gold": 5,
+        "iron": -15
+      },
+      "specialty": "Élite",
+      "stats": {
+        "morale": 10,
+        "defense": 10
+      },
+      "recruitGold": 0,
+      "upkeepFood": -5
+    },
+    "elves": {
+      "name": "Jardins et lembas de la Lórien",
+      "strategy": "Soutenir des archers de longue portée avec les récoltes et le ravitaillement ; limiter les armures et les dépenses militaires.",
+      "production": {
+        "food": 20,
+        "wood": 10,
+        "iron": -20,
+        "gold": -10
+      },
+      "specialty": "Archers",
+      "stats": {
+        "range": 15,
+        "speed": 10,
+        "defense": -10
+      },
+      "recruitGold": 5,
+      "upkeepFood": -5
+    },
+    "woodland": {
+      "name": "Chasseurs de la Grande Forêt",
+      "strategy": "Favoriser le tir mobile et les échanges ; importer une partie des vivres et de l’équipement lourd.",
+      "production": {
+        "wood": 15,
+        "gold": 10,
+        "food": -10,
+        "iron": -15
+      },
+      "specialty": "Archers",
+      "stats": {
+        "attack": 10,
+        "speed": 10,
+        "defense": -10
+      },
+      "recruitGold": 0,
+      "upkeepFood": 0
+    },
+    "gondor": {
+      "name": "Remparts de l’Arbre Blanc",
+      "strategy": "Tenir les cités avec une infanterie solide et des carrières actives.",
+      "production": {
+        "stone": 20,
+        "food": -10
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "defense": 10
+      },
+      "recruitGold": 0,
+      "upkeepFood": 0
+    },
+    "arnor": {
+      "name": "Routes du royaume du Nord",
+      "strategy": "Associer éclaireurs mobiles et revenus dispersés.",
+      "production": {
+        "gold": 10,
+        "stone": -10
+      },
+      "specialty": "Archers",
+      "stats": {
+        "speed": 15
+      },
+      "recruitGold": -5,
+      "upkeepFood": -5
+    },
+    "harad": {
+      "name": "Caravanes et cavaliers du Sud",
+      "strategy": "Financer une cavalerie mobile par les échanges ; surveiller le coût alimentaire des montures et créatures.",
+      "production": {
+        "gold": 15,
+        "food": 10,
+        "stone": -15,
+        "iron": -10
+      },
+      "specialty": "Cavalerie",
+      "stats": {
+        "speed": 15,
+        "attack": 5
+      },
+      "recruitGold": 0,
+      "upkeepFood": 10
+    },
+    "rhun": {
+      "name": "Armées des plaines",
+      "strategy": "Ravitaillement abondant et infanterie en formation.",
+      "production": {
+        "food": 20,
+        "wood": -15
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "defense": 15,
+        "speed": -5
+      },
+      "recruitGold": -10,
+      "upkeepFood": 5
+    },
+    "umbar": {
+      "name": "Richesse des havres du Sud",
+      "strategy": "Financer des raideurs offensifs par les quais ; faible protection et récoltes limitées.",
+      "production": {
+        "gold": 20,
+        "food": -20
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "attack": 10,
+        "defense": -5
+      },
+      "recruitGold": -5,
+      "upkeepFood": 5
+    },
+    "mordor": {
+      "name": "Forges et guerre d’usure",
+      "strategy": "Recruter une infanterie accessible soutenue par les mines ; discipline limitée et bois moins abondant.",
+      "production": {
+        "iron": 20,
+        "wood": -15
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "attack": 10,
+        "morale": -10
+      },
+      "recruitGold": -10,
+      "upkeepFood": -5
+    },
+    "hithlum": {
+      "name": "Ligne du Nord",
+      "strategy": "Tenir les cols avec une infanterie solide.",
+      "production": {
+        "stone": 15,
+        "food": -10
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "defense": 15
+      },
+      "recruitGold": 0,
+      "upkeepFood": 5
+    },
+    "maedhros": {
+      "name": "Marche de fer",
+      "strategy": "Privilégier une élite offensive, exigeante en ravitaillement.",
+      "production": {
+        "iron": 20,
+        "food": -15
+      },
+      "specialty": "Élite",
+      "stats": {
+        "attack": 15
+      },
+      "recruitGold": 0,
+      "upkeepFood": 10
+    },
+    "falas": {
+      "name": "Garde des havres",
+      "strategy": "Mobilité et revenus du littoral, pierre plus rare.",
+      "production": {
+        "gold": 15,
+        "stone": -10
+      },
+      "specialty": "Archers",
+      "stats": {
+        "speed": 15
+      },
+      "recruitGold": -5,
+      "upkeepFood": 0
+    },
+    "ossiriand": {
+      "name": "Chemins et clairières",
+      "strategy": "Mobilité des archers et ressources des bois ; protection et métallurgie limitées.",
+      "production": {
+        "food": 10,
+        "wood": 15,
+        "iron": -20,
+        "gold": -5
+      },
+      "specialty": "Archers",
+      "stats": {
+        "speed": 20,
+        "defense": -10
+      },
+      "recruitGold": -5,
+      "upkeepFood": -5
+    },
+    "cardolan": {
+      "name": "Défense des marches",
+      "strategy": "Soutenir les garnisons avec une bonne production agricole.",
+      "production": {
+        "food": 15,
+        "iron": -10
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "defense": 10,
+        "morale": 5
+      },
+      "recruitGold": -5,
+      "upkeepFood": 0
+    },
+    "rhudaur": {
+      "name": "Combattants des collines",
+      "strategy": "Infanterie mobile, équipement lourd limité.",
+      "production": {
+        "wood": 15,
+        "iron": -15
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "speed": 15,
+        "defense": -5
+      },
+      "recruitGold": -10,
+      "upkeepFood": -5
+    },
+    "ironhills": {
+      "name": "Boucliers du Fer",
+      "strategy": "Élite blindée, mines riches et vivres coûteux.",
+      "production": {
+        "iron": 30,
+        "food": -20
+      },
+      "specialty": "Élite",
+      "stats": {
+        "defense": 20,
+        "speed": -15
+      },
+      "recruitGold": -10,
+      "upkeepFood": 15
+    },
+    "dunland": {
+      "name": "Levées des clans",
+      "strategy": "Recruter une infanterie offensive abordable ; discipline fragile et commerce réduit.",
+      "production": {
+        "food": 15,
+        "gold": -15
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "attack": 15,
+        "morale": -5
+      },
+      "recruitGold": -5,
+      "upkeepFood": -5
+    },
+    "beornings": {
+      "name": "Gardiens de la vallée",
+      "strategy": "Soutenir une élite robuste grâce aux récoltes.",
+      "production": {
+        "food": 25,
+        "iron": -20
+      },
+      "specialty": "Élite",
+      "stats": {
+        "hp": 15
+      },
+      "recruitGold": 5,
+      "upkeepFood": -10
+    },
+    "gondolin": {
+      "name": "Défense de la cité cachée",
+      "strategy": "Élite défensive et carrières actives, commerce limité.",
+      "production": {
+        "stone": 20,
+        "gold": -10
+      },
+      "specialty": "Élite",
+      "stats": {
+        "defense": 15,
+        "morale": 5
+      },
+      "recruitGold": 0,
+      "upkeepFood": 5
+    },
+    "nargothrond": {
+      "name": "Lames du Narog",
+      "strategy": "Élite offensive équipée par les forges.",
+      "production": {
+        "iron": 15,
+        "wood": -10
+      },
+      "specialty": "Élite",
+      "stats": {
+        "attack": 15
+      },
+      "recruitGold": 0,
+      "upkeepFood": 0
+    },
+    "doriath": {
+      "name": "Vivres de la reine et sentinelles",
+      "strategy": "Cultiver les vivres des marches et protéger les archers ; compenser des forges moins productives.",
+      "production": {
+        "food": 15,
+        "wood": 10,
+        "iron": -20,
+        "gold": -5
+      },
+      "specialty": "Archers",
+      "stats": {
+        "range": 10,
+        "defense": 5
+      },
+      "recruitGold": 5,
+      "upkeepFood": -5
+    },
+    "edain": {
+      "name": "Solidarité des Maisons",
+      "strategy": "Infanterie endurante soutenue par les récoltes ; commerce plus modeste.",
+      "production": {
+        "food": 15,
+        "gold": -10
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "hp": 10,
+        "morale": 10
+      },
+      "recruitGold": -5,
+      "upkeepFood": 0
+    },
+    "belegost": {
+      "name": "Art des Montagnes Bleues",
+      "strategy": "Élite résistante grâce aux mines, récoltes faibles.",
+      "production": {
+        "iron": 20,
+        "food": -15
+      },
+      "specialty": "Élite",
+      "stats": {
+        "defense": 15
+      },
+      "recruitGold": -5,
+      "upkeepFood": 5
+    },
+    "angband": {
+      "name": "Forges de Morgoth",
+      "strategy": "Soutenir de puissantes créatures avec une économie minière.",
+      "production": {
+        "iron": 25,
+        "wood": -20
+      },
+      "specialty": "Créature",
+      "stats": {
+        "attack": 10
+      },
+      "recruitGold": 0,
+      "upkeepFood": 15
+    },
+    "arthedain": {
+      "name": "Derniers défenseurs du Nord",
+      "strategy": "Éclaireurs disciplinés, revenus restreints.",
+      "production": {
+        "food": 10,
+        "gold": -10
+      },
+      "specialty": "Archers",
+      "stats": {
+        "morale": 15,
+        "defense": 5
+      },
+      "recruitGold": -5,
+      "upkeepFood": -10
+    },
+    "angmar": {
+      "name": "Pression du Nord",
+      "strategy": "Infanterie agressive et accessible ; défense plus fragile et ravitaillement difficile.",
+      "production": {
+        "iron": 15,
+        "food": -20
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "attack": 15,
+        "defense": -5
+      },
+      "recruitGold": -10,
+      "upkeepFood": 5
+    },
+    "rohan": {
+      "name": "Maîtrise des chevaux",
+      "strategy": "Cavalerie rapide et offensive soutenue par les plaines ; entretien des chevaux et carrières moins productives.",
+      "production": {
+        "food": 20,
+        "stone": -20,
+        "iron": -10
+      },
+      "specialty": "Cavalerie",
+      "stats": {
+        "speed": 15,
+        "attack": 10
+      },
+      "recruitGold": -5,
+      "upkeepFood": 10
+    },
+    "dwarves": {
+      "name": "Trésor de la Montagne",
+      "strategy": "Financer une élite résistante avec les mines et le commerce.",
+      "production": {
+        "gold": 15,
+        "iron": 15,
+        "food": -20
+      },
+      "specialty": "Élite",
+      "stats": {
+        "hp": 15,
+        "speed": -10
+      },
+      "recruitGold": 0,
+      "upkeepFood": 10
+    },
+    "dale": {
+      "name": "Marchands et archers",
+      "strategy": "Financer des archers de longue portée par le commerce.",
+      "production": {
+        "gold": 20,
+        "stone": -15
+      },
+      "specialty": "Archers",
+      "stats": {
+        "range": 10,
+        "attack": 5
+      },
+      "recruitGold": -10,
+      "upkeepFood": 0
+    },
+    "isengard": {
+      "name": "Industrie de guerre",
+      "strategy": "Construire des engins offensifs grâce aux forges ; mobilité réduite et récoltes sacrifiées.",
+      "production": {
+        "iron": 25,
+        "food": -20
+      },
+      "specialty": "Siège",
+      "stats": {
+        "attack": 15,
+        "speed": -10
+      },
+      "recruitGold": -5,
+      "upkeepFood": 10
+    },
+    "moria": {
+      "name": "Guerre souterraine",
+      "strategy": "Lever une infanterie mobile à faible entretien ; moral fragile et dépendance au bois extérieur.",
+      "production": {
+        "stone": 20,
+        "wood": -20
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "speed": 10,
+        "morale": -10
+      },
+      "recruitGold": -10,
+      "upkeepFood": -10
+    },
+    "reunited": {
+      "name": "Routes réunifiées",
+      "strategy": "Relancer le commerce et soutenir une infanterie disciplinée ; mines moins productives.",
+      "production": {
+        "gold": 15,
+        "iron": -15
+      },
+      "specialty": "Infanterie",
+      "stats": {
+        "morale": 10,
+        "defense": 5
+      },
+      "recruitGold": -5,
+      "upkeepFood": 0
+    }
+  },
+  "buildings": {
+    "keep": {
+      "name": "Citadelle",
+      "desc": "Le cœur de votre cité. Chaque niveau augmente ses revenus et sa population.",
+      "resource": "gold",
+      "rate": 210,
+      "cost": 240
+    },
+    "farm": {
+      "name": "Ferme",
+      "desc": "Des terres fertiles pour nourrir votre peuple et soutenir vos armées.",
+      "resource": "food",
+      "rate": 390,
+      "cost": 110
+    },
+    "market": {
+      "name": "Marché",
+      "desc": "Les caravanes et les échoppes font prospérer votre trésorerie.",
+      "resource": "gold",
+      "rate": 330,
+      "cost": 160
+    },
+    "lumber": {
+      "name": "Scierie",
+      "desc": "Le bois des forêts voisines devient charpentes et fortifications.",
+      "resource": "wood",
+      "rate": 330,
+      "cost": 100
+    },
+    "quarry": {
+      "name": "Carrière",
+      "desc": "Une pierre solide pour les remparts et les grands ouvrages.",
+      "resource": "stone",
+      "rate": 270,
+      "cost": 130
+    },
+    "mine": {
+      "name": "Mine de fer",
+      "desc": "Les veines de minerai approvisionnent les forges du royaume.",
+      "resource": "iron",
+      "rate": 210,
+      "cost": 150
+    },
+    "barracks": {
+      "name": "Caserne",
+      "desc": "Débloquez de nouvelles unités. Sa capacité se mesure en points de recrutement.",
+      "resource": null,
+      "rate": 0,
+      "cost": 210
+    },
+    "walls": {
+      "name": "Remparts",
+      "desc": "Renforcez la protection de la ville. Le GM applique ces défenses dans Minecraft.",
+      "resource": null,
+      "rate": 0,
+      "cost": 180
+    }
+  },
+  "ageLimits": {
+    "1": 590,
+    "2": 3441,
+    "3": 3021,
+    "4": 1000
+  },
+  "ageNames": {
+    "1": "Premier Âge",
+    "2": "Deuxième Âge",
+    "3": "Troisième Âge",
+    "4": "Quatrième Âge"
+  }
+}
